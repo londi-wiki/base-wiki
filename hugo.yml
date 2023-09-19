@@ -1,0 +1,32 @@
+baseURL : "https://wiki.strubli.com/webfr"
+languageCode : "en-ch"
+title : "webfr wiki page"
+theme : "dark-theme-editor"
+
+
+params:
+  site:
+    faviconUrl: ""
+  header:
+    title: "webfr wiki page"
+    subtitle: ""
+    author: Leon
+    logo:
+      imgUrl: ""
+  footer:
+    theme: false
+    modifiedTime: false
+    dateFormat: "02. Jan 2006 15:04:05"
+    buildTimestamp: "2023-09-10T00:19:10+0200"
+    socialLink:
+      github: "https://www.github.com/londi"
+    copyrightStr: "All Rights Reserved ®."
+  globalFrontmatter:
+    author: "Leon Lüthi"
+  homePage:
+    siteLongDescriptionTitle: "Intro"
+    siteLongDescription: "This is a summary and code snippet collection of the modul webfr.\nCopyright of images belongs to FHNW!"
+    numOfRecentPosts: 10
+  page:
+    dateFormat: "02.01.2006"
+    codeBlockCopible: false
