@@ -6,6 +6,7 @@ theme : "dark-theme-editor"
 
 params:
   site:
+    subURL : "webfr"
     faviconUrl: ""
   header:
     title: "webfr wiki page"
