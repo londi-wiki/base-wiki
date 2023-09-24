@@ -1,0 +1,59 @@
+trigger:
+- main
+
+pool:
+  'Strubli Pool'
+
+stages:
+
+- stage: 'Prepare'
+  displayName: 'Prepare'
+
+  jobs:
+  - job: checkout
+    steps:
+      - checkout: self
+        submodules: true
+        persistCredentials: true
+  - job: 'Build'
+    pool:
+      'Strubli Pool'
+    steps:
+    - script: |
+        /home/linuxbrew/.linuxbrew/bin/hugo
+      displayName: 'build hugo site'
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/public'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        replaceExistingArchive: true
+        verbose: true
+    - upload: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      artifact: drop
+
+- stage: 'Deployment'
+  displayName: 'Deployment'
+  
+  jobs:
+    
+  - deployment: Wiki_Server
+    displayName: Deployment to Strubli wiki server
+    environment: 
+      name: 'Wiki Server'
+      resourceName: 'wiki-server'
+      resourceType: virtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: ExtractFiles@1
+            inputs:
+              archiveFilePatterns: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              destinationFolder: '/var/www/html/$(WIKI-NAME)/'
+              cleanDestinationFolder: true
+              overwriteExistingFiles: false
+          - script: |
+              curl -H "Content-Type: application/json" -X POST -d  '{ "content": "Deployment triggered.", "embeds": [ { "title": "Wiki page '$(WIKI-NAME)' ✅", "description": "Wiki page '$(WIKI-NAME)' successfully deployed. Build id: $(Build.BuildId) 🥳", "url": "https://dev.azure.com/strubli/Strubli%20Wiki/_build/results?buildId=$(Build.BuildId)" } ] }' https://discord.com/api/webhooks/1155459564880269382/q1MDl_diuZ0Pr8YrP_lVJf8m_lA3Cgp1ZHhlLwGqWausaOnPZ9oJS_2qi5JnHTgfi-S3
