@@ -22,7 +22,7 @@ stages:
     - script: |
         git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" \
             submodule update --init --recursive
-        displayName: Fetch Submodules
+      displayName: Fetch Submodules
     - script: |
         /home/linuxbrew/.linuxbrew/bin/hugo
       displayName: 'build hugo site'
