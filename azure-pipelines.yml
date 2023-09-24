@@ -24,7 +24,7 @@ stages:
             submodule update --init --recursive
       displayName: Fetch Submodules
     - script: |
-        /home/linuxbrew/.linuxbrew/bin/hugo
+        /home/linuxbrew/.linuxbrew/bin/hugo --enableGitInfo
       displayName: 'build hugo site'
     - task: ArchiveFiles@2
       displayName: 'Archive files'
