@@ -28,6 +28,7 @@ params:
     siteLongDescriptionTitle: "Intro"
     siteLongDescription: "This is a summary and code snippet collection of the modul webfr.\nCopyright of images belongs to FHNW!"
     numOfRecentPosts: 10
+    showRecentPostsBlock: true
   page:
     dateFormat: "02.01.2006"
     codeBlockCopible: false

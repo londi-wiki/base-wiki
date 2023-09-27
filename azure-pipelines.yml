@@ -20,6 +20,7 @@ stages:
           'Strubli Pool'
         steps:
           - script: |
+              git config --global --add url."git@github.com:".insteadOf "https://github.com/"
               git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" \
                   submodule update --init --recursive
             displayName: Fetch Submodules

@@ -7,3 +7,5 @@ math: false
 ---
 
 [Github Assignments](https://github.com/FHNW-WEBFR-HS23/)
+
+[Softwarelab](https://webfr.fhnw.softwarelab.ch/)
