@@ -13,3 +13,14 @@ catalina start
 cataline stop
 ```
 
+```shell
+jar -tvf build/libs/ub1-solution.war 
+```
+
+```shell
+sudo tail -99f /opt/tomcat/logs/catalina.out
+
+# more detailed error logs:
+sudo tail -99f /opt/tomcat/logs/localhost.2023-09-28.log
+```
+
