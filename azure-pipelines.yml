@@ -17,10 +17,8 @@ stages:
               knownHostsEntry: 'github.com'
               sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEQzfLVTh6h3AlVouLg00UVIhB2vPBkqtKSf7uvRpVG1Z2q3c4xXdbQJANh8ToD8yqxFmpGQtLl3NlQguOMx+wq63+gPiWGAq+b5PrQbIN4gpC6fH35AhMztdxNCPpCym891RBYpMny4SKu2tdzfdmhUPQ8exdAYfaBdgOMqb91JfEuVwNCgsOispfayybiH+vIeHOjm9urgzl/pRq+ysf/b8Ow96pCNs1KewOi0hwYP8upcYZvr2cq/FfWEx3D8Gv+9JMueMZDhUxCE0EuhmFS+kmogiqK7l0DvbiYmV6esi8IeCuvWd8uA7OYT4JXSNq9SnVACx2KhVyk3zwG/GIPLjLT0pWgfzS5F9aUSEvtb9E7OIDb79gE3uMoebjb0+DjPoWpIrcspVUDRyzh71R+3xD5bcH1zhfhuXzzJ2VV7xYR9srwOnDuDvxM7rrfoia/qvcmNAdy/TordkeiK+7FH0wzzLbnGkIrXg4ei4DDYs/cYS24MKKMKsIoPgL7+c= leon@Taschenrechner'
               sshKeySecureFile: 'azure_rsa'
-          - checkout: self
-            submodules: false
-            timeoutInMinutes: 1
-            retryCountOnTaskFailure: 2
+          - script: |
+              git clone git@github.com:londi/webfr-wiki.git
       - job: 'Build'
         pool:
           'Strubli Pool'
