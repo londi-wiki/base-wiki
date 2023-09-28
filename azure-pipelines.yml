@@ -19,7 +19,6 @@ stages:
               sshKeySecureFile: 'azure_rsa'
           - checkout: self
             submodules: true
-            persistCredentials: true
       - job: 'Build'
         pool:
           'Strubli Pool'
