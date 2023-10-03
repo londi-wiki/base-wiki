@@ -34,9 +34,9 @@ jobs:
       HUGO_VERSION: 0.114.0
     steps:
       - name: Test
-        run: echo $(whoami)
+        run: echo $(brew --version)
       - name: Test2
-        run: echo whoami
+        run: echo $(hugo version)
       - name: Checkout
         uses: actions/checkout@v3
         with:
