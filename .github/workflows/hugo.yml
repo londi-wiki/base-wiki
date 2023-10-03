@@ -35,12 +35,12 @@ jobs:
     steps:
       - name: Test
         run: |
-          (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/leon/.profile
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-      - name: Test
-        run: echo $(brew --version)
+          source /home/leon/.profile
+          echo $(brew --version)
       - name: Test2
-        run: echo $(hugo version)
+        run: |
+          source /home/leon/.profile
+          echo $(hugo version)
       - name: Checkout
         uses: actions/checkout@v3
         with:
