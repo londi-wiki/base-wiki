@@ -33,6 +33,8 @@ jobs:
     env:
       HUGO_VERSION: 0.114.0
     steps:
+      - name: Test
+        run: echo $whoami
       - name: Checkout
         uses: actions/checkout@v3
         with:
