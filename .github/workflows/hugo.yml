@@ -34,7 +34,9 @@ jobs:
       HUGO_VERSION: 0.114.0
     steps:
       - name: Test
-        run: echo $whoami
+        run: echo $(whoami)
+      - name: Test2
+        run: echo whoami
       - name: Checkout
         uses: actions/checkout@v3
         with:
