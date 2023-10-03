@@ -49,6 +49,9 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          echo $PWD
+          echo $(PWD)
+          ls -la
           source /home/leon/.profile
           hugo \
             --minify \
@@ -56,13 +59,4 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
   # Deployment job
-  #deploy:
-   # environment:
-   #   name: github-pages
-   #   url: ${{ steps.deployment.outputs.page_url }}
-   # runs-on: ubuntu-latest
-   # needs: build
-  #  steps:
-  #    - name: Deploy to GitHub Pages
-   #     id: deployment
-   #     uses: actions/deploy-pages@v2
+
