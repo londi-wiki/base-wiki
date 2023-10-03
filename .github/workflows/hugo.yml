@@ -51,12 +51,13 @@ jobs:
         run: |
           echo $PWD
           echo $(PWD)
-          ls -la
           source /home/leon/.profile
           hugo \
             --minify \
             --enableGitInfo \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          ls -la
+          ls -la public/
 
   # Deployment job
 
