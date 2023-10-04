@@ -37,11 +37,6 @@ jobs:
         uses: actions/checkout@v3
       - name: checkout theme (submodule)
         run: |
-          echo "---"
-          ls -la themes/
-          echo "---"
-          ls -la themes/dark-theme-editor
-          echo "---"
           source /home/leon/.profile
           mkdir -p themes
           git clone git@github.com:londi-wiki/dark-theme-editor.git themes/dark-theme-editor
