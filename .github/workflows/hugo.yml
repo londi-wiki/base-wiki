@@ -71,4 +71,5 @@ jobs:
           source: public/
           target: /var/www/html/webfr/
           rm: true
+          strip_components: 1
           
