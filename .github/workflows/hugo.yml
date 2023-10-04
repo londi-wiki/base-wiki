@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: self-hosted
     env:
-      HUGO_VERSION: 0.118.2
+      HUGO_VERSION: 0.119.0
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -39,13 +39,9 @@ jobs:
           submodules: recursive
       - name: checkout theme (submodule)
         run: |
-          echo "before"
-          ls -la themes/dark-theme-editor/
           source /home/leon/.profile
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
-          echo "after"
-          ls -la themes/dark-theme-editor/
+          mkdir themes
+          git clone git@github.com:londi-wiki/dark-theme-editor.git themes/dark-theme-editor
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Insert BuildTimestamp in hugo.yml
