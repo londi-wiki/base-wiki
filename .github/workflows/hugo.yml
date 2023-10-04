@@ -38,9 +38,9 @@ jobs:
       - name: checkout theme (submodule)
         run: |
           echo "---"
-          ll -ls themes/
+          ls -la themes/
           echo "---"
-          ll -ls themes/dark-theme-editor
+          ls -la themes/dark-theme-editor
           echo "---"
           source /home/leon/.profile
           mkdir -p themes
