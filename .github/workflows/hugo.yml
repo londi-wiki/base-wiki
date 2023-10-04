@@ -39,9 +39,13 @@ jobs:
           submodules: recursive
       - name: checkout theme (submodule)
         run: |
+          echo "before"
+          ls -la
           source /home/leon/.profile
-          git submodule add -f git@github.com:londi/dark-theme-editor.git themes/dark-theme-editor
-          git submodule update --remote
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+          echo "after"
+          ls -la
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Insert BuildTimestamp in hugo.yml
