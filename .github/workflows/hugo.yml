@@ -40,7 +40,7 @@ jobs:
       - name: checkout theme (submodule)
         run: |
           source /home/leon/.profile
-          mkdir themes
+          mkdir -p themes
           git clone git@github.com:londi-wiki/dark-theme-editor.git themes/dark-theme-editor
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
