@@ -40,12 +40,12 @@ jobs:
       - name: checkout theme (submodule)
         run: |
           echo "before"
-          ls -la
+          ls -la themes
           source /home/leon/.profile
           git pull --recurse-submodules
           git submodule update --remote --recursive
           echo "after"
-          ls -la
+          ls -la themes
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Insert BuildTimestamp in hugo.yml
