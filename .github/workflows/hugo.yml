@@ -68,13 +68,13 @@ jobs:
         uses: betanzos/scp-upload@v1
         with:
           # Source local file path
-          source: public/
+          source: public/*
           # Remote host
           host: 10.10.0.45
           # Remote host username
           username: leon
           # SSH private key
-          key: ${{ secrets.DEPLOY_AGENT_KEY }}
+          key: /home/leon/.ssh/id_rsa #${{ secrets.DEPLOY_AGENT_KEY }}
           # Remote directory to copy the file
           remote_dir: /var/www/html/webfr
           recursive: true
