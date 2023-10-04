@@ -62,19 +62,13 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
-      - name: SCP Upload
-        # You may pin to the exact commit or the version.
-        # uses: betanzos/scp-upload@6681a6d4596e23b96314c6c4ae2c154d4c4d346c
-        uses: betanzos/scp-upload@v1
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.4
         with:
-          # Source local file path
+          host: ${{ secrets.WIKI_SERVER_HOST }}
+          username: ${{ secrets.WIKI_SERVER_USERNAME }}
+          key: ${{ secrets.DEPLOY_AGENT_KEY }}
           source: public/
-          # Remote host
-          host: 10.10.0.45
-          # Remote host username
-          username: leon
-          # SSH private key
-          key: /home/leon/.ssh/id_rsa #${{ secrets.DEPLOY_AGENT_KEY }}
-          # Remote directory to copy the file
-          remote_dir: /var/www/html/webfr
-          recursive: true
+          target: /var/www/html/webfr/
+          rm: true
+          
