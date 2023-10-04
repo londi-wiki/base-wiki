@@ -56,8 +56,25 @@ jobs:
             --minify \
             --enableGitInfo \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-          ls -la
-          ls -la public/
 
   # Deployment job
-
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: SCP Upload
+        # You may pin to the exact commit or the version.
+        # uses: betanzos/scp-upload@6681a6d4596e23b96314c6c4ae2c154d4c4d346c
+        uses: betanzos/scp-upload@v1
+        with:
+          # Source local file path
+          source: public/
+          # Remote host
+          host: 10.10.0.45
+          # Remote host username
+          username: leon
+          # SSH private key
+          key: ${{ secrets.DEPLOY_AGENT_KEY }}
+          # Remote directory to copy the file
+          remote_dir: /var/www/html/webfr
+          recursive: true
