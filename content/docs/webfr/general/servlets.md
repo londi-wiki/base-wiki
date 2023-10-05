@@ -1,9 +1,13 @@
 ---
 title : 'Servlets'
 date : 2023-09-28T17:39:25+02:00
+icon: "article"
+description: ""
+lastmod : 2023-09-28T17:39:25+02:00
 tags: ["week2"]
 author: "Leon"
 math: false
+draft: false
 ---
 
 ## Filter
