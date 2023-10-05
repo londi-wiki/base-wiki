@@ -11,7 +11,7 @@ toc: true
 
 ##  Qualitative Merkmale für Daten
 
-- Beschreibung der unstruktuerten Roh-Datenquellen, wenn es diese gab bzw. dessen was ursprünglich vorlag
+- Beschreibung der unstrukturierten Roh-Datenquellen, wenn es diese gab bzw. dessen was ursprünglich vorlag
 - Charakterisierung eines Merkmalsträgers
 - Beschreibung der Datensammlung: wann, wo und wie wurden die Daten von wem gesammelt
 - Liste der Attribute pro Merkmalsträger, sowie deren Bedeutung, Berechnungsweise und Datentyp
