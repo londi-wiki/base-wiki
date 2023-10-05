@@ -1,4 +1,4 @@
-baseURL : "https://wiki.strubli.com/webfr"
+baseURL : "https://wiki.strubli.com/"
 languageCode : "en-ch"
 title : "webfr wiki page"
 themes: "lotusdocs"
@@ -15,7 +15,6 @@ module:
 
 params:
   site:
-    subURL : "webfr"
     faviconUrl: ""
   header:
     title: "webfr wiki page"
