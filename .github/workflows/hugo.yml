@@ -61,7 +61,10 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
-      - name: copy file via ssh password
+      - name: clean folder
+        run: |
+          ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
+      - name: copy file via scp
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.WIKI_SERVER_HOST }}
@@ -69,6 +72,6 @@ jobs:
           key: ${{ secrets.DEPLOY_AGENT_KEY }}
           source: public/
           target: /var/www/html/
-          rm: true
+          rm: false
           strip_components: 1
           
