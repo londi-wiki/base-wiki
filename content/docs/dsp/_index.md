@@ -2,7 +2,7 @@
 weight: 200
 title: "DSP"
 description: "Example content"
-icon: "edit"
+icon: "bubble_chart"
 date: "2023-05-22T00:34:57+01:00"
 lastmod: "2023-05-22T00:34:57+01:00"
 draft: false

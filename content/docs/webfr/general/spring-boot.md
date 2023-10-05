@@ -13,13 +13,36 @@ toc: true
 
 ### @SpringBootApplication
 
-### @RequestMapping(method = RequestMethod.GET)
+### @RequestMapping(path="/", method = RequestMethod.GET)
 
 - Front Controller
-- 
+- @RequestMapping(path="/{id}", method = RequestMethod.GET)
 
 ### @Controller
 
 - Page Controller
 
-### @Autowired: 
+### @Autowired
+
+...
+
+
+### RequestParam vs. PathVariable
+
+**RequestParam**
+
+```java
+@RequestMapping(value = "/questionnaire/", method = RequestMethod.GET)
+public void findById(@RequestParam Long id) { ... }
+
+// ...flashcard-mvc/questionnaire/?id=0
+```
+
+**PathVariable**
+
+```java
+@RequestMapping(value = "/questionnaire/{id}", method = RequestMethod.GET)
+public void findById(@PathVariable("id") Long id) { ... }
+
+// ...flashcard-mvc/questionnaire/0
+```
