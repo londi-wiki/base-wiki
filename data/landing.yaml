@@ -12,13 +12,13 @@ hero:
       mobile: "gradient-mobile.webp"
 
   badge:
-   text: v0.0.2
+   text: vX.Y.Z
    color: primary # primary, secondary, success, danger, warning, info, light, dark
    pill: false # boolean
    soft: true # boolean
   buildTimestamp:
     text: "2023-01-01T00:00:00+0200"
-    color: secondary # primary, secondary, success, danger, warning, info, light, dark
+    color: info # primary, secondary, success, danger, warning, info, light, dark
     pill: false # boolean
     soft: true # boolean
     dateFormat: "02. Jan 2006 15:04:05"
