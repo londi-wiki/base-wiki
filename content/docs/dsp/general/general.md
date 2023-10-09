@@ -1,5 +1,5 @@
 ---
-title : 'Week1'
+title : 'General'
 date : 2023-09-19T21:09:13+02:00
 tags: ["week1"]
 author: "Leon"

@@ -1,5 +1,5 @@
 ---
-title : 'Week1'
+title : 'General'
 date : 2023-09-19T21:18:01+02:00
 tags: ["Zufallsexperiment", "Ergebnismenge", "Ereignis", "Elementarereignis"]
 author: "Leon"
