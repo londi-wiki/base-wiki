@@ -16,6 +16,12 @@ hero:
    color: primary # primary, secondary, success, danger, warning, info, light, dark
    pill: false # boolean
    soft: true # boolean
+  buildTimestamp:
+    text: "2023-01-01T00:00:00+0200"
+    color: secondary # primary, secondary, success, danger, warning, info, light, dark
+    pill: false # boolean
+    soft: true # boolean
+    dateFormat: "02. Jan 2006 15:04:05"
 
 #  titleLogo:
 #   path: "images/logos"
@@ -37,9 +43,9 @@ hero:
     icon: rocket_launch
     btnText: "Go to wiki"
     url: "docs/"
-#  cta2Button:
-#    icon: construction
-#    btnText: "In Development"
-#    url: "https://github.com/colinwilson/lotusdocs"
+  cta2Button:
+    icon: code
+    btnText: "Github Repo"
+    url: "https://github.com/londi-wiki/base-wiki"
 
   info: "**wiki.strubli.com**."
