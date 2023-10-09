@@ -80,6 +80,7 @@ snd :: (a,b) -> b
 > b1 = f.fst.i :: Bool -> Int
 > b2 = f.snd.i :: Bool -> Int
 ```
+@fhnw
 
 
 
