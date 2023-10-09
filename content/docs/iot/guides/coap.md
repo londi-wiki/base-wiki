@@ -15,4 +15,6 @@ It's a resource oriented protocol similar to how HTTP REST works. Each resource 
 
 COAP communicated via UDP.
 
+Resources are discoverable at .well-known/core
 
+[Cheat Sheet](https://github.com/markushx/coap-cheatsheet/raw/master/coap-cheatsheet.pdf)
