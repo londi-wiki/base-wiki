@@ -46,7 +46,7 @@ jobs:
       - name: Insert BuildTimestamp in hugo.yml
         run: |
           source /home/leon/.profile
-          sed -i -e "s/2023-01-01T00:00:00+0200/$(date '+%Y-%m-%dT%H:%M:%S%z')/g" data/landing.yaml
+          sed -i -e "s/2023-01-01T00:00:00+0200/$(date '+%Y-%m-%dT%H:%M:%S%z')/g" ./data/landing.yaml
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
