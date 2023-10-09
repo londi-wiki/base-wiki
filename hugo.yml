@@ -14,32 +14,15 @@ module:
 
 
 params:
-  site:
-    faviconUrl: ""
-  header:
-    title: "webfr wiki page"
-    subtitle: ""
-    author: Leon
-    logo:
-      imgUrl: ""
-  footer:
-    theme: false
-    modifiedTime: false
-    dateFormat: "02. Jan 2006 15:04:05"
-    buildTimestamp: "2023-01-01T00:00:00+0200"
-    socialLink:
-      github: "https://www.github.com/londi"
-    copyrightStr: "All Rights Reserved ®."
   globalFrontmatter:
     author: "Leon Lüthi"
-  homePage:
-    siteLongDescriptionTitle: "Intro"
-    siteLongDescription: "This is a summary and code snippet collection of the modul webfr.\nCopyright of images belongs to FHNW!"
-    numOfRecentPosts: 10
-    showRecentPostsBlock: true
   page:
     dateFormat: "02.01.2006"
-    codeBlockCopible: false
+    codeBlockCopible: true
+
+  plausible:
+    dataDomain: "wiki.strubli.com"
+    scriptURL: "https://pla.strubli.com/js/script.js"
 
   docs: # Parameters for the /docs 'template'
     title           : "Webfr Wiki"           # default html title for documentation pages/sections
@@ -81,3 +64,7 @@ menu:
         url :  "docs/"
         identifier :  "docs"
         weight :  10
+      - name: "About"
+        url: "https://www.leonluethi.com"
+        identifier: "about"
+        weight: 20
