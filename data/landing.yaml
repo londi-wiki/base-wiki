@@ -30,7 +30,7 @@ hero:
 #   height: 80px
 
   title: "Wiki Page"
-  subtitle: Wiki page - this site contains content of fhnw.ch. copyright belongs to fhnw or for selfwritten content to me.
+  subtitle: Wiki page - Hi and welcome to my wiki page. This site contains information about various it topics all around my study and private projects. Content flagged with '@fhnw' is cited of content from fhnw.ch and belong to fhnw.
 
 #  image:
 #    path: "images" # path to image under configured assets directory. default 'images'
