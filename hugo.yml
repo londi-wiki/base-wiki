@@ -22,7 +22,7 @@ params:
 
   plausible:
     dataDomain: "wiki.strubli.com"
-    scriptURL: "https://pla.strubli.com/js/script.js"
+    scriptURL: "https://pla.strubli.com/js/script.tagged-events.js"
 
   docs: # Parameters for the /docs 'template'
     title           : "Webfr Wiki"           # default html title for documentation pages/sections
@@ -57,6 +57,31 @@ params:
     # Link behaviour
     intLinkTooltip  : true                                # Enable a tooltip for internal links that displays info about the destination? default false
     # extLinkNewTab   : false                               # Open external links in a new Tab? default true
+
+  feedback:
+    enabled : true                                                                   # default / not set : false
+    emoticonTpl : true                                                               # optional
+    eventDest : ["plausible"]                                               # optional
+    emoticonEventName : "Feedback"                                                   # optional
+    positiveEventName : "Positive Feedback"                                          # optional
+    negativeEventName : "Negative Feedback"                                          # optional
+    positiveFormTitle : "What did you like?"                                         # optional
+    negativeFormTitle : "What went wrong?"                                           # optional
+    successMsg : "Thank you for helping to improve our documentation!"               # optional
+    errorMsg : "Sorry! There was an error while attempting to submit your feedback!" # optional
+    positiveForm : [
+    ["Accurate", "Accurately describes the feature or option."],
+    ["Solved my problem", "Helped me resolve an issue."],
+    ["Easy to understand", "Easy to follow and comprehend."],
+    ["Something else"]
+    ]
+    negativeForm : [
+    ["Inaccurate", "Doesn't accurately describe the feature or option."],
+    ["Couldn't find what I was looking for", "Missing important information."],
+    ["Hard to understand", "Too complicated or unclear."],
+    ["Code sample errors", "One or more code samples are incorrect."],
+    ["Something else"]
+    ]
 
 menu:
   primary:
