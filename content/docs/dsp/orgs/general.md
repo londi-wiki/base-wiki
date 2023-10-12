@@ -9,13 +9,11 @@ draft: false
 
 ## Links
 
-[dsp page](https://ml.pages.fhnw.ch/courses/dsp/dsp_hs2023/dsp_page/welcome.html)
+[dsp page](https://ml.pages.fhnw.ch/courses/dsp/dsp_hs2023/dsp_page)
 
 [dsp hs 2023](https://gitlab.fhnw.ch/ml/courses/dsp/dsp_hs2023/dsp_hs2023)
 
 [datastories](https://gitlab.fhnw.ch/ml/courses/dsp/dsp_hs2023/datastories_hs2023)
-
-[Pages](https://ml.pages.fhnw.ch/courses/dsp/dsp_page/content)
 
 ## Themen
 
