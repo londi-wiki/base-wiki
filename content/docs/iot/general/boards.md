@@ -31,4 +31,13 @@ Nordic [nRF52840](https://www.nordicsemi.com/Products/Low-power-short-range-wire
 
 > To upload: click twice on the reset button.
 
+### Raspberry Pi Zero
+
+[Setup](https://github.com/tamberg/fhnw-iot/wiki/Raspberry-Pi-Zero-W#write-the-raspberry-pi-os-img-to-the-sd-card)
+
+802.11 b/g/n wireless LAN
+Bluetooth(R) 4.1
+Bluetooth Low Energy (BLE)
+1GHz, single-core CPU
+512MB RAM
 
