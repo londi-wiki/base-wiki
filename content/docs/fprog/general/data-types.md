@@ -48,3 +48,37 @@ anount :: BillingInfo -> Float
 amount (CreditCard a _ _) = a
 amount (Invoice a _) = a
 ```
+> Data constructors must begin with a capital letter.
+
+
+## Use datatype in other datatypes
+
+```haskell
+data Shape = Circle Float
+            | Square Float Float
+            deriving (Show)
+
+circumference :: Shape -> Float
+circumference (Circle r) = r**2 * pi
+circumference (Square w h) = w * h
+
+f = Fig (XY 2 3) (Square 2 4)
+f :: Figure
+f
+Fig (XY 2.0 3.0) (Square 2.0 4.0)
+it :: Figure
+
+-- other example
+
+move :: Figure -> Float -> Float -> Figure
+move (Fig (XY x y) (s)) nx ny = Fig (XY (x+nx) (y+ny)) s
+
+f = Fig (XY 2 3) (Square 2 4)
+f :: Figure
+f
+Fig (XY 2.0 3.0) (Square 2.0 4.0)
+it :: Figure
+move f 2 4
+Fig (XY 4.0 7.0) (Square 2.0 4.0)
+it :: Figure
+```
