@@ -20,6 +20,9 @@ params:
     dateFormat: "02.01.2006"
     codeBlockCopible: true
 
+  #footer:
+  #  copyright: "Test"
+  #  version: true
   plausible:
     dataDomain: "wiki.strubli.com"
     scriptURL: "https://pla.strubli.com/js/script.tagged-events.js"
