@@ -14,6 +14,15 @@ case expression of
   pattern -> result
   pattern -> result
     ...
+    
+    
+f1 :: Int -> Int
+f1 x =
+    case x of
+        0 -> 0
+        1 -> 10
+        2 -> 20
+        _ -> 20 - x
 ```
 
 

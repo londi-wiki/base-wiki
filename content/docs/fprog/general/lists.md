@@ -79,7 +79,7 @@ head "hello" ~> 'h'
 
 ### Pattern matching Lists
 
-```shell
+```haskell
 stdMatch [] = "Matched empty List"
 stdMatch [x:xs] = "Matched list with head " ++ show x
 stdMatch [1,2,3,4] ~> "Matched list with head 1"
@@ -106,7 +106,7 @@ filter (\s -> length s > 2) ["ab", "abc", "a"] ~> ["abc"]
 
 map times2 [1,2,3,4] ~> [2,4,6,8]
 map fst [(1, "a"), (2, "b"), (6, "f")] ~> [1,2,6]
-map head ["abcd", "c", "xyz"] ~> "abcd" -- [Char]
+map head ["abcd", "c", "xyz"] ~> "acx" -- [Char]
 ```
 
 ```haskell
@@ -126,7 +126,7 @@ q11 ~> ["a","c"]
 ### Wildcard matcher
 
 ```haskell
-f7 (_:a:_:c) = a : c
+f7 (_ : a : _ : c) = a : c -- whitespaces are necessary for proper syntax highlighting
 q7 = f7 [1,2,3,4,5]
 
 q7 ~> [2,4,5]
