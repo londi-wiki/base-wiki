@@ -9,10 +9,11 @@ draft: false
 toc: true
 ---
 
-## State
+## Basics
 
-```javascript
-const [counter, setCounter] = useState(0);
+[Add reactstrap](https://github.com/reactstrap/reactstrap#adding-bootstrap)
 
-<Button color='secondary' onClick={() => setCounter(0) } disabled={disabled}>refresh</Button>
-```
+
+
+
+

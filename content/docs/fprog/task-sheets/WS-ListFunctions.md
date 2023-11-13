@@ -92,10 +92,10 @@ math: false
 
 #
 
-| Signatur     |  concat [[a]] -> [a]                                                                                                           |
+| Signatur     | concat [[a]] -> [a]                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------- |
 | Beispiel     | concat [[1],[2,3],[4]] ~> [1,2,3,4] concat ["abc","def"] ~> "abcdef"                                      |
-| Beschreibung | Concats multiple lists into one.                                                                                                          |
+| Beschreibung | Concats multiple lists into one.                                                                                                         |
 
 #
 
