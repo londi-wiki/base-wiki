@@ -120,5 +120,155 @@ useEffect(() => {
 In production, you would only see "✅ Connecting..." printed once. Remounting components only happens in development to help you find Effects that need cleanup. 
 You can turn off Strict Mode to opt out of the development behavior, but we recommend keeping it on. This lets you find many bugs like the one above.
 
+# How to handle the Effect firing twice in development?
 
+## Controlling non-React widgets
 
+```jsx
+useEffect(() => {
+  const map = mapRef.current;
+  map.setZoomLevel(zoomLevel);
+}, [zoomLevel]);
+
+useEffect(() => {
+    const dialog = dialogRef.current;
+    dialog.showModal();
+    return () => dialog.close();
+}, []);
+```
+
+## Subscribing to events
+
+```jsx
+useEffect(() => {
+  function handleScroll(e) {
+    console.log(window.scrollX, window.scrollY);
+  }
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+```
+
+## Triggering animations
+
+```jsx
+useEffect(() => {
+  const node = ref.current;
+  node.style.opacity = 1; // Trigger the animation
+  return () => {
+    node.style.opacity = 0; // Reset to the initial value
+  };
+}, []);
+```
+
+## Fetching data
+
+```jsx
+useEffect(() => {
+  let ignore = false;
+
+  async function startFetching() {
+    const json = await fetchTodos(userId);
+    if (!ignore) {
+      setTodos(json);
+    }
+  }
+
+  startFetching();
+
+  return () => {
+    ignore = true;
+  };
+}, [userId]);
+```
+
+## Sending analytics
+
+In development, logVisit will be called twice for every URL, so you might be tempted to try to fix that. We recommend keeping this code as is. Like with earlier examples, there is no user-visible behavior difference between running it once and running it twice. From a practical point of view, logVisit should not do anything in development because you don’t want the logs from the development machines to skew the production metrics. Your component remounts every time you save its file, so it logs extra visits in development anyway.
+
+```jsx
+useEffect(() => {
+  logVisit(url); // Sends a POST request
+}, [url]);
+```
+
+## Not an Effect: Initializing the application
+
+Some logic should only run once when the application starts. You can put it outside your components:
+
+```jsx
+if (typeof window !== 'undefined') { // Check if we're running in the browser.
+  checkAuthToken();
+  loadDataFromLocalStorage();
+}
+
+function App() {
+  // ...
+}
+```
+
+## Not an Effect: Buying a product
+
+```jsx
+useEffect(() => {
+  // 🔴 Wrong: This Effect fires twice in development, exposing a problem in the code.
+  fetch('/api/buy', { method: 'POST' });
+}, []);
+```
+
+```jsx
+  function handleClick() {
+    // ✅ Buying is an event because it is caused by a particular interaction.
+    fetch('/api/buy', { method: 'POST' });
+  }
+```
+
+# Example
+
+```jsx
+import { useState, useEffect } from 'react';
+
+function Playground() {
+  const [text, setText] = useState('a');
+
+  useEffect(() => {
+    function onTimeout() {
+      console.log('⏰ ' + text);
+    }
+
+    console.log('🔵 Schedule "' + text + '" log');
+    const timeoutId = setTimeout(onTimeout, 3000);
+
+    return () => {
+      console.log('🟡 Cancel "' + text + '" log');
+      clearTimeout(timeoutId);
+    };
+  }, [text]);
+
+  return (
+    <>
+      <label>
+        What to log:{' '}
+        <input
+          value={text}
+          onChange={e => setText(e.target.value)}
+        />
+      </label>
+      <h1>{text}</h1>
+    </>
+  );
+}
+
+export default function App() {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+      <button onClick={() => setShow(!show)}>
+        {show ? 'Unmount' : 'Mount'} the component
+      </button>
+      {show && <hr />}
+      {show && <Playground />}
+    </>
+  );
+}
+```
