@@ -56,6 +56,9 @@ jobs:
         run: |
           source /home/leon/.profile
           hugo --enableGitInfo
+      - name: Self Hosted Runner Post Job Cleanup Action
+        uses: TooMuch4U/actions-clean@v2.1
+           
 
   # Deployment job
   deploy:
