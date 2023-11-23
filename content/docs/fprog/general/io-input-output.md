@@ -48,6 +48,103 @@ s :: String
 it :: (Int, Bool)
 ```
 
+## Input Output
+
+```haskell
+-- Reading a line
+getLine :: IO String
+
+-- Reading a single character
+getChar :: IO Char
+
+-- Writing s string
+putStr :: String -> IO ()
+
+-- Writing a string followed by a newline
+putStrLn :: String -> IO ()
+```
+
+## Unit - One Element Type
+
+```haskell
+-- putStrLn does not return an interesting value:
+putStrLn :: String -> IO ()
+```
+
+## Return statement
+
+```haskell
+return :: a -> IO a
+
+main :: IO ()
+main = do putStrLn "Enter a text"
+          input <- getLine
+          putStrLn (reverse input)
+          putStrLn "continue? y/n"
+          continue <- getChar
+          putStrLn ""
+          if continue == 'y' then main else return ()
+```
+
+## Simple File IO
+
+```haskell
+-- Identifying a file by a path
+type FilePath = String
+
+-- Reading content from a file
+readFile :: FilePath -> IO String
+
+-- Writing content to a file
+writeFile :: FilePath -> String -> IO ()
+
+-- Example: Copy a text file
+main :: IO ()
+main = do content <- readFile "in.txt"
+          writeFile "out.txt" content
+```
+
+### openFile: resource busy (file is locked)
+
+The statement `$!` is used to force the evaluation of the second argument and guarantees that the file is fully loaded before using the content.
+
+```haskell
+($!) :: (a -> b) -> a -> b
+
+-- Example
+readTasks :: IO TaskList
+readTasks = do content <- readFile "TaskListDB.txt"
+               let list = read content :: [(Bool,String)]
+               return $! list
+```
+
+## Command Line Arguments
+
+```haskell
+-- Get arguments
+getArgs :: IO [String]
+
+-- Example
+import System.Environment
+import Data.List
+
+main :: IO ()
+main = do args <- getArgs
+          putStrLn (intercalate "\n" args)
+```
+
+## do Notation
+
+```haskell
+action = putStrLn "ab" >> putStrLn "cd"
+action :: IO ()
+ab
+cd
+
+action = getLine >>= \s -> (putStr reverse s) >> writeFile "bla.txt" s)
+action :: IO ()
+```
+
 ## MiniCalc Simple
 
 ```haskell
