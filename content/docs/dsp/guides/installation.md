@@ -7,17 +7,8 @@ math: false
 draft: false
 ---
 
-Lab läuft in einem Docker Container:
+Jupyter Notebook in einem Docker Container ausführen:
 
 ```shell
-docker start dsp_hs2023
+docker run -d --name=jupyter_playground -p 8888:8888 -v "${PWD}":/home/jovyan/work jupyter/scipy-notebook
 ```
-
-[Localhost Lab](http://localhost:8877/lab )
-
-## Fork updaten
-```
-git pull upstream main 
-```
-
-
