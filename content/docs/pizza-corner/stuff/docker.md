@@ -51,3 +51,30 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
 ```
+
+## Selfhosted registry
+
+## Setup
+
+Registry with simple UI: [Joxit/docker-registry-ui](https://github.com/Joxit/docker-registry-ui)
+
+### Add insecure-registries option
+
+```bash
+"insecure-registries": [
+    "localhost:5000",
+    ...
+]
+```
+
+### build and push
+
+```bash
+docker build -t APP:latest .
+
+docker login IP:5000 -u USER -p 'PASSWORD'
+
+docker tag APP:latest IP:5000/author/APP
+
+docker push IP:5000/author/APP
+```
