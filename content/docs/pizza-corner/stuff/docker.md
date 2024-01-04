@@ -60,9 +60,30 @@ Registry with simple UI: [Joxit/docker-registry-ui](https://github.com/Joxit/doc
 
 ### Add insecure-registries option
 
+**Ubuntu**
+
+add the file /etc/docker/daemon.json with the following content:
+
+```bash
+nano /etc/docker/daemon.json
+
+#
+
+{
+    "insecure-registries" : [ "IP:5000" ]
+}
+
+#
+
+sudo systemctl restart docker
+```
+
+**Docker Desktop (Windows)**
+
 ```bash
 "insecure-registries": [
     "localhost:5000",
+    "IP:5000",
     ...
 ]
 ```
