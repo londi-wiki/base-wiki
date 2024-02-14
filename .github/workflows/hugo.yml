@@ -65,8 +65,9 @@ jobs:
     steps:
       - name: clean folder
         run: |
-          echo ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
+          ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
       - name: copy file via scp
+        if: always()
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.WIKI_SERVER_HOST }}
@@ -77,7 +78,9 @@ jobs:
           rm: false
           strip_components: 1
       - name: Discord notification
+        if: always()
         run: |
           curl -H "Content-Type: application/json" -X POST -d  '{ "content": "Deployment for wiki triggered.", "embeds": [ { "title": "Wiki page ✅", "description": "Wiki page successfully deployed. Run id: ${{ github.run_number }} 🥳", "url": "https://github.com/londi-wiki/base-wiki/actions/runs/${{ github.run_id }}" } ] }' https://discord.com/api/webhooks/1155459564880269382/q1MDl_diuZ0Pr8YrP_lVJf8m_lA3Cgp1ZHhlLwGqWausaOnPZ9oJS_2qi5JnHTgfi-S3 
       - name: Self Hosted Runner Post Job Cleanup Action
+        if: always()
         uses: TooMuch4U/actions-clean@v2.1    
