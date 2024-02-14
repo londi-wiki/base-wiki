@@ -65,7 +65,7 @@ jobs:
     steps:
       - name: clean folder
         run: |
-          ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
+          ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} -i ${{ secrets.DEPLOY_AGENT_KEY }} 'rm -rf /var/www/html/*'
       - name: copy file via scp
         if: always()
         uses: appleboy/scp-action@v0.1.4
