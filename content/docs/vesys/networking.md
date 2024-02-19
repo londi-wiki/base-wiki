@@ -393,13 +393,31 @@ public class EchoServer {
 - Problem: Server can serve at most one client
 - Solutions:
     – Thread-per-client
-        - After accept returns a socket, start a new thread which answers this request 
-and immediately call accept again
+        - After accept returns a socket, start a new thread which answers this request and immediately call accept again
     – Thread-pool
         - Start n threads where each handles client by client
-        - Multiple threads may call accept simultaneously on the same server socket. 
-Upon a connection request, one thread is selected.
+        - Multiple threads may call accept simultaneously on the same server socket. Upon a connection request, one thread is selected.
     – Thread-pool from java.util.concurrent package
         - Executors / ExecutorService
     – NIO
     – Virtual Threads
+
+**EchoServer2 threaded**
+
+```java
+public class EchoServer2 {
+   public static void main(String args[]) throws IOException {
+      try (ServerSocket server = new ServerSocket(1234)) {
+      
+         while (true) {
+            Socket s = server.accept();
+ 
+            Thread t = new Thread(new EchoHandler(s));
+            t.start();
+         }
+      }
+   }
+}
+```
+
+In den Folien folgen noch andere thread Beispiele.

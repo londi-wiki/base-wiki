@@ -155,7 +155,7 @@ TODO: Mermaid of diagram
 1. Send n to all neighbours
 2. Receive x: 
     if x < n 
-        => falsch: n = n % x
-        => richtig: (n-1) % x + 1
-        => Send n to all neighbours
+        - => wrong: n = n % x
+        - => correct: (n-1) % x + 1
+        - => after that: Send n to all neighbours
 
