@@ -4,6 +4,7 @@ date : 2023-09-25T17:23:25+02:00
 tags: ["draft"]
 author: "Leon"
 katex: true
+draft: true
 ---
 
 ## Wahrscheinlichkeit

@@ -4,6 +4,7 @@ date : 2023-10-03T18:26:39+02:00
 tags: ["draft"]
 author: "Leon"
 katex: true
+draft: true
 ---
 
 ## Beispiel anhand Lotto

@@ -4,6 +4,7 @@ date : 2023-09-25T17:22:50+02:00
 tags: ["draft"]
 author: "Leon"
 katex: true
+draft: true
 ---
 
 ## Definition Zufallsexperiment
