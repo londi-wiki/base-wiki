@@ -15,7 +15,11 @@ Ollama ist ein CLI Tool um bekannte LLM Modelle auf eine Weise auszuprobieren.
 
 ## Anleitung
 
-1. [Ollama installieren](https://ollama.com/download)
+1. Ollama installieren
+   1. Lokal: [Ollama Download Seite](https://ollama.com/download)
+   2. Docker: https://hub.docker.com/r/ollama/ollama
+      1. Hinweis: Für das Ausführen auf der GPU müssen zusätzliche Schritte gemacht werden, siehe Docker Seite.
+      2. `docker exec -it ollama bash`
 2. Starten, z.B. llama 2: `ollama run llama2`
 3. Mit `/bye` beenden
 
