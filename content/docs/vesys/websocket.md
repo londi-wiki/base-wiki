@@ -13,6 +13,8 @@ toc: true
 
 [rfc6455](https://www.rfc-editor.org/info/rfc6455)
 
+[Jakarta Websocket Spec](https://jakarta.ee/specifications/websocket/2.1/jakarta-websocket-spec-2.1.pdf)
+
 **5.2.  Base Framing Protocol**
 
 ```bash
@@ -106,4 +108,26 @@ Application data: y bytes
  after any "Extension data". The length of the "Application data"
  is equal to the payload length minus the length of the "Extension
  data".
+```
+
+
+## Beispiel 1
+
+Es wird eine Instanz pro Klient (also pro Websocket Verbindung) erstellt.
+
+```java
+@ServerEndpoint("/echo")
+
+public class EchoServer {
+    public static void main(String[] args) throws Exception {
+        Server server = new Server("localhost", 2222, "/ws", null, EchoServer.class);
+        server.start();
+        System.in.read();
+    }
+
+    @OnMessage
+    public String onMessage(String message, Session session) {
+        return "echo " + message;
+    }
+}
 ```
