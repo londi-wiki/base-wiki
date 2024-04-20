@@ -116,18 +116,67 @@ Application data: y bytes
 Es wird eine Instanz pro Klient (also pro Websocket Verbindung) erstellt.
 
 ```java
-@ServerEndpoint("/echo")
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.server.ServerEndpoint;
+import org.glassfish.tyrus.server.Server;
 
-public class EchoServer {
-    public static void main(String[] args) throws Exception {
-        Server server = new Server("localhost", 2222, "/ws", null, EchoServer.class);
+@ServerEndpoint("/echo")
+public class LeonServer {
+
+    public static void main(String[] args) throws Exception{
+        Server server = new Server("localhost", 2222, "/ws", null, LeonServer.class);
         server.start();
+        System.out.println("Server started, press a key to stop the server");
         System.in.read();
     }
 
     @OnMessage
-    public String onMessage(String message, Session session) {
-        return "echo " + message;
+    public String onMessage(String message) {
+        System.out.println("Received message: " + message);
+        return "ECHO: " + message;
     }
+
+}
+
+```
+
+```java
+import jakarta.websocket.*;
+import org.glassfish.tyrus.client.ClientManager;
+
+import java.io.IOException;
+import java.net.URI;
+import java.util.concurrent.CountDownLatch;
+
+@ClientEndpoint
+public class LeonClient {
+
+    public static CountDownLatch latch = new CountDownLatch(1);
+
+    public static void main(String[] args) throws Exception{
+        final URI url = new URI("ws://localhost:2222/ws/echo");
+        ClientManager client = ClientManager.createClient();
+        Session session = client.connectToServer(LeonClient.class, url);
+        latch.await();
+    }
+
+    @OnOpen
+    public void onOpen(Session session) throws IOException {
+        System.out.println("Connected to server");
+        session.getBasicRemote().sendText("Hello");
+    }
+
+    @OnMessage
+    public void onMessage(Session session, String message) throws IOException {
+        System.out.println("Received message: " + message);
+        session.close();
+    }
+
+    @OnClose
+    public void onClose() {
+        System.out.println("Connection closed");
+        latch.countDown();
+    }
+
 }
 ```
