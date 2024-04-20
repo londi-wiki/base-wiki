@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Network"
+title: "RDP"
 description: ""
 icon: "article"
 date: "2024-04-19T12:47:38+02:00"
@@ -8,8 +8,6 @@ lastmod: "2024-04-19T12:47:38+02:00"
 draft: false
 toc: true
 ---
-
-
 
 ## Remote desktop (RDP)
 
