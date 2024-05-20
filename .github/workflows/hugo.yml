@@ -38,6 +38,7 @@ jobs:
       - name: get hugo modules
         run: |
           source /home/leon/.profile
+          source /home/leon/.bashrc
           mkdir -p themes
           # git clone git@github.com:londi-wiki/dark-theme-editor.git themes/dark-theme-editor
           hugo mod get
@@ -46,6 +47,7 @@ jobs:
       - name: Insert BuildTimestamp in hugo.yml
         run: |
           source /home/leon/.profile
+          source /home/leon/.bashrc
           sed -i -e "s/2023-01-01T00:00:00+0200/$(date '+%Y-%m-%dT%H:%M:%S%z')/g" ./data/landing.yaml
           sed -i -e "s/X.Y.Z/1.0.${{ github.run_number }}/g" ./data/landing.yaml
       - name: Build with Hugo
@@ -55,6 +57,7 @@ jobs:
           HUGO_ENV: production
         run: |
           source /home/leon/.profile
+          source /home/leon/.bashrc
           hugo --enableGitInfo
                  
 
