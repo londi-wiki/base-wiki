@@ -31,3 +31,22 @@ Between Exchanges and queues are bindings that are controlling the flow:
 A queue can be subscribed by one or multiple consumers leading to the situation that a message is either received by subscriber 1 or 2.
 Typically, a queue has often only one subscriber.
 
+## Queue declare
+
+- durable queues will survive a server restart
+- exclusive queues are restricted to a connection
+- autoDelete queues are deleted by the server when no longer in use
+
+queueDeclare is idempotent.
+
+## Publishing
+
+```java
+String message = "Hello World at " + LocalDateTime.now();
+channel.basicPublish(
+  exchange: "", // Direct exchange
+  routing key: QUEUE_NAME,
+  props: null,
+  body: message.getBytes(StandardCharsets.UTF_8)) // Byte array
+```
+

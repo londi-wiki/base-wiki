@@ -23,3 +23,10 @@ ssh -D 1337 -N -C root@IP_ADDRESS
 # -N: Not execute remote commands
 # -C: Compress
 ```
+
+## ssh-copy-id: ERROR: No identities found
+
+```bash
+# ssh-copy-id: ERROR: No identities found
+# Solution: create ssh keys on the CLIENT!
+```
