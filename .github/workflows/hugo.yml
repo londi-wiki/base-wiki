@@ -71,7 +71,6 @@ jobs:
     steps:
       - name: clean folder
         run: |
-          echo ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }}
           ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
       - name: copy file via scp
         if: always()
