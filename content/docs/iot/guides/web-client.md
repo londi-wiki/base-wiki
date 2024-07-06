@@ -77,7 +77,6 @@ void loop() {
   }
 }
 ```
-@FHNW
 
 ## With basic autentication
 
@@ -159,4 +158,3 @@ void loop() {
   }
 }
 ```
-@FHNW

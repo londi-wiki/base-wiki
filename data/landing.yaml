@@ -30,7 +30,7 @@ hero:
 #   height: 80px
 
   title: "Wiki Page"
-  subtitle: Wiki page - Hi and welcome to my wiki page. This site contains information about various it topics all around my study and private projects. I do not guarantee the accuracy of the content on this page. Use it at your own risk! Content flagged with '@fhnw' is cited of content from fhnw and belong to fhnw.
+  subtitle: Wiki page - Hi and welcome to my wiki page. This site contains information about various IT topics all around my study and private projects. I do not guarantee the accuracy of the content on this page. Use it at your own risk!.
 
 #  image:
 #    path: "images" # path to image under configured assets directory. default 'images'
