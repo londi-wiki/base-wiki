@@ -73,15 +73,8 @@ jobs:
         run: |
           ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
       - name: copy file via scp
-        if: always()
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.WIKI_SERVER_HOST }}
-          username: ${{ secrets.WIKI_SERVER_USERNAME }}
-          source: public/
-          target: /var/www/html/
-          rm: false
-          strip_components: 1
+        run: |
+          scp public/ ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }}:/var/www/html/
       - name: Discord notification
         if: always()
         run: |
