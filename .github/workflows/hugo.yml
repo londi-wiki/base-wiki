@@ -74,7 +74,7 @@ jobs:
           ssh ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }} 'rm -rf /var/www/html/*'
       - name: copy file via scp
         run: |
-          scp public/ ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }}:/var/www/html/
+          scp public ${{ secrets.WIKI_SERVER_USERNAME }}@${{ secrets.WIKI_SERVER_HOST }}:/var/www/html/
       - name: Discord notification
         if: always()
         run: |
