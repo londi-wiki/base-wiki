@@ -78,7 +78,6 @@ jobs:
         with:
           host: ${{ secrets.WIKI_SERVER_HOST }}
           username: ${{ secrets.WIKI_SERVER_USERNAME }}
-          key: ${{ secrets.DEPLOY_AGENT_KEY }}
           source: public/
           target: /var/www/html/
           rm: false
