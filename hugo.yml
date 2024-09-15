@@ -1,6 +1,6 @@
 baseURL : "https://wiki.strubli.com/"
 languageCode : "en-ch"
-title : "webfr wiki page"
+title : "wiki page"
 themes: "lotusdocs"
 enableEmoji: true
 enableGitInfo: true
@@ -31,7 +31,7 @@ params:
     github: "londi-wiki/base-wiki"
 
   docs: # Parameters for the /docs 'template'
-    title           : "Webfr Wiki"           # default html title for documentation pages/sections
+    title           : "Wiki"           # default html title for documentation pages/sections
     # pathName        : "docs"                            # path name for documentation site | default "docs"
     themeColor      : "emerald"                            # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
     darkMode        : true                                # enable dark mode option? default false
