@@ -40,9 +40,19 @@ public interface Repository<T, ID extends Serializable> {
 Eigenschaften:
 - Stell folgende Funktionen zur Verfügung:
   - find
-  - persist
+  - persist: Erstellt eine Instanz managed und persistiert
   - update
-  - remove
+  - remove: Entfernt die Entität von der Datenbank
+  - refresh: Aktualisiert die manged-instance von der Datenbank, verwirft Änderungen an der Entität (falls vorhanden)
+  - merge: Führt den Zustand der gegebenen Entität mit dem aktuellen im PC zusammen
+    - gibt eine neue einzigartige Instanz zurück
+    - Kann auch für das Einfügen verwendet werden (manged instance is returned)
+  - flush: Synchronisiert den PC zur unterliegenden DB
+  - contains
+  - clear:
+    - Leert den PC, führt dazu, dass alle managed Entitäten detached werden
+    - Änderungen an Entitäten welche noch nicht "flushed" sind gehen verloren
+  - detach: Entfernt die gegebene Entität vom PC
 - Persistence context & controlled lifecycle
 
 Aufgaben:
@@ -283,4 +293,19 @@ public class User {
    }
 }
 ```
+
+## Queries
+
+```java
+TypedQuery<Movie> q = em.createQuery(
+                 "SELECT m FROM Movie m WHERE m.title = :title",
+ Movie.class);
+q.setParameter("title", title); 
+List<Movie> movies = q.getResultList();
+```
+
+
+## Transactions
+
+Werden verwendet, um Operationen via EntityManager an der DB zu machen (ausschliesslich "Lesen").
 
