@@ -198,3 +198,102 @@ int main() {
     return 0;
 }
 ```
+
+## Parameterübergabe
+
+```cpp
+// By Value
+void foo1(int x) // by value: Daten (auch Zeiger) werden kopiert
+
+//By Reference
+void foo3(const Person& p) // in: referenzierte Person wird nicht kopiert
+void foo4(Person& p) // in-out: referenzierte Person wird nicht kopiert
+// kann aber in foo4 verändert werden
+
+// By Pointer
+void foo5(Point* p) // good-practice: nur für out-Parameter verwenden, da beim Aufruf der out-Parameter 
+// gut über den Adressoperator erkennbar ist
+```
+
+> Datentypen mit weniger oder gleichviel Speicher wie zwei Zeiger werden üblicherweise "by value" übergeben
+
+## Rückgabewerte
+
+**By Value**
+
+Die Daten werden in Form eines temporären Objekts zurückkopiert. 
+Bei grossen Objekten sollte man effizientere in-out oder out Parameterübergabe nutzen.
+
+```cpp
+double sqrt(double x)
+Point move(const Point& p, int dx) // Ansatz: Point is immutable
+```
+
+**By Reference**
+
+Darf nur verwendet werden, wenn die Referenz auf das zurückgegebene Objekt 
+eine längere Lebensdauer als die Ausführung der Funktion hat.
+
+```cpp
+Point& Point::move(int dx, int dy) { 
+    … return *this; 
+} // Point is mutable
+
+// falsche Verwendung (verwendet impliziten Zeiger auf zerstörtes Objekt)
+Point& createPoint(int x, int y) { 
+    Point p(x, y); 
+    return p; 
+}
+```
+
+## Initialisierungslisten
+
+**Beispiel**
+
+```cpp
+#include <initializer_list> 
+
+struct Tuple {
+    int value[];
+    Tuple(const initializer_list<int>& v); // ctor #1 
+    Tuple(int a, int b, int c); // ctor #2
+    Tuple(const initializer_list<int>& v, size_t cap); // ctor #3
+};
+
+Tuple t1(4, 5, 6); // () ctor #2 wird verwendet
+Tuple t2{1, 2, 3}; // {} ctor #1 wird verwendet
+Tuple t3{2, 4, 6, 8}; // {} ctor #1 wird verwendet 
+Tuple t4{{2, 4, 6}, 3}; // {{},} ctor #3 wird verwendet
+```
+
+**Andere Beispiele:** 
+
+```cpp
+void print(const initializer_list<int>& ls) {
+    for (auto i: ls) cout << i << ' '; 
+    cout << endl;
+}
+
+for (auto i :{ 2, 4, 6, 8 }) cout << i << ',';
+```
+
+## Strukturiertes Binden von Werten
+
+**Array**
+
+```cpp
+int arr[3] = { 2, 3, 4 };
+auto [a, b, c] = arr; // Variablen a, b und c erhalten; Kopien der drei Arraywerte
+```
+
+**Pair**
+
+```cpp
+pair<int, double> p = { 5, 3.14 };
+auto [i, d] = p; // Variable i ist vom Typ int, d vom Typ double
+
+map<string, int> m;
+for(const auto& [key, value] : m) {
+    cout << key << ',' << value << endl;
+}
+```
