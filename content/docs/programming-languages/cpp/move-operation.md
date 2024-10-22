@@ -13,10 +13,14 @@ toc: true
 
 In c++ unterscheidet man bei den Speicheradressen grob zwischen L- und R-Values.
 
-LValue (Left value) definiert eine identifizierbare Speicheradresse, RValue (Right value) hingegen einen temporärem Wert der nicht mit einem benannten Speicherort verknüpft ist.
-RValues stehen meist auf der rechten Seite eines Zuweisungsoperators, z.B: Literale (5, 3.14, 'c'), Ausdrücke die temporäre Werte ergeben und Rückgabewerte von Funktionen.
+LValue (Left value) definiert eine identifizierbare Speicheradresse, RValue (Right value) hingegen 
+einen temporärem Wert der nicht mit einem benannten Speicherort verknüpft ist.
+RValues stehen meist auf der rechten Seite eines Zuweisungsoperators, z.B: Literale (5, 3.14, 'c'), 
+Ausdrücke die temporäre Werte ergeben und Rückgabewerte von Funktionen.
 
-Mit der Einführung von rvalue-Referenzen (erkennbar an &&) in C++11 wurde ein zusätzlicher Nutzen für rvalues geschaffen. Dies ermöglicht "Move-Semantics", also die Optimierung von Speicheroperationen, indem temporäre Objekte anstelle von Kopien übernommen werden. Ein Beispiel dafür ist:
+Mit der Einführung von rvalue-Referenzen (erkennbar an &&) in C++11 wurde ein zusätzlicher Nutzen 
+für rvalues geschaffen. Dies ermöglicht "Move-Semantics", also die Optimierung von Speicheroperationen, 
+indem temporäre Objekte anstelle von Kopien übernommen werden. Ein Beispiel dafür ist:
 
 ```cpp
 int&& r = 5; // 5 ist ein rvalue
@@ -33,7 +37,69 @@ std::vector<int> v = foo(); // der Rückgabewert wird verschoben statt kopiert (
 
 Am besten versteht man lvalue als einen "benannten Speicherort" und rvalue als einen "temporären, anonymen Wert". rvalue-Referenzen erweitern dieses Konzept durch die Möglichkeit, temporäre Objekte effizienter zu handhaben.
 
-## Beispiel
+l-value: l-value Referenz: T&
+r-value: r-value Referenz: T&&
+
+## Beispiel 1
+
+```cpp
+// r-value
+foo(T&& r) { ... }
+
+// l-value
+foo(T& l) { ... }
+
+// l- and r-value
+foo(const T& l) { ... }
+```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+void test(const int& l) {
+    cout << "non movable: " << l << endl;
+}
+
+void test(int&& r) {
+    cout << "movable: " << r << endl;
+}
+
+int main()
+{
+    std::cout << "Hello, World!" << std::endl;
+
+    int x = 5; cout << &x << endl; // 00000000123456
+    test(x); // non movable 5
+    test(std::move(x)); // movable 5
+    test(9); // movable 9
+
+    return 0;
+}
+```
+
+## Ergänzungen
+
+```cpp
+struct C { 
+    int n; 
+};
+
+...
+
+C c;
+
+4;                      // pr-value ist nur verschiebbar
+C{4};                   // pr-value ist nur verschiebbar
+c;                      // l-value hat nur Identität
+c.n;                    // l-value hat nur Identität
+std::forward<C&>(c);    // l-value hat nur Identität
+std::move(c);           // x-value hat Identität und ist verschiebbar 
+C{4}.n;                 // x-value hat Identität und ist verschiebbar
+```
+
+## Beispiel 2
 
 ```cpp
 #pragma once
