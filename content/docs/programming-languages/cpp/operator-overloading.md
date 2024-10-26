@@ -110,6 +110,15 @@ int main() {
 
 ## Spaceship Operator <=>
 
+Der spaceship Operator wird auch "three-way comparison operator" genannt und ist vergleichbar mit dem compareTo von Java.
+
+Der Spaceship-Operator wurde in C++20 eingeführt und bietet eine elegante Möglichkeit, alle Vergleichsoperationen mit einer einzigen Implementierung zu definieren. Hier sind die wichtigsten Punkte:
+
+Der Operator gibt einen von drei möglichen Werten zurück:
+- Negativ (strong_ordering::less): wenn links < rechts
+- Null (strong_ordering::equal): wenn links == rechts
+- Positiv (strong_ordering::greater): wenn links > rechts
+
 ```cpp
 // lexikografische Ordnung
 friend auto operator<=>(const Point& lhs, const Point& rhs) noexcept = default;
@@ -124,6 +133,67 @@ bool operator==(const Point& p) const {
     return std::is_eq(*this <=> p);
 }
 // -----------
+```
+
+Weitere Beispiele:
+
+```cpp
+#include <iostream>
+#include <compare>
+
+class Point {
+    int x, y;
+public:
+    Point(int x, int y) : x(x), y(y) {}
+    
+    // Spaceship Operator definieren
+    auto operator<=>(const Point& other) const {
+        // Erst x vergleichen
+        if (auto cmp = x <=> other.x; cmp != 0)
+            return cmp;
+        // Wenn x gleich ist, y vergleichen
+        return y <=> other.y;
+    }
+    
+    // Optional: == Operator für einfachere Gleichheitsprüfung
+    bool operator==(const Point& other) const = default;
+};
+
+int main() {
+    // Beispiel 1: Einfache Zahlenvergleiche
+    int a = 10;
+    int b = 20;
+    auto result1 = a <=> b;
+    
+    if (result1 < 0)
+        std::cout << "a ist kleiner als b\n";
+    else if (result1 > 0)
+        std::cout << "a ist größer als b\n";
+    else
+        std::cout << "a ist gleich b\n";
+    
+    // Beispiel 2: Benutzerdefinierte Klasse
+    Point p1(1, 2);
+    Point p2(1, 3);
+    
+    auto result2 = p1 <=> p2;
+    
+    if (result2 < 0)
+        std::cout << "p1 ist kleiner als p2\n";
+    else if (result2 > 0)
+        std::cout << "p1 ist größer als p2\n";
+    else
+        std::cout << "p1 ist gleich p2\n";
+    
+    // Beispiel 3: Automatisch generierte Vergleichsoperatoren
+    if (p1 < p2)
+        std::cout << "p1 ist kleiner als p2\n";
+    
+    if (p1 == p2)
+        std::cout << "p1 ist gleich p2\n";
+    
+    return 0;
+}
 ```
 
 ## Cast Operator
