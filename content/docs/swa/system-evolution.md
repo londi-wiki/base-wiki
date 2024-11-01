@@ -34,7 +34,7 @@ desto weniger agil wird es. Es gibt zwei kritische Punkte im Diagramm:
 - C1: Dieser Punkt stellt den Moment dar, in dem der Verlust an Agilität etwa das Fünffache des funktionalen Zugewinns beträgt. Das bedeutet, dass ab diesem Punkt jede Erhöhung der Funktionalität den Verlust an Agilität stark überwiegt.
 - C2: Hier wird der Verlust an Agilität so groß, dass der Zugewinn an Funktionalität kaum noch einen positiven Effekt hat. Mit anderen Worten: Jede weitere funktionale Verbesserung macht das System so unflexibel, dass der zusätzliche Nutzen marginal wird.
 
-## Problematik, die Murer et al entdeckt haben:**
+## Problematik, die Murer et al entdeckt haben:
 
 Murer et al. entdeckten in ihrer empirischen Forschung,
 dass viele Softwaresysteme im Laufe ihrer Entwicklung
