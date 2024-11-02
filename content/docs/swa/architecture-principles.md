@@ -34,79 +34,77 @@ Siehe [Single Responsibility](https://wiki.strubli.com/docs/swa/architecture-pat
 
 **Hauptaspekte des LSP:**
 
-1. Verhaltenskompatibilität
-- Subklassen müssen alle Verträge (Contracts) der Basisklasse erfüllen
-- Keine Abschwächung der Vorbedingungen
-- Keine Verstärkung der Nachbedingungen
-- Invarianten müssen erhalten bleiben
-
-2. Signaturkompatibilität
-- Parameter-Typen dürfen in Subklassen nur weiter werden
-- Rückgabe-Typen dürfen in Subklassen nur enger werden
-- Exceptions dürfen nur weniger oder spezieller werden
+- Verhaltenskompatibilität
+  - Subklassen müssen alle Verträge (Contracts) der Basisklasse erfüllen
+  - Keine Abschwächung der Vorbedingungen
+  - Keine Verstärkung der Nachbedingungen
+  - Invarianten müssen erhalten bleiben
+- Signaturkompatibilität
+  - Parameter-Typen dürfen in Subklassen nur weiter werden
+  - Rückgabe-Typen dürfen in Subklassen nur enger werden
+  - Exceptions dürfen nur weniger oder spezieller werden
 
 ```mermaid
 classDiagram
-    %% Gutes Beispiel - Vögel
-    class Bird {
+    %% Gute Implementierung
+    class Shape {
         <<abstract>>
-        #name: String
-        #weight: double
-        +getName(): String
-        +getWeight(): double
-        +move(): void
+        #width: double
+        #height: double
+        +Shape(width: double, height: double)
+        +calculateArea(): double*
     }
     
-    class FlyingBird {
-        <<abstract>>
-        +fly(): void
-        +move(): void
-    }
-    
-    class FlightlessBird {
-        <<abstract>>
-        +walk(): void
-        +move(): void
-    }
-    
-    class Penguin {
-        +walk(): void
-        +move(): void
-        +swim(): void
-    }
-    
-    class Sparrow {
-        +fly(): void
-        +move(): void
-    }
-    
-    %% Schlechtes Beispiel - Rechtecke
     class Rectangle {
-        -width: double
-        -height: double
-        +setWidth(double)
-        +setHeight(double)
-        +getArea(): double
+        +Rectangle(width: double, height: double)
+        +setWidth(width: double)
+        +setHeight(height: double)
+        +calculateArea(): double
     }
     
     class Square {
-        -side: double
-        +setWidth(double)
-        +setHeight(double)
+        +Square(side: double)
+        +setSide(side: double)
+        +calculateArea(): double
+    }
+    
+    %% Schlechte Implementierung
+    class Rectangle2 {
+        #width: double
+        #height: double
+        +Rectangle2(width: double, height: double)
+        +setWidth(width: double)
+        +setHeight(height: double)
         +getArea(): double
     }
     
+    class Square2 {
+        +Square2(side: double)
+        +setWidth(width: double)
+        +setHeight(height: double)
+        +getArea(): double
+        note: "LSP Verletzung: setWidth/Height ändern beide Dimensionen"
+    }
+    
     %% Beziehungen
-    Bird <|-- FlyingBird
-    Bird <|-- FlightlessBird
-    FlyingBird <|-- Sparrow
-    FlightlessBird <|-- Penguin
+    Shape <|-- Rectangle : ✓ LSP konform
+    Shape <|-- Square : ✓ LSP konform
+    Rectangle2 <|-- Square2 : ✗ LSP verletzt
     
-    Rectangle <|-- Square
-    
-    note for Bird "Gutes Beispiel:\nKorrekte Abstraktion"
-    note for Rectangle "Schlechtes Beispiel:\nVerletzt LSP"
+    note for Shape "Gute Implementierung:\n- Klare Abstraktion\n- Jede Unterklasse behält eigene Invarianten"
+    note for Rectangle2 "Schlechte Implementierung:\n- Enge Kopplung\n- Überraschende Seiteneffekte"
 ```
+
+**Gute Implementierung:**
+- Shape als abstrakte Basisklasse
+- Rectangle und Square als unabhängige Ableitungen
+- Jede Klasse hat ihre eigenen, passenden Methoden
+- LSP wird eingehalten, da jede Unterklasse die Basisklassen-Garantien erfüllt
+
+**Schlechte Implementierung**
+- Direkte Vererbung Rectangle2 -> Square2
+- Square2 muss Methoden überschreiben, um Quadrat-Eigenschaften zu erzwingen
+- LSP-Verletzung durch unerwartetes Verhalten der überschriebenen Methoden
 
 **Best Practices**
 
@@ -122,4 +120,4 @@ TODO...
 
 ### Dependency Inversion
 
-
+TODO...
