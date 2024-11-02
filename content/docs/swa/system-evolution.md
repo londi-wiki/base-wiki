@@ -11,7 +11,7 @@ toc: true
 
 # System Evolution
 
-![system-evolution](/images/system-evolution.png)
+![system-evolution](https://wiki.strubli.com/images/system-evolution.png)
 
 Quelle: Stephan Murer et al empirisch
 

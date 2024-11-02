@@ -13,14 +13,16 @@ toc: true
 
 ## SOLID
 
-1. [Single Responsibility](/swa/architecture-patterns/#single-responsibility-prinzip-srp)
+1. Single Responsibility
 2. Open/Closed
 3. Liskov Substitution
 4. Interface Segregation
 5. Dependency Inversion
 
 
-### Single 
+### Single Responsibility 
+
+Siehe [Single Responsibility](https://wiki.strubli.com/docs/swa/architecture-patterns/#single-responsibility-prinzip-srp)
 
 ### Open/Closed
 
@@ -33,14 +35,12 @@ toc: true
 **Hauptaspekte des LSP:**
 
 1. Verhaltenskompatibilität
-
 - Subklassen müssen alle Verträge (Contracts) der Basisklasse erfüllen
 - Keine Abschwächung der Vorbedingungen
 - Keine Verstärkung der Nachbedingungen
 - Invarianten müssen erhalten bleiben
 
 2. Signaturkompatibilität
-
 - Parameter-Typen dürfen in Subklassen nur weiter werden
 - Rückgabe-Typen dürfen in Subklassen nur enger werden
 - Exceptions dürfen nur weniger oder spezieller werden

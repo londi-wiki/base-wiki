@@ -82,28 +82,72 @@ Wann das Composite Pattern passend ist:
 - Wenn eine rekursive Struktur erforderlich ist, bei der ein „Ganzes“ und „Teile“ gleichartig verarbeitet werden.
 - Wenn Objekte (wie Verzeichnisse) andere Objekte (wie Dateien und Unterverzeichnisse) enthalten können, aber dennoch die gleiche Schnittstelle benötigen.
 
+**Beispiel:**
+
+- FileSystemItem (Component):
+  - Abstrakte Basisklasse für alle Elemente im Dateisystem
+  - Definiert gemeinsame Operationen wie print() und getSize()
+
+- File (Leaf):
+  - Repräsentiert eine einfache Datei
+  - Hat eine konkrete Größe
+  - Implementiert die print() Methode, um sich selbst anzuzeigen
+
+- Directory (Composite):
+  - Kann sowohl Dateien als auch andere Verzeichnisse enthalten
+  - Verwaltet eine Liste von FileSystemItems
+  - Implementiert print() durch Delegation an alle Kinder
+  - Berechnet die Gesamtgröße durch Summierung aller enthaltenen Elemente
+
+```mermaid
+classDiagram
+    class FileSystemItem {
+        <<abstract>>
+        -String name
+        +print(prefix: String)*
+        +getSize(): int*
+    }
+    
+    class File {
+        -int size
+        +print(prefix: String)
+        +getSize(): int
+    }
+    
+    class Directory {
+        -List~FileSystemItem~ children
+        +addItem(item: FileSystemItem)
+        +print(prefix: String)
+        +getSize(): int
+    }
+    
+    FileSystemItem <|-- File
+    FileSystemItem <|-- Directory
+    Directory o-- FileSystemItem
+```
+
 ## Creational Patterns
 
-- Singleton: Stellt sicher, dass eine Klasse nur eine einzige Instanz hat und bietet einen globalen Zugriffspunkt darauf.
-- Factory Method: Definiert eine Schnittstelle zur Erstellung von Objekten, überlässt die Entscheidung über die Instanziierung aber den Unterklassen.
-- Abstract Factory: Erzeugt eine Familie von verwandten oder abhängigen Objekten, ohne deren konkrete Klassen zu spezifizieren.
-- Builder: Trennt die Konstruktion eines komplexen Objekts von seiner Repräsentation, sodass derselbe Konstruktionsprozess unterschiedliche Darstellungen erzeugen kann.
-- Prototype: Erlaubt das Erstellen neuer Objekte durch das Kopieren eines Prototypen-Objekts.
+- **Singleton:** Stellt sicher, dass eine Klasse nur eine einzige Instanz hat und bietet einen globalen Zugriffspunkt darauf.
+- **Factory Method:** Definiert eine Schnittstelle zur Erstellung von Objekten, überlässt die Entscheidung über die Instanziierung aber den Unterklassen.
+- **Abstract Factory:** Erzeugt eine Familie von verwandten oder abhängigen Objekten, ohne deren konkrete Klassen zu spezifizieren.
+- **Builder:** Trennt die Konstruktion eines komplexen Objekts von seiner Repräsentation, sodass derselbe Konstruktionsprozess unterschiedliche Darstellungen erzeugen kann.
+- **Prototype:** Erlaubt das Erstellen neuer Objekte durch das Kopieren eines Prototypen-Objekts.
 
 ## Structural Patterns
 
-- Adapter: Konvertiert die Schnittstelle einer Klasse in eine andere Schnittstelle, die die Clients erwarten. Es ermöglicht das Zusammenarbeiten von Klassen, die sonst inkompatibel wären.
-- Decorator: Fügt einem Objekt zur Laufzeit zusätzliche Funktionalitäten hinzu, ohne dessen Klasse zu ändern.
-- Facade: Bietet eine vereinfachte Schnittstelle zu einem komplexen System von Klassen oder einer Bibliothek.
-- Proxy: Bietet einen Stellvertreter oder Platzhalter für ein anderes Objekt, um zusätzliche Kontrolle (wie Zugriff oder Caching) hinzuzufügen.
-- Bridge: Trennt eine Abstraktion von ihrer Implementierung, sodass beide unabhängig voneinander variieren können.
+- **Adapter:** Konvertiert die Schnittstelle einer Klasse in eine andere Schnittstelle, die die Clients erwarten. Es ermöglicht das Zusammenarbeiten von Klassen, die sonst inkompatibel wären.
+- **Decorator:** Fügt einem Objekt zur Laufzeit zusätzliche Funktionalitäten hinzu, ohne dessen Klasse zu ändern.
+- **Facade:** Bietet eine vereinfachte Schnittstelle zu einem komplexen System von Klassen oder einer Bibliothek.
+- **Proxy:** Bietet einen Stellvertreter oder Platzhalter für ein anderes Objekt, um zusätzliche Kontrolle (wie Zugriff oder Caching) hinzuzufügen.
+- **Bridge:** Trennt eine Abstraktion von ihrer Implementierung, sodass beide unabhängig voneinander variieren können.
 
 ## Behavioral Patterns
 
-- Strategy: Definiert eine Familie von Algorithmen, kapselt sie und macht sie austauschbar. Der Algorithmus kann zur Laufzeit geändert werden.
-- Command: Kapselt eine Anforderung als ein Objekt, sodass Sie Anfragen als Objekte speichern, übergeben und bearbeiten können.
-- Chain of Responsibility: Gibt eine Anforderung durch eine Kette von Handlern weiter, bis sie verarbeitet wird.
-- Template Method: Definiert das Skelett eines Algorithmus in einer Methode, lässt jedoch Unterklassen einige Schritte des Algorithmus definieren.
-- State: Ermöglicht es einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert.
-- Mediator: Definiert ein Objekt, das die Kommunikation zwischen verschiedenen Objekten vermittelt und entkoppelt.
-- Visitor: Trennt einen Algorithmus von den Objekten, auf denen er arbeitet, sodass neue Operationen hinzugefügt werden können, ohne die Klassen zu ändern, auf die der Algorithmus angewendet wird.
+- **Strategy:** Definiert eine Familie von Algorithmen, kapselt sie und macht sie austauschbar. Der Algorithmus kann zur Laufzeit geändert werden.
+- **Command:** Kapselt eine Anforderung als ein Objekt, sodass Sie Anfragen als Objekte speichern, übergeben und bearbeiten können.
+- **Chain of Responsibility:** Gibt eine Anforderung durch eine Kette von Handlern weiter, bis sie verarbeitet wird.
+- **Template Method:** Definiert das Skelett eines Algorithmus in einer Methode, lässt jedoch Unterklassen einige Schritte des Algorithmus definieren.
+- **State:** Ermöglicht es einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert.
+- **Mediator:** Definiert ein Objekt, das die Kommunikation zwischen verschiedenen Objekten vermittelt und entkoppelt.
+- **Visitor:** Trennt einen Algorithmus von den Objekten, auf denen er arbeitet, sodass neue Operationen hinzugefügt werden können, ohne die Klassen zu ändern, auf die der Algorithmus angewendet wird.
