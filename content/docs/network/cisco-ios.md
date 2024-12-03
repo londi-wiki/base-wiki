@@ -157,3 +157,9 @@ R1(config)# do show ip route static
 ! Konfiguration speichern
 R1(config)# do write memory
 ```
+
+# Disable dynamic trunk
+
+```java
+switchport nonegotia?!
+```

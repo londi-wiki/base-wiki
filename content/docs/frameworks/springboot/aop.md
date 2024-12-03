@@ -59,10 +59,32 @@ public class TraceAspect {
 }
 ```
 
+## Annotation
+
+### Beispiel
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Loggable {
+}
+
+@Loggable
+@GetMapping
+ResponseEntity<List<Customer>> getAllCustomers() {
+    return ResponseEntity.ok(customerManagement.getAllCustomers());
+}
+
+@Before("@annotation(ch.fhnw.eaf.library.customer.aop.Loggable)")
+public void traceService2(JoinPoint jp) {
+    logger.debug("Called logGetAll() before calling '{}'", jp.getSignature());
+}
+```
+
 ```bash
 * *..customer.web..*.getAll*(..)
-↓ ↓  ↓       ↓   ↓  ↓     ↓   ↓
-1 2  3       4   5  6     7   8
+↓ ↓  ↓       ↓   ↓ ↓    ↓    ↓
+1 2  3       4   5 6    7    8
 
 1. Erster *: Beliebiger Return-Typ
 2. *..: Beliebiges Package und Sub-Packages vor "customer"

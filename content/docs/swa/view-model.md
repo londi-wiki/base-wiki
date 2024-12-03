@@ -19,7 +19,7 @@ toc: true
 
 - Entwicklungssicht (Development View):
   - **Beschreibung:** Diese Sicht zeigt die Struktur des Codes aus Entwicklersicht. Sie hilft zu verstehen, wie das System in einzelnen Modulen, Komponenten oder Paketen strukturiert ist.
-  - **Diagrammtypen:** [Komponentendiagramme](https://www.lucidchart.com/pages/de/uml-komponentendiagramm) und [Paketdiagramme](https://www.lucidchart.com/pages/de/uml-paketdiagramm#:~:text=Paketdiagramme%20(engl.,Klassen%20oder%20sogar%20andere%20Pakete.)
+  - **Diagrammtypen:** [Komponentendiagramme](https://www.lucidchart.com/pages/de/uml-komponentendiagramm) und [Paketdiagramme](https://www.lucidchart.com/pages/de/uml-paketdiagramm)
 
 - Prozesssicht (Process View):
   - **Beschreibung:** Die Prozesssicht beschreibt das Laufzeitverhalten des Systems und legt den Fokus auf die Interaktion und Kommunikation zwischen verschiedenen Prozessen, insbesondere in verteilten Systemen.
