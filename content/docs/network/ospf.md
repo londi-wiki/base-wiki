@@ -53,7 +53,7 @@ Bestätigung des Empfangs von LSUs.
 
 # Beispiel
 
-![OSPF Example](/images/ospf-example.png)
+![OSPF Example](https://wiki.strubli.com/images/ospf-example.png)
 
 **Standorte:** R1, R2, R3 und deren zugehörige Router.
 **ISP:** Verbindung zum Internet.
