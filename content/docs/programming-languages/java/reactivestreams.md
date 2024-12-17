@@ -89,6 +89,8 @@ Beispiel:
 Mono<String> mono = Mono.just("Hello, Mono!");
 // oder:
 Mono<String> emptyMono = Mono.empty();
+// oder:
+Mono<Void> ... // Z.B. um zu Signalisieren, dass ein Prozessschritt vollständig abgeschlossen wurde. 
 ```
 
 ### Flux
