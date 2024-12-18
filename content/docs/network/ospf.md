@@ -276,5 +276,74 @@ FastEthernet0/1 is up, line protocol is up
   Suppress hello for 0 neighbor(s)
 ```
 
+## OSPF IPv6
+
+```
+Brugg(config)#ipv6 unicast-routing
+Brugg(config)#ipv6 router ospf 1
+Brugg(config-rtr)#router-id 1.1.1.1
+
+Brugg(config)#int g0/1
+Brugg(config-if)#ipv6 ospf 1 area 0
+
+Brugg#show ipv6 protocols
+IPv6 Routing Protocol is "connected"
+IPv6 Routing Protocol is "application"
+IPv6 Routing Protocol is "ND"
+IPv6 Routing Protocol is "ospf 1"
+  Router ID 1.1.1.1
+  Number of areas: 1 normal, 0 stub, 0 nssa
+  Interfaces (Area 0):
+    Loopback0
+    GigabitEthernet0/0
+    Serial0/0/1
+    GigabitEthernet0/1
+  Redistribution:
+    None
+    
+
+Brugg#show ipv6 ospf interface brief
+Interface    PID   Area            Intf ID    Cost  State Nbrs F/C
+Lo0          1     0               13         1     LOOP  0/0
+Gi0/0        1     0               3          1     DR    1/1
+Se0/0/1      1     0               7          64    P2P   1/1
+Gi0/1        1     0               4          1     DR    0/0
 
 
+
+Brugg#show ipv6 ospf neighbor
+
+            OSPFv3 Router with ID (1.1.1.1) (Process ID 1)
+
+Neighbor ID     Pri   State           Dead Time   Interface ID    Interface
+2.2.2.2           1   FULL/BDR        00:00:30    3               GigabitEthernet0/0
+3.3.3.3           0   FULL/  -        00:00:35    6               Serial0/0/1
+
+
+
+Brugg#show ipv6 route
+IPv6 Routing Table - default - 7 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, ls - LISP site
+       ld - LISP dyn-EID, a - Application
+O   2001:DB8:0:100::1/128 [110/64]
+     via FE80::21B:D5FF:FE70:30D6, Serial0/0/1
+O   2001:DB8:0:100::2/128 [110/1]
+     via FE80::3A90:A5FF:FE38:7100, GigabitEthernet0/0
+LC  2001:DB8:0:100::3/128 [0/0]
+     via Loopback0, receive
+O   2001:DB8:0:102::/64 [110/2]
+     via FE80::3A90:A5FF:FE38:7100, GigabitEthernet0/0
+C   2001:DB8:0:104::/64 [0/0]
+     via GigabitEthernet0/1, directly connected
+L   2001:DB8:0:104::1/128 [0/0]
+     via GigabitEthernet0/1, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+
+```

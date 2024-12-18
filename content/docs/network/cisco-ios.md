@@ -77,6 +77,8 @@ Switch# copy run start
 
 ```
 Switch#write erase
+Switch#erase startup-config
+Switch#reload
 ```
 
 # IP Adresse setzen
@@ -86,7 +88,7 @@ Switch#write erase
 ```
 R1(config)# interface Serial 0/1/0
 R1(config-if)# ip address 192.168.2.1 255.255.255.0
-R1(config-if)# no shutdown
+R1(config-if)# no shutdown (herunterfahren)
 ```
 
 ## IPv6
@@ -156,10 +158,4 @@ R1(config)# do show ip route static
 
 ! Konfiguration speichern
 R1(config)# do write memory
-```
-
-# Disable dynamic trunk
-
-```java
-switchport nonegotia?!
 ```
