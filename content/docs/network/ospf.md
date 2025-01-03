@@ -313,7 +313,7 @@ Gi0/1        1     0               4          1     DR    0/0
 
 Brugg#show ipv6 ospf neighbor
 
-            OSPFv3 Router with ID (1.1.1.1) (Process ID 1)
+OSPFv3 Router with ID (1.1.1.1) (Process ID 1)
 
 Neighbor ID     Pri   State           Dead Time   Interface ID    Interface
 2.2.2.2           1   FULL/BDR        00:00:30    3               GigabitEthernet0/0
