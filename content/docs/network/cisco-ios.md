@@ -101,7 +101,6 @@ R1(config-if)# no shutdown
 R1(config-if)# end
 R1# show ipv6 interface brief
 R1# show ipv6 route
-R1# ping ipv6 2001:0db8:0015:0002:0000:0000:0000:0010
 ```
 
 ## Link-Local Address (LLA)
@@ -110,6 +109,21 @@ R1# ping ipv6 2001:0db8:0015:0002:0000:0000:0000:0010
 R1(config)# interface G0/0
 R1(config-if)# ipv6 address FE80::1 link-local
 ```
+
+### IPv6 Ping
+```
+R1#ping ipv6 2001:0db8:0015:0002:0000:0000:0000:0010
+
+# Bei LLA (link local address) muss zusätzlich das Output Interface angegeben werden:
+R1#ping ipv6 2001:0db8:0015:0002:0000:0000:0000:0010
+Output Interface: GigabitEthernet0/0
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FE80::209:7CFF:FEDD:5101, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 0/1/7 ms
+```
+
 
 ## Show interface status
 
@@ -144,7 +158,7 @@ S1(config-if)# no shutdown
 
 # Statische Route
 
-## Route setzen
+## IPv4 Route setzen
 
 ```
 ! Syntax: ip route [Ziel-Netzwerk] [Subnetzmaske] [Next-Hop-IP oder Ausgangs-Interface]
@@ -158,4 +172,19 @@ R1(config)# do show ip route static
 
 ! Konfiguration speichern
 R1(config)# do write memory
+```
+
+## IPv6 Route setzen
+
+```
+Netz: 8::1/64
+Ziel (Int Adresse vom nächsten Router): 2001:db8:0:4::1
+
+ipv6 route 2001:DB8:0:3::/64 2001:DB8:0:4::2
+ipv6 route 2001:DB8:0:2::/64 2001:DB8:0:4::2
+ipv6 route 2001:DB8:0:1::/64 2001:DB8:0:4::2
+ipv6 route 2001:DB8:0:4::/64 2001:DB8:0:4::2
+
+Die können mit einem /48-Prefix zusammengefasst werden:
+ipv6 route 2001:DB8::/48 2001:DB8:0:4::2
 ```
