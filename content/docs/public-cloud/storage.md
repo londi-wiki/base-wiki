@@ -4,7 +4,7 @@ title: "Storage"
 description: ""
 icon: "article"
 date: "2024-10-08T14:32:35+02:00"
-lastmod: "2024-10-08T14:32:35+02:00"
+lastmod: "2025-01-20T03:00:35+02:00"
 draft: false
 toc: true
 ---
@@ -27,6 +27,7 @@ Es gibt vier verschiedene Arten Daten zu speichern:
 | Google Cloud   | Google Persistent Disk | Cloud Filestore | Google Cloud Storage  |
 
 ## Wichtige Lernziele
+
 - Die Unterschiede zwischen verschiedenen Cloud-Speichertypen verstehen.
 - Cloud-basierten Objektspeicher einrichten, Daten hoch- und herunterladen sowie Konsistenzmodelle für Daten verstehen.
 
@@ -89,3 +90,78 @@ Es gibt vier verschiedene Arten Daten zu speichern:
 
 Beispiel: https://doc.s3.amazonaws.com/2006-03-01/AmazonS3.wsdl, "doc" ist der Name des Buckets und
 "2006-03-01/AmazonS3.wsdl" ist der Schlüssel.
+
+# S3 Eigenschaften
+
+## Allgemein
+
+S3 Buckets sind Container zur Speicherung von Objekten, die hierarchisch organisiert und weltweit verteilt sein können.
+
+## Metadaten
+
+-	Abteilung
+-	Projektname
+-	Zugriffslevel
+-	Kostenstelle (für eine bessere Verwaltung und Abrechnung)
+
+## Umsetzung der Ausfallsicherheit
+
+S3 nutzt redundante Datenreplikation über mehrere Availability Zones (AZs), 
+um hohe Verfügbarkeit und Ausfallsicherheit zu gewährleisten.
+
+## CDN
+
+AWS Cloudfront: Stellt Inhalte über ein weltweites Netzwerk von Edge-Standorten bereit, 
+um Latenz zu minimieren und bietet einen DDoS-Schutz. 
+
+## Storageklassen
+
+- Standard: Häufiger Zugriff
+- Standard-IA: Seltener Zugriff
+- Glacier: Archivierung
+
+
+# Blob Eigenschaften
+
+## Allgemein
+
+Zugriffszeiten und Kosten können variieren, je nachdem wie häufig auf die Daten zugegriffen wird. 
+Dabei unterscheiden sich die Kosten für Lesen und Schreiben.
+
+**Zugriff**
+
+- http/HTTPS
+- SMB/NFS
+
+# Block Storage
+
+## Allgemein
+
+**Zugriff**
+
+iSCSI und Fibre Channel
+
+
+
+# File Storage
+
+## Allgemein
+
+**Zugriff**
+
+NFS und SMB/CIFS
+
+**Use Cases**
+
+- Gemeinsame Nutzung von Dateien in verteilten Umgebungen
+- Backup Lösung
+- Home-Verzeichnis
+
+
+
+# File vs. Blob Storage
+
+- File Storage bietet eine hierarchische Struktur
+- Blob Storage eine flache, objektbasierte Struktur für unstrukturierte Daten
+
+
