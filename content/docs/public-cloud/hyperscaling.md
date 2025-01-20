@@ -81,7 +81,31 @@ toc: true
 - Integration: Nutzung von Cloud-Diensten wie Datenbanken, Storage und Monitoring-Tools
 - Portabilität: Anwendungen können zwischen verschiedenen Hyperscalern oder On-Prem Systemen migriert werden.
 
+# Use case: Split eines Monolithen in eine Microservicearchitektur
 
+1. Identifikation von Domänen
+   1. Zerlegen des Monolithen in logische Geschäftsfunktionen (z.B. Authentifizierung, Payment, User Management)
+2. Definieren von APIs
+    1. Entwickeln von Schnittstellen für die Kommunikation zwischen den Microservices.
+3. Datenbank aufteilen
+   1. Jeder Microservice sollte eine eigene Datenbank oder Datendomäne haben, um Endkopplung zu gewährleisten.
+4. Deployment & Orchestrierung
+   1. Einsatz von Containern (z.B. Docker) und Kubernetes zur Verwaltung
+5. Observability einbauen
+   1. Logging, Monitoring und Tracing für alle Services
 
+## Serverless Infrastrukturen
 
+**Komplett serverless Infrastrukturen**
+
+- Dienste wie AWS Lambda, Azure Functions oder Google Cloud Functions bieten echte Serverless-Architekturen.
+- Entwickler kümmern sich nur um den Code, während die Infrastruktur vollständig vom Anbieter verwaltet wird.
+
+**Was muss man bei Kubernetes betreiben?**
+
+- Bei managed Kubernetes (z. B. EKS/AKS):
+  - Cluster Nodes: Worker Nodes müssen bereitgestellt und skaliert werden.
+  - Networking: Load Balancer, Ingress-Controller konfigurieren.
+  - Speicher: Persistent Volumes verwalten.
+  - Observability: Monitoring und Logging implementieren.
 
