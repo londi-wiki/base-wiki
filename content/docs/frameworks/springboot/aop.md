@@ -4,7 +4,7 @@ title: "Aop"
 description: ""
 icon: "article"
 date: "2024-11-04T10:57:36+01:00"
-lastmod: "2024-11-04T10:57:36+01:00"
+lastmod: "2025-01-21T12:30:36+01:00"
 draft: false
 toc: true
 ---
@@ -14,33 +14,24 @@ toc: true
 Aspektorientierte Programmierung (AOP) ist ein Programmierparadigma
 für die objektorientierte Programmierung, um generische
 Funktionalitäten über mehrere Klassen hinweg zu verwenden
-(Cross-Cutting Concern). Die Aspekte werden dabei von der
+(**Cross-Cutting Concern**). Die Aspekte werden dabei von der
 eigentlichen Geschäftslogik getrennt. Typische Anwendungsbeispiele
 sind Transaktionsverwaltung, Auditfähigkeit oder Tracing.
 
+**Vorteile von AOP**
+
+- Trennung von Geschäftslogik und wiederverwendbaren Funktionalitäten.
+- Verbesserte Wartbarkeit und Wiederverwendbarkeit des Codes.
+- Reduktion von redundanten Code.
+
 ## AOP Begriffe
 
-- Aspect: A modularization of a
-cross-cutting concern. The
-combination of advice and
-pointcut.
-- Join Point: Point during the
-execution of a program.
-- Advice: Action taken at a
-particular joinpoint.
-- Pointcut: A set of joinpoints
-specifying where advice should be
-applied.
-- Weaving: Assembling aspects into
-advised objects.
+- Aspect: Eine modulare Einheit eines Cross-Cutting Concerns.
+- Join Point: Ein bestimmter Punkt während der Programmausführung, z. B. ein Methodenaufruf.
+- Advice: Die eigentliche Logik, die an einem Join Point ausgeführt wird.
+- Pointcut: Eine Menge von Join Points, die spezifizieren, wo ein Advice angewendet wird.
+- Weaving: Der Prozess, Aspekte mit der Zielanwendung zu verknüpfen (zur Laufzeit oder Compile-Zeit).
 
-TODO: Schema hinzufügen
-
-## TODO AOP Code Generierung
-
-TODO
-
-## AspectJ Pointcut Expression
 
 ### Beispiel
 
