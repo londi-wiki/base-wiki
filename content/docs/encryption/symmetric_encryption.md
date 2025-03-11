@@ -195,3 +195,11 @@ y0:     1111    y1:     1010    y2:     1000
      x0   x1   x2
 x = 0010 0110 1011
 ```
+
+## Vergleich
+
+| Eigenschaft/Modi                               | ECB                               | R-CBC                                                                             | R-CTR                                                                                                                  |
+|------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Grobes Vorgehen                                | Blöcke einzeln ver-/entschlüsseln | Blöcke abhängig vom vorherigen Block verschlüsseln, aber unabhängig entschlüsseln | Blöcke einzeln ver-/entschlüsseln aber abhängig von y-1                                                                |
+| Verhalten von Übertragungsfehler bei einem Bit | max. 1 Bit in Block xi betroffen. | max. 1 Bit in Block xi betroffen.                                                 | Wenn Fehler in y-1, dann sind alle Blöcke betroffen, sonst max. 1 Bit in Block xi betroffen, wenn Fehler nicht in y-1. |
+
