@@ -24,6 +24,7 @@ Jeder Block wird mit Schlüssel k ge-"xor"t.
 Grobes Vorgehen: `yi = E(xi, k)`
 
 **Verschlüsseln**
+
 ```
 Beispiel:
 Vernam-System mit Länge l = 4
@@ -43,8 +44,23 @@ y = 0001 0101 1000
 ```
 
 **Entschlüsseln**
+
 ```
-TODO
+Beispiel:
+Vernam-System mit Länge l = 4
+     y0   y1   y2
+y = 0001 0101 1000
+Schlüssel k = 0011
+
+
+y0:     0001    y1:     0101    y2:     1000
+k:      0011    k:      0011    k:      0011
+(mod)   ----    (mod)   ----    (mod)   ----    
+        0010            0110            1011
+   
+   
+     x0   x1   x2
+x = 0010 0110 1011
 ```
 
 
@@ -65,10 +81,11 @@ Grobes Vorgehen: `yi = E(yi-1 (+) xi, k)`
 ```
 Beispiel:
 Vernam-System mit Länge l = 3
-             x0  x1  x2
-Klartext x = 010 000 101
 Schlüssel k = 110
 Zufallsstring y-1 = 001
+
+             x0  x1  x2
+Klartext x = 010 000 101
 
 
 x0:     010     x1:     000     x2:     101
@@ -89,12 +106,12 @@ y = 001 101 011 000
 ```
 Beispiel:
 Vernam-System mit Länge l = 3
+Schlüssel k = 110
+Zufallsstring y-1 = 001
 
     y-1 y0  y1  y2
 y = 001 101 011 000
 
-Schlüssel k = 110
-Zufallsstring y-1 = 001
 
 
 y0:     101     y1:     011     y2:     000
@@ -123,13 +140,15 @@ Die Blöcke können somit unabhängig voneinander verschlüsselt werden (sogar p
 Grobes Vorgehen: `yi = E( (y-1 + i) mod 2^l ), k) (+) xi`
 
 **Verschlüsseln**
+
 ```
 Beispiel:
 Vernam-System mit Länge l = 4
+Schlüssel k = 0011
+Zufallsstring y-1 = 1110
+
               x0   x1   x2
 Klartext x = 0010 0110 1011
-Schlüssel k = 0011
-Zufallsstring y-1 = 0011
 
 
 y-1:    1110    y-1:    1110    y-1:    1110
@@ -150,6 +169,29 @@ y = 1110 1111 1010 1000
 
 **Entschlüsseln**
 
+Grobes Verfahren: `xi = yi (+) E((y-1 + i) mod 2^l, k)`
+
 ```
-TODO
+Beispiel:
+Vernam-System mit Länge l = 4
+Schlüssel k = 0011
+Zufallsstring y-1 = 1110
+
+    y-1   y0   y1   y2
+y = 1110 1111 1010 1000
+
+y-1:    1110    y-1:    1110    y-1:    1110
+c:         0    c:         1    c:         2
+(add)   ----    (add)   ----    (add)   ----
+        1110            1111            0000
+k:      0011    k:      0011    k:      0011
+(mod)   ----    (mod)   ----    (mod)   ----    
+        1101            1100            0011
+y0:     1111    y1:     1010    y2:     1000
+(mod)   ----    (mod)   ----    (mod)   ----
+        0010            0110            1011      
+   
+   
+     x0   x1   x2
+x = 0010 0110 1011
 ```
