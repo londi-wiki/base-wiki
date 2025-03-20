@@ -19,24 +19,12 @@ Zutaten:
 - Selbstinverse Permutation B auf {0, 1, 2, m * n - 1} (die Bitpermutation)
 - Rundenschlüsselfunktion K: {0, 1}^s x {0, 1, ..., r} -> {0, 1}^(m*n)
 
-$ S: \{0, 1\}^n \rightarrow \{0, 1\}^n $
+$ S: \{0, 1\}^n $
 
-$ B: \{0, 1, 2, \dots, mn - 1\} \rightarrow \{0, 1, 2, \dots, mn - 1\} $
+$ B: \{0, 1, 2, \dots, mn - 1\} $
 
 $ K: \{0, 1\}^s \times \{0, 1, \dots, r\} \rightarrow \{0, 1\}^{mn} $
 
-$$
-
-% Permutation auf {0, 1}^n (die S-Box)
-S: \{0, 1\}^n \rightarrow \{0, 1\}^n
-
-% Selbstinverse Permutation B auf {0, 1, 2, ..., m * n - 1} (die Bitpermutation)
-B: \{0, 1, 2, \dots, mn - 1\} \rightarrow \{0, 1, 2, \dots, mn - 1\}
-
-% Rundenschlüsselfunktion K
-K: \{0, 1\}^s \times \{0, 1, \dots, r\} \rightarrow \{0, 1\}^{mn}
-
-$$
 
 **Schlüsselgenerierung**
 
@@ -45,6 +33,8 @@ m = 3 (Anzahl S-Boxen pro Runde)
 n = 4 (Blockgrösse der S-Box in Bits)
 r = 3 (Anzahl Runden)
 s = 24 (Schlüssellänge)
+
+Es werden r+1 Schlüssel mit der länge n*m (12 Bits) erstellt.
 
 k  = 0001 1010 1111 1100 0000 0111
 k0 = 0001 1010 1111
@@ -56,15 +46,119 @@ k3 =                1100 0000 0111
 **S-Box**
 
 ```
+0000 -> 1110    //  0 -> E
+0001 -> 0100    //  1 -> 4
+0010 -> 1101    //  2 -> D
+0011 -> 0001    //  3 -> 1
+0100 -> 0010    //  4 -> 2
+0101 -> 1111    //  5 -> F
+0110 -> 1011    //  6 -> B
+0111 -> 1000    //  7 -> 8
+1000 -> 0011    //  8 -> 3
+1001 -> 1010    //  9 -> A
+1010 -> 0110    // 10 -> 6
+1011 -> 1100    // 11 -> C
+1100 -> 0101    // 12 -> 5
+1101 -> 1001    // 13 -> 9
+1110 -> 0000    // 14 -> 0
+1111 -> 0111    // 15 -> 7
+```
+
+**Bit-Permutation**
 
 ```
+β (Beta) Bit-Permutation
+
+(Selbstinversiv)
+
+ 0 ->  4
+ 1 ->  5
+ 2 ->  6
+ 3 ->  7
+ 4 ->  0
+ 5 ->  1
+ 6 -> 10
+ 7 -> 11
+ 8 ->  2
+ 9 ->  3
+10 ->  6
+11 ->  7
+```
+
+## Verschlüsseln
+
+```
+-------- Initialer Weissschritt --------
+                        1111 0101 0110
+(xor)                   0001 1010 1111 k0
+                        1110 1111 1001
+--------  Erste Runde, regulär  --------
+                        SBox SBox SBox
+                          |    |    |
+                          V    V    V
+Bit-Permutation         0000 0111 0010
+                        0100 0010 0011
+(xor)                   1010 1111 1100 k1
+-------- Zweite Runde, regulär  --------
+                        SBox SBox SBox
+                          |    |    |
+                          V    V    V
+Bit-Permutation         0000 1110 0111
+                        1101 0011 0010
+(xor)                   1111 1100 0000 k2
+-------- Dritte Runde, verkürzt --------
+                        SBox SBox SBox
+                          |    |    |
+                          V    V    V
+                        1101 0111 1101
+(xor)                   1100 0000 0111 k3
+Chiffretext             0001 0111 1010
+
+```
+
+## Entschlüsseln
+
+Beim Entschlüsseln wird die S-Box invertiert und die Schlüssel wie folgt vertauscht und verändert.
+
+```
+k  = 0001 1010 1111 1100 0000 0111
+k0 = 0001 1010 1111
+k1 =      1010 1111 1100
+k2 =           1111 1100 0000
+k3 =                1100 0000 0111
+
+Bit-Permutation
+ 0 ->  4
+ 1 ->  5
+ 2 ->  6
+ 3 ->  7
+ 4 ->  0
+ 5 ->  1
+ 6 -> 10
+ 7 -> 11
+ 8 ->  2
+ 9 ->  3
+10 ->  6
+11 ->  7
+
+- Erster und letzter Schlüssel werden direkt vertauscht
+- die anderen Schlüssel werden mit in ihrer Reihenfolge vertauscht und Bit-Permutiert
+
+k0 wird zu k3:                      1100 0000 0111 
+k1 wird bit-permutiert und zu k2:   1100 1100 1100
+k2 wird bit-permutiert und zu k1:   1111 1000 1011
+k3 wird zu k0:                      0001 1010 1111
+```
+
+Mit diesen zwei Änderungen wird SPN wie beim Verschlüsseln angewendet.
+
 
 # Modi
 
 ## ECB
 
 Als Erstes wird der Klartext in Blöcke der Länge l unterteilt.
-Jeder Block wird mit Schlüssel k ge-"xor"t.
+Jeder Block wird mit Schlüssel k mit xor verrechnet.
 
 Grobes Vorgehen: `yi = E(xi, k)`
 
@@ -112,7 +206,7 @@ x = 0010 0110 1011
 ## R-CBC
 
 Als Erstes wird der Klartext in Blöcke der Länge l unterteilt. 
-Jeder Block wird mit dem jeweiligen vorherigen verschlüsselten Block ge-"xor"t, 
+Jeder Block wird mit dem jeweiligen vorherigen verschlüsselten Block mit xor verrechnet, 
 wobei beim ersten Block für `y-1` ein Zufalls-Bitstring gewählt wird.
 
 So ist jeder Block abhängig vom vorherigen Block.
@@ -176,7 +270,7 @@ x = 010 000 101
 ## R-CTR
 
 Bei R-CTR wird wieder ein zufälliger Bitstring gewählt welcher pro Block um eins vergrössert wird.
-Dieser Wert wird in die Verschlüsselungsfunktion E gegeben und das resultat mit dem Block `xi` ge-"xor"t.
+Dieser Wert wird in die Verschlüsselungsfunktion E gegeben und das Resultat mit dem Block `xi` mit xor verrechnet.
 
 Auch hier: y-1 muss beim Entschlüsseln bekannt sein.
 
@@ -248,3 +342,9 @@ x = 0010 0110 1011
 | Grobes Vorgehen                                | Blöcke einzeln ver-/entschlüsseln | Blöcke abhängig vom vorherigen Block verschlüsseln, aber unabhängig entschlüsseln | Blöcke einzeln ver-/entschlüsseln aber abhängig von y-1                                                                |
 | Verhalten von Übertragungsfehler bei einem Bit | max. 1 Bit in Block xi betroffen. | max. 1 Bit in Block xi betroffen.                                                 | Wenn Fehler in y-1, dann sind alle Blöcke betroffen, sonst max. 1 Bit in Block xi betroffen, wenn Fehler nicht in y-1. |
 
+
+# SPN im CTR Modus
+
+Wird SPN im CTR Modus betrieben, so wird beim Entschlüsseln die Verschlüsselungs-Funktion von SPN verwendet und nicht die Entschlüsselungsfunktion. Somit bleiben die S-Box und die Schlüssel unverändert.
+
+$ x_i = E\left( \left( y_{i-1} + i \right) \bmod \, 2^l, \, k \right) \oplus y_i \quad (i = 0, \ldots, n - 1) $
