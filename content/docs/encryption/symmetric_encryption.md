@@ -13,6 +13,42 @@ toc: true
 # SPN (Substitutionspermutationsnetzwerke)
 
 
+Zutaten:
+- Permutation auf {0, 1}^n (die S-Box)
+- Selbstinverse Permutation B auf {0, 1, 2, m * n - 1} (die Bitpermutation)
+- Rundenschlüsselfunktion K: {0, 1}^s x {0, 1, ..., r} -> {0, 1}^(m*n)
+
+$$
+% Permutation auf {0, 1}^n (die S-Box)
+S: \{0, 1\}^n \rightarrow \{0, 1\}^n
+
+% Selbstinverse Permutation B auf {0, 1, 2, ..., m * n - 1} (die Bitpermutation)
+B: \{0, 1, 2, \dots, mn - 1\} \rightarrow \{0, 1, 2, \dots, mn - 1\}
+
+% Rundenschlüsselfunktion K
+K: \{0, 1\}^s \times \{0, 1, \dots, r\} \rightarrow \{0, 1\}^{mn}
+$$
+
+**Schlüsselgenerierung**
+
+```
+m = 3 (Anzahl S-Boxen pro Runde)
+n = 4 (Blockgrösse der S-Box in Bits)
+r = 3 (Anzahl Runden)
+s = 24 (Schlüssellänge)
+
+k  = 0001 1010 1111 1100 0000 0111
+k0 = 0001 1010 1111
+k1 =      1010 1111 1100
+k2 =           1111 1100 0000
+k3 =                1100 0000 0111
+```
+
+**S-Box**
+
+```
+
+```
 
 # Modi
 
