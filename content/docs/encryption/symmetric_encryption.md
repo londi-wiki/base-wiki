@@ -7,6 +7,7 @@ date: "2025-03-11T11:16:27+01:00"
 lastmod: "2025-03-11T11:16:27+01:00"
 draft: false
 toc: true
+katex: true
 ---
 
 
