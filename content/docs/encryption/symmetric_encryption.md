@@ -19,7 +19,14 @@ Zutaten:
 - Selbstinverse Permutation B auf {0, 1, 2, m * n - 1} (die Bitpermutation)
 - Rundenschlüsselfunktion K: {0, 1}^s x {0, 1, ..., r} -> {0, 1}^(m*n)
 
+$ S: \{0, 1\}^n \rightarrow \{0, 1\}^n $
+
+$ B: \{0, 1, 2, \dots, mn - 1\} \rightarrow \{0, 1, 2, \dots, mn - 1\} $
+
+$ K: \{0, 1\}^s \times \{0, 1, \dots, r\} \rightarrow \{0, 1\}^{mn} $
+
 $$
+
 % Permutation auf {0, 1}^n (die S-Box)
 S: \{0, 1\}^n \rightarrow \{0, 1\}^n
 
@@ -28,6 +35,7 @@ B: \{0, 1, 2, \dots, mn - 1\} \rightarrow \{0, 1, 2, \dots, mn - 1\}
 
 % Rundenschlüsselfunktion K
 K: \{0, 1\}^s \times \{0, 1, \dots, r\} \rightarrow \{0, 1\}^{mn}
+
 $$
 
 **Schlüsselgenerierung**
