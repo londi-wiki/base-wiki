@@ -97,7 +97,7 @@ classDiagram
         -leistung: int
     }
     class Rad {
-        -größe: int
+        -grösse: int
     }
     %% Motor & Räder sind fest mit Auto verbunden
     Auto *-- Motor : Komposition

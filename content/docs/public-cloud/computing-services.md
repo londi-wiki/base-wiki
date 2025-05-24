@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Lernziele
-- Verständnis der verschiedenen Cloud-Computing-Dienste, einschließlich ihrer Vor- und Nachteile.
+- Verständnis der verschiedenen Cloud-Computing-Dienste, einschliesslich ihrer Vor- und Nachteile.
 - Anwendung des Konzepts von Serverless Computing für das Hosting von Anwendungen in der Cloud.
 - Kenntnisse über die Sicherheitsaspekte von Cloud-Computing-Diensten.
 

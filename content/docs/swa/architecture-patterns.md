@@ -90,14 +90,14 @@ Wann das Composite Pattern passend ist:
 
 - File (Leaf):
   - Repräsentiert eine einfache Datei
-  - Hat eine konkrete Größe
+  - Hat eine konkrete Grösse
   - Implementiert die print() Methode, um sich selbst anzuzeigen
 
 - Directory (Composite):
   - Kann sowohl Dateien als auch andere Verzeichnisse enthalten
   - Verwaltet eine Liste von FileSystemItems
   - Implementiert print() durch Delegation an alle Kinder
-  - Berechnet die Gesamtgröße durch Summierung aller enthaltenen Elemente
+  - Berechnet die Gesamtgrösse durch Summierung aller enthaltenen Elemente
 
 ```mermaid
 classDiagram

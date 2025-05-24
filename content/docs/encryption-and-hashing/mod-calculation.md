@@ -21,12 +21,12 @@ $ -4 \bmod 11 = -4 + 11 = 7 $
 
 Der Modus einer grossen Zahl wie die der folgenden kann in mehreren Schritten berechnet werden: 
 
-Ziel: $ (5^{2) ^{ 2 } } \bmod 11 $ 
+**Ziel:** $ (5^{2) ^{ 2 } } \bmod 11 $ 
 
-1. Schritt: mod von $ (5^{2}) $ berechnen
+**Schritt 1**: mod von $ (5^{2}) $ berechnen
 
 $ 5^{ 2 } \bmod 11 = 25 \bmod 11 = 3 $
 
-2. Schritt: Mod von "3" mit dem übrig gebliebenen Exponent $ (^{2}) $ berechnen 
+**Schritt 2**: Mod von "3" mit dem übrig gebliebenen Exponent $ (^{2}) $ berechnen 
 
 $ 3^{ 2 } \bmod 11 = 9 $

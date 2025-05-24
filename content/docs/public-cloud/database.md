@@ -56,8 +56,8 @@ toc: true
 
 **Definition**
 
-Data Gravity beschreibt das Phänomen, dass große Datenmengen Anwendungen, 
-Services und Workflows „anziehen“, weil es ineffizient ist, große Datenmengen zu bewegen.
+Data Gravity beschreibt das Phänomen, dass grosse Datenmengen Anwendungen, 
+Services und Workflows „anziehen“, weil es ineffizient ist, grosse Datenmengen zu bewegen.
 
 **Aspekte**
 

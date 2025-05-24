@@ -22,7 +22,7 @@ Das `Effect`-Attribut bestimmt, ob eine Aktion erlaubt oder verweigert wird.
 
 ### `Deny`
 - Verweigert explizit die angegebene Aktion(en), selbst wenn eine andere Richtlinie dieselbe Aktion erlaubt.
-- Nützlich für Sicherheitsmaßnahmen wie das Blockieren sensibler Aktionen oder bestimmter Bedingungen.
+- Nützlich für Sicherheitsmassnahmen wie das Blockieren sensibler Aktionen oder bestimmter Bedingungen.
 
 ---
 

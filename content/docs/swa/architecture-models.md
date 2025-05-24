@@ -44,7 +44,7 @@ Eine Architekturstrategie, die auf **formalen Modelltransformationen** basiert.
 - Single Responsibility Principle (SRP) – Eine Klasse sollte nur eine Verantwortung haben.
 - Open/Closed Principle (OCP) – Software-Elemente sollten offen für Erweiterungen, aber geschlossen für Änderungen sein.
 - Liskov Substitution Principle (LSP) – Subklassen müssen die Funktionalität der Superklasse beibehalten.
-- Interface Segregation Principle (ISP) – Viele spezifische Schnittstellen sind besser als eine große allgemeine Schnittstelle.
+- Interface Segregation Principle (ISP) – Viele spezifische Schnittstellen sind besser als eine grosse allgemeine Schnittstelle.
 - Dependency Inversion Principle (DIP) – Abhängigkeiten sollten auf Abstraktionen basieren, nicht auf konkreten Implementierungen.
 
 [Siehe SOLID](https://wiki.strubli.com/docs/swa/architecture-principles/#solid)

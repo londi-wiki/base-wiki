@@ -58,7 +58,7 @@ sequenceDiagram
 - Client Credentials Grant Flow
 - JWT (JSON Web Tokens) für Tokenformat
 - Kurze Token-Lebensdauer (z.B. 1 Stunde)
-- Regelmäßige Secret-Rotation
+- Regelmässige Secret-Rotation
 
 **Autorisierung**
 
@@ -67,7 +67,7 @@ sequenceDiagram
 - Validierung von Claims im Token
 - Kontext-basierte Entscheidungen
 
-## Sicherheitsmaßnahmen
+## Sicherheitsmassnahmen
 
 **Network Level**
 

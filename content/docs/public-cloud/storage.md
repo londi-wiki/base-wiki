@@ -34,9 +34,9 @@ Es gibt vier verschiedene Arten Daten zu speichern:
 # Speicherklassifizierungen
 
 1. **Objektspeicher**:
-    - Ausgelegt für das Verwalten großer Mengen unstrukturierter Daten.
+    - Ausgelegt für das Verwalten grosser Mengen unstrukturierter Daten.
     - Daten werden in Containern (oft „Buckets“ genannt) gespeichert und sind über eindeutige URLs zugänglich.
-    - Unterstützt globale Zugänglichkeit über REST-APIs und eignet sich für Anwendungsfälle mit großen Datensätzen.
+    - Unterstützt globale Zugänglichkeit über REST-APIs und eignet sich für Anwendungsfälle mit grossen Datensätzen.
 
 2. **Blockspeicher**:
     - Bietet festplattenähnlichen Speicher, der hauptsächlich in Cloud-Infrastrukturen verwendet wird.
@@ -64,8 +64,8 @@ Es gibt vier verschiedene Arten Daten zu speichern:
 - Diese Lösungen ermöglichen flexible Wiederherstellungsoptionen im Falle eines Datenverlusts oder Systemausfalls.
 
 ## Datenübertragung und Migration
-- Es stehen Werkzeuge zur Verfügung, um eine effiziente Datenübertragung, auch bei sehr großen Datenmengen, zu ermöglichen.
-- Für große Datensätze können physische Datentransferdienste genutzt werden, um lange Netzwerktransferzeiten zu vermeiden.
+- Es stehen Werkzeuge zur Verfügung, um eine effiziente Datenübertragung, auch bei sehr grossen Datenmengen, zu ermöglichen.
+- Für grosse Datensätze können physische Datentransferdienste genutzt werden, um lange Netzwerktransferzeiten zu vermeiden.
 
 ## Konsistenzmodelle
 - Die meisten Cloud-Speichersysteme bieten **eventuelle Konsistenz**, was bedeutet, dass Datenaktualisierungen Zeit benötigen können, um vollständig über alle Systeme propagiert zu werden.

@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Encryption"
+title: "Encryption and Hashing"
 description: ""
 icon: "article"
 date: "2025-03-11T11:13:03+01:00"

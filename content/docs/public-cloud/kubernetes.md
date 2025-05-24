@@ -86,7 +86,7 @@ Container sind standardisierte Einheiten, die Code, Abhängigkeiten und Runtime-
    1. Azure Kubernetes Service (AKS): Kubernetes wird von Azure verwaltet.
    2. Amazon Elastic Kubernetes Service (EKS): Kubernetes wird von AWS verwaltet.
 2. Plane die Architektur:
-   1. Clustergröße: Wie viele Nodes brauchst du?
+   1. Clustergrösse: Wie viele Nodes brauchst du?
    2. Region: In welcher geografischen Region soll der Cluster laufen?
    3. Netzwerk: Plane ein virtuelles Netzwerk und Subnetze.
 3. Automatisiere Deployments:

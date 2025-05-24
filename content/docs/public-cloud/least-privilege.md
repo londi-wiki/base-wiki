@@ -15,7 +15,7 @@ Grundkonzept:
 
 - Jeder Benutzer, Prozess oder Service erhält nur die minimal notwendigen Rechte
 - Nur die Berechtigungen, die für die jeweilige Aufgabe erforderlich sind
-- Zugriffe werden standardmäßig verweigert, außer sie werden explizit gewährt
+- Zugriffe werden standardmässig verweigert, ausser sie werden explizit gewährt
 
 ## Praktische Umsetzung nach Bereichen
 
@@ -62,13 +62,13 @@ Grundkonzept:
 
 - Alle Berechtigungen dokumentieren
 - Begründung für Rechte festhalten
-- Regelmäßige Überprüfung
+- Regelmässige Überprüfung
 
 2. Monitoring
 
 - Zugriffe protokollieren
 - Ungewöhnliche Aktivitäten erkennen
-- Regelmäßige Audits durchführen
+- Regelmässige Audits durchführen
 
 3. Automatisierung
 
@@ -79,6 +79,6 @@ Grundkonzept:
 4. Prozesse
 
 - Standardisierte Prozesse für Rechtevergabe
-- Regelmäßige Überprüfung und Anpassung
+- Regelmässige Überprüfung und Anpassung
 - Dokumentierte Eskalationswege
 

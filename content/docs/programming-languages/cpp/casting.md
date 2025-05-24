@@ -58,7 +58,7 @@ Lass uns das schrittweise durchgehen:
 
 3) Die wichtigen Unterschiede:
 
-    - `static_cast` führt die Umwandlung ohne Laufzeitprüfung durch. Es vertraut einfach darauf, dass der Programmierer weiß, was er tut.
+    - `static_cast` führt die Umwandlung ohne Laufzeitprüfung durch. Es vertraut einfach darauf, dass der Programmierer weiss, was er tut.
 
     - `dynamic_cast` hingegen prüft zur Laufzeit, ob die Umwandlung gültig ist. Bei Zeigern gibt es `nullptr` zurück, wenn die Umwandlung nicht möglich ist.
 

@@ -110,11 +110,11 @@ Durch diesen Mechanismus passt sich TCP automatisch an die langsamste Verbindung
 **Beispiel:**
 
 1. Die maximale TCP-Datenrate wird durch folgende Formel bestimmt:
-   Maximale Datenrate = Fenstergröße / Round-Trip Time
+   Maximale Datenrate = Fenstergrösse / Round-Trip Time
 
 2. Gegeben:
     - Round-Trip Time (RTT) = 100 ms = 0,1 Sekunden
-    - Maximale Fenstergröße ohne Window Scaling = 65535 Bytes (nicht 65636)
+    - Maximale Fenstergrösse ohne Window Scaling = 65535 Bytes (nicht 65636)
 
 3. Berechnung:
    Maximale Datenrate = 65535 Bytes / 0,1 Sekunden

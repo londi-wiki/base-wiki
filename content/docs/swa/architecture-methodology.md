@@ -13,7 +13,7 @@ toc: true
 
 ## Definition Software-Architektur
 
-Software-Architektur beschreibt die Struktur eines Systems, einschließlich Komponenten, Beziehungen und Prinzipien. Sie ist wichtig für Skalierbarkeit, Wartbarkeit und Effizienz.
+Software-Architektur beschreibt die Struktur eines Systems, einschliesslich Komponenten, Beziehungen und Prinzipien. Sie ist wichtig für Skalierbarkeit, Wartbarkeit und Effizienz.
 
 ## Kernziele einer Architekturmethodik
 
@@ -60,7 +60,7 @@ Sie erklärt, warum eine Entscheidung wichtig ist und welche Auswirkungen sie ha
 
 **Beispiel:**
 
-- Condition: Das Unternehmen betreibt bereits ein monolithisches System mit einer großen Codebasis und muss eine schrittweise Migration ermöglichen. Außerdem gibt es regulatorische Vorgaben zur Datenspeicherung in der EU.
+- Condition: Das Unternehmen betreibt bereits ein monolithisches System mit einer grossen Codebasis und muss eine schrittweise Migration ermöglichen. Ausserdem gibt es regulatorische Vorgaben zur Datenspeicherung in der EU.
 - Significance: Die Entscheidung für eine Microservices-Architektur ist bedeutend, weil sie Skalierbarkeit und Flexibilität ermöglicht.
 - Approach: Die Umsetzung erfolgt durch eine API-gesteuerte Kommunikation mit Docker und Kubernetes für die Container-Orchestrierung.
 

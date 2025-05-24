@@ -168,7 +168,7 @@ int main() {
     if (result1 < 0)
         std::cout << "a ist kleiner als b\n";
     else if (result1 > 0)
-        std::cout << "a ist größer als b\n";
+        std::cout << "a ist grösser als b\n";
     else
         std::cout << "a ist gleich b\n";
     
@@ -181,7 +181,7 @@ int main() {
     if (result2 < 0)
         std::cout << "p1 ist kleiner als p2\n";
     else if (result2 > 0)
-        std::cout << "p1 ist größer als p2\n";
+        std::cout << "p1 ist grösser als p2\n";
     else
         std::cout << "p1 ist gleich p2\n";
     

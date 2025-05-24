@@ -32,7 +32,7 @@ zunehmender Funktionalität des Systems.
 Je mehr Funktionalität ein System hinzufügt,
 desto weniger agil wird es. Es gibt zwei kritische Punkte im Diagramm:
 - C1: Dieser Punkt stellt den Moment dar, in dem der Verlust an Agilität etwa das Fünffache des funktionalen Zugewinns beträgt. Das bedeutet, dass ab diesem Punkt jede Erhöhung der Funktionalität den Verlust an Agilität stark überwiegt.
-- C2: Hier wird der Verlust an Agilität so groß, dass der Zugewinn an Funktionalität kaum noch einen positiven Effekt hat. Mit anderen Worten: Jede weitere funktionale Verbesserung macht das System so unflexibel, dass der zusätzliche Nutzen marginal wird.
+- C2: Hier wird der Verlust an Agilität so gross, dass der Zugewinn an Funktionalität kaum noch einen positiven Effekt hat. Mit anderen Worten: Jede weitere funktionale Verbesserung macht das System so unflexibel, dass der zusätzliche Nutzen marginal wird.
 
 ## Problematik, die Murer et al entdeckt haben:
 
@@ -47,7 +47,7 @@ weil die Verluste in der Agilität überwiegen.
 
 ## Mögliche Massnahmen:
 
-**Kontinuierliche Refaktorierung:** Systeme sollten regelmäßig umstrukturiert und optimiert werden,
+**Kontinuierliche Refaktorierung:** Systeme sollten regelmässig umstrukturiert und optimiert werden,
 um ihre Flexibilität zu bewahren. Durch Refaktorierung können unnötige Komplexitäten beseitigt und
 die Agilität erhöht werden.
 

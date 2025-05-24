@@ -48,7 +48,7 @@ graph LR
 - Geringere Latenz (vorhersagbar)
 - Bessere Zuverlässigkeit
 - Erhöhte Sicherheit
-- Kosteneinsparungen bei großen Datenmengen
+- Kosteneinsparungen bei grossen Datenmengen
 
 3. Sicherheitsaspekte
 

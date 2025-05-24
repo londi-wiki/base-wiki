@@ -202,7 +202,7 @@ In vielen Netzwerken werden SLAAC und Stateless DHCPv6 kombiniert, um sowohl die
 - Durch die Aufteilung eines Netzwerks in Subnetze können Administratoren das Netzwerk strukturieren und die Adressverteilung besser steuern.
 - Subnetze ermöglichen eine bessere Kontrolle und Sicherheit innerhalb eines Netzwerks
 - IPv6-Subnetze vereinfachen das Routing und die Verwaltung von Netzwerken
-- IPv6 bietet einen so großen Adressraum, dass Subnetze problemlos erstellt werden können, ohne sich Sorgen um eine knappe Anzahl von Adressen zu machen.
+- IPv6 bietet einen so grossen Adressraum, dass Subnetze problemlos erstellt werden können, ohne sich Sorgen um eine knappe Anzahl von Adressen zu machen.
 - Ein häufiges Szenario, in dem Subnetze verwendet werden, ist die Trennung von bestimmten Diensten.
 - IPv6 unterstützt neben dem klassischen Unicast-Routing auch Multicast und Anycast. Diese Technologien können besonders nützlich sein, wenn sie in einem klar strukturierten Netzwerk mit Subnetzen eingesetzt werden.
 - Durch die Verwendung von Subnetzen kann ein Netzwerk strukturiert geplant und einfach dokumentiert werden.

@@ -183,13 +183,13 @@ class Fahrzeug {
 
 class Auto : Fahrzeug {
     void fahren() {
-        print("Das Auto fährt auf der Straße.")
+        print("Das Auto fährt auf der Strasse.")
     }
 }
 
 class Motorrad : Fahrzeug {
     void fahren() {
-        print("Das Motorrad fährt auf der Straße.")
+        print("Das Motorrad fährt auf der Strasse.")
     }
 }
 
