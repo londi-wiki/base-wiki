@@ -85,3 +85,184 @@ Manchmal ist es nur wichtig, dass Eva zu einem gegebenen Hashwert $v$ kein $x$ f
 
 # Kompressionsfunktion
 
+Eine **Kompressionsfunktion** ist eine Funktion, die eine Eingabe beliebiger Länge in eine Ausgabe fester Länge umwandelt.
+
+**Definition:**
+
+Es sei $l, b > 0$. Eine *$(l, b)$-Kompressionsfunktion* ist eine Funktion  
+$$
+f : \{0,1\}^l \times \{0,1\}^b \rightarrow \{0,1\}^l
+$$  
+oder auch  
+$$
+f : \{0,1\}^{l + b} \rightarrow \{0,1\}^l
+$$
+
+---
+
+Die zugehörige *Iterationsfunktion*  
+$$
+\mathit{i^{f}} : \{0,1\}^l \times \{0,1\}^{b*} \rightarrow \{0,1\}^l
+$$  
+ist definiert durch:
+
+- Leeres Wort:  
+  $$
+  \mathit{i^{f}}(u, \epsilon) = u \quad \text{für } u \in \{0,1\}^l
+  $$
+
+- Rekursion:  
+  $$
+  \mathit{i^{f}}(u, xv) = f(\mathit{i^{f}}(u, x), v) \quad \text{für } u \in \{0,1\}^l,\, x \in \{0,1\}^{b*},\, v \in \{0,1\}^b
+  $$
+
+---
+
+Es sei $x = x_0 x_1 \dots x_{n-1} \in \{0,1\}^{bn}$ und $u \in \{0,1\}^l$ beliebig.  
+Dann gilt:  
+$$
+\mathit{i^{f}}(u, x) = f(f(\dots f(f(u, x_0), x_1), \dots, x_{n-2}), x_{n-1}) \in \{0,1\}^l
+$$
+
+### Beobachtung
+
+**Problem**
+
+$ \mathit{i^{f}} $ lässt sich (bei beliebigem Initialisierungsvektor) nur auf Nachrichten anwenden, deren Länge ein Vielfaches von b ist.
+
+**Lösung**
+
+Fülle die Nachrichten so auf, dass ihre Länge ein Vielaches von b ist. (Geeignetes Auffüllen liefert auch eine "sichere" Hashfunktion.)
+
+**Definition**
+
+Die Funktion  
+$$
+p_{MD}^{b,r} : \{0,1\}^{< 2^r} \rightarrow \{0,1\}^{b+}
+$$  
+definiert durch  
+$$
+p_{MD}^{b,r}(x) = x \,\|\, 1 \,\|\, 0^s \,\|\, (x)_2^r
+$$  
+heißt **Merkle-Damgård Füllfunktion**.
+
+(||: Konkatenation)
+
+---
+
+Hierbei ist $s \ge 0$ minimal mit  
+$$
+|x| + 1 + r + s \text{ ein Vielfaches von } b
+$$  
+und $(x)_2^r$ ist ein $r$-Bit-String, der die Länge von $x$ enthält (gegebenenfalls mit vorangestellten Nullen).
+
+
+### Beispiel
+
+Die (2,2)-Kompressionsfunktion $f$ sei definiert durch  
+$$
+f(x_0 x_1 x_2 x_3) = x_0 \oplus x_1 \,\|\, x_1 \oplus x_3,
+$$  
+wobei $\|$ die Konkatenation (Hintereinanderschreiben) zur besseren Lesbarkeit darstellt.
+
+---
+
+Es sei $u = 10$ und $x = 01\,01\,0$. Berechne:  
+$$
+h_u^{f, p_{MD}^{2,4}}(x).
+$$
+
+---
+
+## Gegeben:
+
+- **Kompressionsfunktion**:  
+  $$
+  f(x_0 x_1 x_2 x_3) = x_0 \oplus x_1 \,\|\, x_1 \oplus x_3
+  $$  
+  Diese Funktion verarbeitet **4 Bit auf einmal**: $l = b = 2$ (also je 2 Bit Zustand + 2 Bit Block)
+  
+- **Eingabe**: $x = 01010$  
+- **Initialisierungswert**: $u = 10$  
+- **Padding-Funktion**: $p_{MD}^{2,4}$  
+
+---
+
+## Schritt 1: Padding
+
+Die Eingabe $x = 01010$ hat Länge **5**.  
+Für Merkle-Damgård-Padding $p_{MD}^{2,4}$ brauchen wir:
+
+- Anhängen von `1`
+- Auffüllen mit `0`s (sodass die Länge ein Vielfaches von $b = 2$ ist)
+- Dann die Binärdarstellung der ursprünglichen Länge (5 Bit) als 4-Bit-String: $5 = 0101_2$
+
+**Also:**
+$$
+p_{MD}^{2,4}(01010) = 01010\,1\,0101 = 0101010101
+$$
+
+---
+
+## Schritt 2: Iterationsfunktion
+
+Jetzt wird die Iterationsfunktion $\mathit{if}(u, x)$ aufgerufen mit:
+
+- Initialwert $u = 10$
+- Padding-Ausgabe $x = 0101010101$
+
+Da die Blockgröße $b = 2$ ist, teilen wir $x$ in Blöcke zu 2 Bit:
+
+$$
+[01], [01], [01], [01], [01]
+$$
+
+Dann berechnen wir iterativ:
+
+1. **Start**: $u_0 = 10$
+
+2. **Block 1**: $f(10, 01)$  
+   $$
+   \Rightarrow f(1001) = 1 \oplus 0 \,\|\, 0 \oplus 1 = 1\,1 \Rightarrow u_1 = 11
+   $$
+
+3. **Block 2**: $f(11, 01)$
+   $$
+   \Rightarrow f(1101) = 1 \oplus 1 \,\|\, 1 \oplus 1 = 0\,0 \Rightarrow u_1 = 00
+   $$
+
+4. **Block 3**: $f(00, 01)$
+   $$
+   \Rightarrow f(0001) = 0 \oplus 0 \,\|\, 0 \oplus 1 = 0\,1 \Rightarrow u_1 = 01
+   $$
+
+5. **Block 4**: $f(01, 01)$
+    $$
+    \Rightarrow f(0101) = 0 \oplus 1 \,\|\, 1 \oplus 1 = 1\,0 \Rightarrow u_1 = 10
+    $$
+
+6. **Block 5**: $f(10, 01)$
+    $$
+    \Rightarrow f(1001) = 1 \oplus 0 \,\|\, 0 \oplus 1 = 1\,1 \Rightarrow u_1 = 11
+    $$
+
+**Ergebnis**
+
+$$
+   \mathit{i^{f}}(10, 0101010101) = 11 \quad
+$$
+---
+
+
+**Beobachtung**
+
+"Kompressionsfunktion ist kollisionsresistent" $ \Rightarrow $ "zugehörige iterierte MD-Hashfunktion ist kollisionsresistent"
+
+
+Genauer: Man kann aus einer Kollision für die Hashfunktion eine Kollision für die Kompressionsfunktion konstruieren.
+
+Damit muss man sich also nur noch um die Kompressionsfunktion kümmern, und erhält automatisch eine mindestens so sichere Hashfunktion.
+
+Dies ist ein wichtiges Konstruktionsprinzip in der Kryptographie:  
+
+Man baut komplexere Funktionen aus einfachen Bestandteilen zusammen und zeigt, dass die komplexe Funktion sicher ist, **falls die Bausteine sicher sind**.
