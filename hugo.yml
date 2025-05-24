@@ -1,81 +1,105 @@
 baseURL : "https://wiki.strubli.com/"
 languageCode : "en-ch"
 title : "wiki page"
-themes: "lotusdocs"
+contentDir: "content"
 enableEmoji: true
 enableGitInfo: true
 
 module:
+  hugoVersion:
+    extended: true
+    min: "0.120.0"
   imports:
-    - path: "github.com/londi-wiki/lotusdocs"
-      disable: false
-    - path: "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+    - path: github.com/colllijo/lotusdocs
       disable: false
 
+defaultContentLanguage: de
+languages:
+  de:
+    disabled: false
+    languageName: "Deutsch"
+    weight: 10
+    params: {}
+  en:
+    disabled: false
+    languageName: "English"
+    contentDir: "content/en"
+    weight: 20
+    params: {}
+
+markup:
+  defaultMarkdownHandler: "goldmark"
+  markup:
+    tableOfContents:
+      startLevel: 1
+      endLevel: 3
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
   globalFrontmatter:
     author: "Leon Lüthi"
+  sans_serif_font: "hack"
+  secondary_font: "hack"
+  mono_font: "hack"
+  footer:
+    copyright: |
+      © :YEAR: Leon Lüthi.  
+      Built with [**Lotus Docs**](https://github.com/colllijo/lotusdocs)
   page:
     dateFormat: "02.01.2006"
     codeBlockCopible: true
-
-  #footer:
-  #  copyright: "Test"
-  #  version: true
   plausible:
     dataDomain: "wiki.strubli.com"
     scriptURL: "https://pla.strubli.com/js/script.tagged-events.js"
-
   social:
-    github: "londi-wiki/base-wiki"
-
-  docs: # Parameters for the /docs 'template'
-    title           : "Wiki"           # default html title for documentation pages/sections
-    # pathName        : "docs"                            # path name for documentation site | default "docs"
-    themeColor      : "emerald"                            # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
-    darkMode        : true                                # enable dark mode option? default false
-    prism           : true                                # enable syntax highlighting via Prism
-    prismTheme      : "solarized-light"                           # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
-    # gitinfo
-    lastMod         : false                                # enable 'Last modified' date on pages - default false
-    lastModRelative : false                                # format 'Last modified' time as relative - default true
-
-    sidebarIcons    : true                                # enable sidebar icons? default false
-    breadcrumbs     : true                                # default is true
-    backToTop       : true                                # enable back-to-top button? default true
-
-    # ToC
-    toc             : true                                # enable table of contents? default is true
-    tocMobile       : true                                # enable table of contents in mobile view? default is true
-    scrollSpy       : true                                # enable scrollspy on ToC? default is true
-
-    # front matter
-    descriptions    : true                                # enable front matter descriptions under content title?
-    titleIcon       : true                                # enable front matter icon title prefix? default is false
-
-    # content navigation
-    navDesc         : true                                # include front matter descriptions in Prev/Next navigation cards
-    navDescTrunc    : 30                                  # Number of characters by which to truncate the Prev/Next descriptions
-
-    listDescTrunc   : 100                                 # Number of characters by which to truncate the list card description
-
-    # Link behaviour
-    intLinkTooltip  : true                                # Enable a tooltip for internal links that displays info about the destination? default false
-    # extLinkNewTab   : false                               # Open external links in a new Tab? default true
+    github: "londi"
+    rss: true
+  docs:
+    # Core Options
+    title: "Wiki"
+    landingPage: false
+    pathName: "docs"
+    themeColor: "emerald"
+    darkMode: true
+    prism: true
+    prismTheme: "lotusdocs"
+    # Icon options
+    sidebarIcons: true                              
+    titleIcon: true
+    # GitInfo options
+    repoURL: https://github.com/londi-wiki/base-wiki
+    repoBranch: main
+    editPage: true
+    lastMod: true
+    # Linking options
+    intLinkTooltip: true
+    
+    breadcrumbs: true                                # default is true
+    backToTop: true                                # enable back-to-top button? default true
+    
+    toc: true                                # enable table of contents? default is true
+    tocMobile: true                                # enable table of contents in mobile view? default is true
+    scrollSpy: true                                # enable scrollspy on ToC? default is true
+    descriptions: true                                # enable front matter descriptions under content title?
+    navDesc: true                                # include front matter descriptions in Prev/Next navigation cards
+    navDescTrunc: 30                                  # Number of characters by which to truncate the Prev/Next descriptions
+    listDescTrunc: 100                                 # Number of characters by which to truncate the list card description
+    intLinkTooltip: true                                # Enable a tooltip for internal links that displays info about the destination? default false
 
   feedback:
-    enabled : true                                                                   # default / not set : false
-    emoticonTpl : true                                                               # optional
+    enabled: true                                                                   # default / not set : false
+    emoticonTpl: true                                                               # optional
     eventDest:
       - plausible
-    emoticonEventName : "Feedback"                                                   # optional
-    positiveEventName : "Positive Feedback"                                          # optional
-    negativeEventName : "Negative Feedback"                                          # optional
-    positiveFormTitle : "What did you like?"                                         # optional
-    negativeFormTitle : "What went wrong?"                                           # optional
-    successMsg : "Thank you for helping to improve my documentation!"               # optional
-    errorMsg : "Sorry! There was an error while attempting to submit your feedback!" # optional
+    emoticonEventName: "Feedback"                                                   # optional
+    positiveEventName: "Positive Feedback"                                          # optional
+    negativeEventName: "Negative Feedback"                                          # optional
+    positiveFormTitle: "What did you like?"                                         # optional
+    negativeFormTitle: "What went wrong?"                                           # optional
+    successMsg: "Thank you for helping to improve my documentation!"               # optional
+    errorMsg: "Sorry! There was an error while attempting to submit your feedback!" # optional
     positiveForm:
       - - Accurate
         - Accurately describes the feature or option.
@@ -94,14 +118,3 @@ params:
       - - Code sample errors
         - One or more code samples are incorrect.
       - - Something else
-
-menu:
-  primary:
-      - name  :  "Docs"
-        url :  "docs/"
-        identifier :  "docs"
-        weight :  10
-      - name: "About"
-        url: "https://www.leonluethi.com"
-        identifier: "about"
-        weight: 20
