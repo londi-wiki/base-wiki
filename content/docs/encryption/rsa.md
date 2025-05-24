@@ -43,7 +43,7 @@ $ E(x,(n,e)) = x^{e} \bmod n,     (n,e) \in K_{pub}, x \in \mathbb{Z}_{n} $
 $ D(y,(n,d)) = y^{d} \bmod n,     (n,d) \in K_{priv}, y \in \mathbb{Z}_{n} $
 
 
-# Euklidischer Algorithmus (ggT)
+# Erweiterter Euklidischer Algorithmus (EEA) ggT
 
 Für das Finden des ggT und lieare Diophantische Gleichung: `a * x + b * y = ggT(a, b)`
 

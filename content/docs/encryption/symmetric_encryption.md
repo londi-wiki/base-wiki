@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Symmetric encryption"
+title: "Symmetrische Verschlüsselung"
 description: ""
 icon: "article"
 date: "2025-03-11T11:16:27+01:00"
