@@ -52,7 +52,7 @@ params:
     codeBlockCopible: true
   plausible:
     dataDomain: "wiki.strubli.com"
-    scriptURL: "https://pla.strubli.com/js/script.tagged-events.js"
+    scriptURL: "https://pla.strubli.com/js/script.outbound-links.pageview-props.revenue.tagged-events.js"
   social:
     github: "londi"
     rss: true
