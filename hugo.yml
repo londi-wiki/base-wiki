@@ -53,6 +53,7 @@ params:
   plausible:
     dataDomain: "wiki.strubli.com"
     scriptURL: "https://pla.strubli.com/js/script.outbound-links.pageview-props.revenue.tagged-events.js"
+    eventAPI: "https://pla.strubli.com/api/event"
   social:
     github: "londi"
     rss: true
