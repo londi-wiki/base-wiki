@@ -144,7 +144,7 @@ definiert durch
 $$
 p_{MD}^{b,r}(x) = x \,\|\, 1 \,\|\, 0^s \,\|\, (x)_2^r
 $$  
-heißt **Merkle-Damgård Füllfunktion**.
+heisst **Merkle-Damgård Füllfunktion**.
 
 (||: Konkatenation)
 
@@ -211,7 +211,7 @@ Jetzt wird die Iterationsfunktion $\mathit{if}(u, x)$ aufgerufen mit:
 - Initialwert $u = 10$
 - Padding-Ausgabe $x = 0101010101$
 
-Da die Blockgröße $b = 2$ ist, teilen wir $x$ in Blöcke zu 2 Bit:
+Da die Blockgrösse $b = 2$ ist, teilen wir $x$ in Blöcke zu 2 Bit:
 
 $$
 [01], [01], [01], [01], [01]
