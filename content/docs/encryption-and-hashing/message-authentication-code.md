@@ -5,8 +5,9 @@ description: ""
 icon: "article"
 date: "2025-05-27T09:18:56+02:00"
 lastmod: "2025-05-27T09:18:56+02:00"
-draft: true
+draft: false
 toc: true
+katex: true
 ---
 
 # Einleitung
@@ -45,7 +46,7 @@ $$
 V(x, t, k) = 1
 $$
 
-Ist $(x, t)$ ein gültiges Paar, so heißt $t$ ein **gültiges Etikett zu $x$** (bzgl. $k$).
+Ist $(x, t)$ ein gültiges Paar, so heisst $t$ ein **gültiges Etikett zu $x$** (bzgl. $k$).
 
 ## Arten von MACs
 
