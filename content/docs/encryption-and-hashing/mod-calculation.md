@@ -21,7 +21,7 @@ $ -4 \bmod 11 = -4 + 11 = 7 $
 
 Der Modus einer grossen Zahl wie die der folgenden kann in mehreren Schritten berechnet werden: 
 
-**Ziel:** $ (5^{2) ^{ 2 } } \bmod 11 $ 
+**Ziel:** $ (5^{2})^{2} \bmod 11 $ 
 
 **Schritt 1**: mod von $ (5^{2}) $ berechnen
 
