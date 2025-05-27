@@ -119,3 +119,83 @@ Ohne Kenntnis des privaten Schlüssels $\hat{k}$ zu einem öffentlichen Schlüss
 
 Selbst wenn man zu vielen anderen Nachrichten gültige Signaturen kennt!
 
+# Angriff auf naives RSA-Signaturschema
+
+Das Problem des naiven Schemas lässt sich sehr schön daran zeigen, dass sich mit Kenntnis des öffentlichen Schlüssels $\text{(n,e)}$ ganz ohne $\text{d}$ gültige (Nachricht, Signatur)-Paare erzeugen lassen.
+
+## 1. Schemaübersicht
+
+- **Signieren**  
+  $$ \text{T(x, (n,d))} = s = x^d \bmod n, $$
+
+  wobei $$x \in \mathbb{Z}_n\ $$ die Nachricht ist.
+
+- **Verifizieren**  
+  $$
+  V(x, s, (n,e)) =
+  \begin{cases}
+    1, & \text{falls } s^e \bmod n = x, \\
+    0, & \text{sonst.}
+  \end{cases}
+  $$
+
+---
+
+## 2. Angriffsidee
+
+Anstatt $x$ vorzugeben und $s = x^d$ zu berechnen, wählt der Angreifer beliebig ein $s \in \mathbb{Z}_n$ und berechnet
+
+$$
+x = s^e \bmod n.
+$$
+
+Dann gilt:
+
+$$
+s^e \bmod n = x
+\quad\Longrightarrow\quad
+V(x, s, (n,e)) = 1,
+$$
+
+also ist $(x, s)$ ein gültiges Nachrichten-Signatur-Paar, ganz ohne Kenntnis von $d$.
+
+---
+
+## 3. Numerisches Beispiel
+
+1. **Schlüsseldaten**  
+   $$
+   p = 5,\quad q = 11
+   \quad\Longrightarrow\quad
+   n = p \cdot q = 55,\quad 
+   \varphi(n) = (p-1)(q-1) = 4 \cdot 10 = 40.
+   $$  
+   Wähle $e = 3$. Dann berechnet man $d$ aus
+   $$
+     3 \cdot d \equiv 1 \pmod{40},
+   $$
+   also $d = 27 \quad (3*27 \mod{40} = 1)$.
+
+2. **Angreifer wählt** $s = 2$
+   $$
+   x = 2^e \bmod 55 = 2^3 \bmod 55 = 8.
+   $$
+
+3. **Gültigkeit prüfen**  
+   $$
+   2^e \bmod 55 = 8 = x
+   \quad\Longrightarrow\quad
+   V(x=8,\,s=2,\,(n,e)) = 1.
+   $$
+
+   Damit ist $(8,2)$ ein gültiges (Nachricht, Signatur)-Paar, obwohl $d$ unbekannt bleibt.
+
+---
+
+## 4. Fazit
+
+Das naive „Umkehren“ von RSA als Signaturschema ist **unsicher**, 
+da sich mit dem öffentlichen Schlüssel $(n,e)$ beliebige Signaturen erzeugen lassen.  
+Für echte Unforgeability benötigt man zusätzliche Maßnahmen wie  
+- Hash-Funktionen,  
+- sichere Padding-Schemata (z. B. RSA-PSS).  
