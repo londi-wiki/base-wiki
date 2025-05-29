@@ -75,7 +75,9 @@ Ein Problem bei Rainbow Tables ist die Möglichkeit von Kollisionen, d. h. versc
 
 ---
 
-### Vorgehensweise bei gegebenem Hashwert $\texttt{FAFB3}$:
+### Vorgehensweise bei gegebenem Hashwert
+
+**Vorgehensweise bei gegebenem Hashwert $\texttt{FAFB3}$**
 
 **Auszug auf der Tabelle:**
 

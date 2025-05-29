@@ -10,8 +10,11 @@ toc: true
 katex: true
 ---
 
+## Einleitung
 
-# SPN (Substitutionspermutationsnetzwerke)
+Symmetrische Verschlüsselung ist ein Verfahren, bei dem der gleiche Schlüssel sowohl für die Verschlüsselung als auch für die Entschlüsselung von Daten verwendet wird. Dies bedeutet, dass der Schlüssel geheim gehalten werden muss, um die Sicherheit der verschlüsselten Informationen zu gewährleisten.
+
+## SPN (Substitutions-permutations-netzwerke)
 
 
 Zutaten:
@@ -153,9 +156,9 @@ k3 wird zu k0:                      0001 1010 1111
 Mit diesen zwei Änderungen wird SPN wie beim Verschlüsseln angewendet.
 
 
-# Modi
+## Modi
 
-## ECB
+### ECB
 
 Als Erstes wird der Klartext in Blöcke der Länge l unterteilt.
 Jeder Block wird mit Schlüssel k mit xor verrechnet.
@@ -203,7 +206,7 @@ x = 0010 0110 1011
 ```
 
 
-## R-CBC
+### R-CBC
 
 Als Erstes wird der Klartext in Blöcke der Länge l unterteilt. 
 Jeder Block wird mit dem jeweiligen vorherigen verschlüsselten Block mit xor verrechnet, 
@@ -267,7 +270,7 @@ x = 010 000 101
 ```
 
 
-## R-CTR
+### R-CTR
 
 Bei R-CTR wird wieder ein zufälliger Bitstring gewählt welcher pro Block um eins vergrössert wird.
 Dieser Wert wird in die Verschlüsselungsfunktion E gegeben und das Resultat mit dem Block `xi` mit xor verrechnet.
@@ -335,7 +338,7 @@ y0:     1111    y1:     1010    y2:     1000
 x = 0010 0110 1011
 ```
 
-## Vergleich
+### Vergleich
 
 | Eigenschaft/Modi                               | ECB                               | R-CBC                                                                             | R-CTR                                                                                                                  |
 |------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|

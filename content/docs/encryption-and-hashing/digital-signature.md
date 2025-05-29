@@ -10,13 +10,13 @@ toc: true
 katex: true
 ---
 
-# Einleitung
+## Einleitung
 
 Eine digitale Signatur ist ein kryptografisches Verfahren, das verwendet wird, um die Authentizität und Integrität digitaler Nachrichten oder Dokumente zu gewährleisten. Sie funktioniert ähnlich wie eine handschriftliche Unterschrift, bietet jedoch ein höheres Mass an Sicherheit und Nachweisbarkeit.
 
-# Prinzip
+## Prinzip
 
-## Signierschema – Übersicht
+### Signierschema – Übersicht
 
 Ein **Signierschema** ist ein Tupel
 
@@ -66,7 +66,7 @@ $$
 
 ---
 
-### ✒️ Signieren (Signing)
+### Signieren (Signing)
 
 Der Signieralgorithmus $T$ nimmt als Eingabe:
 
@@ -100,13 +100,13 @@ $$
 
 ### Gültigkeit
 
-Ein Paar $(x, s)$ heißt **gültiges Nachrichten-Signatur-Paar** (bzgl. $k$), wenn
+Ein Paar $(x, s)$ heisst **gültiges Nachrichten-Signatur-Paar** (bzgl. $k$), wenn
 
 $$
 V(x, s, k) = 1
 $$
 
-Dann heißt $s$ eine **gültige Signatur zu $x$** (bzgl. $k$).
+Dann heisst $s$ eine **gültige Signatur zu $x$** (bzgl. $k$).
 
 ---
 
@@ -119,11 +119,11 @@ Ohne Kenntnis des privaten Schlüssels $\hat{k}$ zu einem öffentlichen Schlüss
 
 Selbst wenn man zu vielen anderen Nachrichten gültige Signaturen kennt!
 
-# Angriff auf naives RSA-Signaturschema
+## Angriff auf naives RSA-Signaturschema
 
 Das Problem des naiven Schemas lässt sich sehr schön daran zeigen, dass sich mit Kenntnis des öffentlichen Schlüssels $\text{(n,e)}$ ganz ohne $\text{d}$ gültige (Nachricht, Signatur)-Paare erzeugen lassen.
 
-## 1. Schemaübersicht
+### 1. Schemaübersicht
 
 - **Signieren**  
   $$ \text{T(x, (n,d))} = s = x^d \bmod n, $$
@@ -141,7 +141,7 @@ Das Problem des naiven Schemas lässt sich sehr schön daran zeigen, dass sich m
 
 ---
 
-## 2. Angriffsidee
+### 2. Angriffsidee
 
 Anstatt $x$ vorzugeben und $s = x^d$ zu berechnen, wählt der Angreifer beliebig ein $s \in \mathbb{Z}_n$ und berechnet
 
@@ -161,7 +161,7 @@ also ist $(x, s)$ ein gültiges Nachrichten-Signatur-Paar, ganz ohne Kenntnis vo
 
 ---
 
-## 3. Numerisches Beispiel
+### 3. Numerisches Beispiel
 
 1. **Schlüsseldaten**  
    $$
@@ -192,10 +192,169 @@ also ist $(x, s)$ ein gültiges Nachrichten-Signatur-Paar, ganz ohne Kenntnis vo
 
 ---
 
-## 4. Fazit
+### 4. Fazit
 
 Das naive „Umkehren“ von RSA als Signaturschema ist **unsicher**, 
 da sich mit dem öffentlichen Schlüssel $(n,e)$ beliebige Signaturen erzeugen lassen.  
-Für echte Unforgeability benötigt man zusätzliche Maßnahmen wie  
+Für echte Unforgeability benötigt man zusätzliche Massnahmen wie  
 - Hash-Funktionen,  
 - sichere Padding-Schemata (z. B. RSA-PSS).  
+
+
+## Beispielaufgabe: Verfikation
+
+### Aufgabe 1
+
+Gegeben sei der öffentliche **Verifikationsschlüssel**
+
+$$
+(n = 35,\ e = 11)
+$$
+
+und der Text
+
+$$
+x = 8.
+$$
+
+Überprüfen Sie, ob
+
+$$
+s = 17
+$$
+
+eine **korrekte Signatur** zu $x$ ist  
+**bzgl. des Signierschemas $S_{RSA}$ (oben)**.
+
+Formel:
+
+
+- **Verifizieren**  
+  $$
+  V(x, s, (n,e)) =
+  \begin{cases}
+    1, & \text{falls } s^e \bmod n = x, \\
+    0, & \text{sonst.}
+  \end{cases}
+  $$
+
+Anwendung:
+
+$$
+17^{11} \bmod{35} = 33 \\
+33 \neq 8
+$$
+
+Somit ist die Signatur nicht korrekt.
+
+## Beispielaufgabe: Gültigkeit
+
+### Aufgabe 2
+
+Es sei $(n, e)$ der öffentliche **Verifikationsschlüssel** des Signierschemas $S_{RSA}$  
+(oben).
+
+Nehmen Sie an, dass es einem Fälscher gelingt, zwei Signaturen $s_1$ und $s_2$ zu erzeugen:
+
+- $s_1$ ist eine gültige Signatur zu $r \in \mathbb{Z}_n^*$
+- $s_2$ ist eine gültige Signatur zu $x \cdot r^{-1}$
+
+**Zeigen Sie**, dass
+
+$$
+s_1 \cdot s_2 \bmod n
+$$
+
+eine gültige Signatur zu $x$ ist.
+
+
+
+
+
+
+
+## Nachweis: Multiplikation zweier RSA-Signaturen ergibt gültige Signatur
+
+Wir nehmen an, dass der Angreifer zwei gültige Signaturen erhalten hat:
+
+$$
+s_1 \equiv r^d \pmod{n}, \quad s_2 \equiv (x \cdot r^{-1})^d \pmod{n}
+$$
+
+wobei $d$ der geheime Exponent ist. Wir wollen zeigen, dass
+
+$$
+s := s_1 \cdot s_2 \pmod{n}
+$$
+
+eine gültige Signatur zu $x$ ist.
+
+---
+
+### Schritt 1: Ausdrücke für $s_1$ und $s_2$
+
+- Da $s_1$ eine Signatur auf die Nachricht $r$ ist:
+
+  $$
+  s_1 = r^d \pmod{n}
+  $$
+
+- Da $s_2$ eine Signatur auf $x \cdot r^{-1}$ ist:
+
+  $$
+  s_2 = (x \cdot r^{-1})^d \pmod{n}
+  $$
+
+---
+
+### Schritt 2: Produkt der beiden Signaturen
+
+Wir betrachten das Produkt:
+
+$$
+s_1 \cdot s_2 = r^d \cdot (x \cdot r^{-1})^d \pmod{n}
+$$
+
+---
+
+### Schritt 3: Zusammenfassen der Potenzen
+
+Nach den Potenzgesetzen gilt:
+
+$$
+r^d \cdot (x \cdot r^{-1})^d = \left(r \cdot (x \cdot r^{-1})\right)^d \pmod{n}
+$$
+
+Denn allgemein:
+
+$$
+a^d \cdot b^d = (a \cdot b)^d
+$$
+
+---
+
+### Schritt 4: Vereinfachung im Inneren
+
+Im Inneren steht:
+
+$$
+r \cdot (x \cdot r^{-1}) \equiv (r \cdot r^{-1}) \cdot x \equiv 1 \cdot x \equiv x \pmod{n}
+$$
+
+Die innere Gleichung in die äussere eingesetzt ergibt dann:
+
+$$
+\left(r \cdot (x \cdot r^{-1})\right)^d = x^d \pmod{n}
+$$
+
+---
+
+### Schritt 5: Endergebnis
+
+Einsetzen ergibt:
+
+$$
+s_1 \cdot s_2 \equiv (r \cdot (x \cdot r^{-1}))^d \equiv x^d \pmod{n}
+$$
+
+$x^d$ ist laut RSA die **korrekte Signatur auf $x$**.
