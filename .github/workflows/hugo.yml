@@ -46,7 +46,7 @@ jobs:
           /usr/local/hugo/hugo mod get -u
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Insert BuildTimestamp in hugo.yml
+      - name: Insert BuildTimestamp in landing.yaml
         run: |
           source /home/leon/.profile
           export PATH=$PATH:/usr/local/hugo
