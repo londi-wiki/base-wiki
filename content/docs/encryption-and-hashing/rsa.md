@@ -19,11 +19,7 @@ Erfunden von: Ron **R**ivest, Adi **S**hamir Len **A**dleman.
 Formel:
 
 $$
-K = \left\{ \left( (n, e), (n, d) \right):\\
-n = p \cdot q \text{ mit Primzahlen } p \ne q,\\ 
-e, d \in {\mathbb{Z}_{{\varphi(n)}}}^* : \\
-(e \cdot d) \bmod \varphi(n) = 1
-\right\}
+K = \left\{ \left( (n, e), (n, d) \right) : n = p \cdot q \text{ mit Primzahlen } p \ne q, \, e, d \in \mathbb{Z}_{\varphi(n)}^*, \, (e \cdot d) \bmod \varphi(n) = 1 \right\}
 $$
 
 Schlüsselraum: 
