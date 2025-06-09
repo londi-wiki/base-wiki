@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Moolith Microservice"
+title: "Modulith Microservice"
 description: ""
 icon: "article"
 date: "2024-11-04T09:23:41+01:00"

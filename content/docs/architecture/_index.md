@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Software Architecture"
+title: "Architecture"
 description: ""
 icon: "square_foot"
 date: "2024-10-22T08:21:55+02:00"
