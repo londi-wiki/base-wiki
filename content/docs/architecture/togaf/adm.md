@@ -42,7 +42,24 @@ Schritte:
 
 #### A. Architecture Vision
 
-Die Architecture Vision-Phase definiert die Vision und die Ziele der Architektur, einschliesslich der Stakeholder-Anforderungen und der Geschäftsziele.
+Die Architecture Vision-Phase definiert die Vision und die Ziele der Architektur, einschliesslich der Stakeholder-Anforderungen und der Geschäftsziele. 
+
+**Ansatz**
+
+- **Anfrage für Architekturarbeit erhalten**
+  - Eingang und Annahme einer formellen Anfrage zur Durchführung architektonischer Tätigkeiten.
+
+- **Definiere den Umfang und die Einschränkungen**
+  - Bestimme, was innerhalb und ausserhalb des Geltungsbereichs des Architekturvorhabens liegt, einschliesslich aller relevanten Rahmenbedingungen.
+
+- **Erhalte, überprüfe und verstehe die dokumentierten Grundlagen**
+  - Umfasst Geschäftsprinzipien, Geschäftsziele, strategische Treiber und Architekturprinzipien (aus der Vorbereitungsphase).
+  - Stelle sicher, dass alle bestehenden Definitionen aktuell und gültig sind.
+
+- **Beschreibe Ist- und Zielarchitekturen auf hoher Ebene**
+  - Für alle Domänen: Business, Daten, Anwendung und Technologie.
+  - Fokus liegt auf der Darstellung auf einer übergeordneten, konzeptionellen Ebene.
+
 
 ### Architectures
 

@@ -38,7 +38,7 @@ toc: true
   - Prinzipien sollten dauerhaft sein, aber dennoch Änderungen zulassen.
 
 - **Verständlich (Understandable)**
-  - Die Absichten der Prinzipien sind klar, verständlich und eindeutig formuliert, um unbeabsichtigte Verstöße zu minimieren.
+  - Die Absichten der Prinzipien sind klar, verständlich und eindeutig formuliert, um unbeabsichtigte Verstösse zu minimieren.
 
 - **Robust (Robust)**
   - Erlaubt qualitativ hochwertige und konsistente Entscheidungen zu Architekturen, macht Richtlinien durchsetzbar und ermöglicht die Erstellung von Standards in komplexen Situationen.
