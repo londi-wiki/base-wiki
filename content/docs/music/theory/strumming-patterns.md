@@ -1,3 +1,14 @@
+---
+weight: 999
+title: "Rhythmus und Strumming Patterns"
+description: ""
+icon: "article"
+date: "2026-03-10T16:45:07+00:00"
+lastmod: "2026-03-10T16:45:07+00:00"
+draft: false
+toc: true
+---
+
 # Rhythmus & Strumming Patterns
 
 Rhythmus ist mindestens so wichtig wie die richtigen Töne. Ein Akkord im falschen Rhythmus klingt schlechter als ein falscher Akkord im richtigen Rhythmus. Auf der Ukulele ist das Strumming (Anschlagsmuster) das Herzstück des Sounds.

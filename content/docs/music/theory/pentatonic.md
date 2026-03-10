@@ -1,3 +1,14 @@
+---
+weight: 999
+title: "Pentatonische Skala"
+description: ""
+icon: "article"
+date: "2026-03-10T16:45:07+00:00"
+lastmod: "2026-03-10T16:45:07+00:00"
+draft: false
+toc: true
+---
+
 # Pentatonische Skala
 
 Die pentatonische Skala ist **die** Skala für Einsteiger und Fortgeschrittene gleichermassen. Sie klingt fast immer gut, ist einfach zu lernen, und bildet die Basis für unzählige Soli, Riffs und Improvisationen – in Rock, Blues, Pop, Folk und vielem mehr.

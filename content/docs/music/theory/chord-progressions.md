@@ -1,3 +1,14 @@
+---
+weight: 999
+title: "Akkordfolgen"
+description: ""
+icon: "article"
+date: "2026-03-10T16:45:07+00:00"
+lastmod: "2026-03-10T16:45:07+00:00"
+draft: false
+toc: true
+---
+
 # Akkordfolgen (Chord Progressions)
 
 Akkordfolgen sind das Rückgrat von Musik. Fast jeder Song folgt einem bestimmten Muster von Akkorden – und wenn du diese Muster kennst, kannst du tausende Songs verstehen, begleiten oder selbst schreiben.

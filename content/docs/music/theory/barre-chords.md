@@ -1,3 +1,14 @@
+---
+weight: 999
+title: "Barre Griffe auf der Ukulele"
+description: ""
+icon: "article"
+date: "2026-03-10T16:45:07+00:00"
+lastmod: "2026-03-10T16:45:07+00:00"
+draft: false
+toc: true
+---
+
 # Barre-Griffe auf der Ukulele
 
 Barre-Griffe (auch "Barré" geschrieben, vom Französischen für "versperrt") ermöglichen es, Akkorde überall auf dem Griffbrett zu spielen – nicht nur in den offenen Standardpositionen. Sie sind ein wichtiger Schritt in Richtung Flexibilität und eröffnen das gesamte Griffbrett.

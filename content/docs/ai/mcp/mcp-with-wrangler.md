@@ -1,3 +1,14 @@
+---
+weight: 999
+title: "MCP with Wrangler"
+description: ""
+icon: "article"
+date: "2026-03-10T16:45:07+00:00"
+lastmod: "2026-03-10T16:45:07+00:00"
+draft: false
+toc: true
+---
+
 # MCP Server für claude.ai mit Cloudflare Workers & Wrangler
 
 Ein eigener MCP Server (Model Context Protocol) erlaubt es, Claude mit eigenen Tools zu erweitern – zum Beispiel um Web-Apps direkt aus dem Chat heraus zu deployen. Cloudflare Workers ist dafür eine ideale Plattform: kostenlos, global verteilt, und mit Wrangler einfach zu deployen.
