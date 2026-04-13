@@ -102,16 +102,3 @@ Einmalige Admin-Tasks (Migrationen, Skripte) als eigenständige Prozesse im glei
 **Implikation:** DB-Migrationen laufen als Init-Container oder Job in OpenShift, nicht manuell per SSH auf dem Server.
 
 ---
-
-## Relevanz für unsere Zielarchitektur
-
-| Faktor | Relevanz | Bemerkung |
-|--------|----------|-----------|
-| III – Konfiguration | Hoch | Häufigster Blocker bei OpenShift-Migration |
-| VI – Zustandslose Prozesse | Hoch | Kritisch für horizontale Skalierung |
-| X – Dev/Prod-Parität | Hoch | Container lösen dies strukturell |
-| IX – Graceful Shutdown | Mittel | Wichtig für Rolling Deployments |
-| XI – Logs | Mittel | Integration mit zentralem Log-Stack |
-| I–XII (alle) | Richtlinie | Neue Eigenentwicklungen müssen alle 12 Faktoren erfüllen |
-
-> **Architektur-Entscheid:** Neue Eigenentwicklungen und migrierte Systeme müssen alle 12 Faktoren erfüllen. Bestehende Systeme werden im Rahmen der Gap-Analyse gegen diese Kriterien bewertet.
