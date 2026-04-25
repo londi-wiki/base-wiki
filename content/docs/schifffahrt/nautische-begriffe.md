@@ -4,7 +4,7 @@ title: "Nautische Begriffe"
 description: ""
 icon: "article"
 date: "2026-04-25T08:03:02+00:00"
-lastmod: "2026-04-25T08:03:02+00:00"
+lastmod: "2026-04-25T08:08:26+00:00"
 draft: false
 toc: true
 ---
@@ -30,6 +30,8 @@ Eine Sammlung der gebräuchlichsten Begriffe in der Schifffahrt und Seefahrt mit
 | **Festmacher** | Tau oder Leine zum Festmachen (Vertäuen) am Kai |
 | **Poller** | Metallpfosten am Kai oder Schiff, um Leinen zu befestigen |
 | **Kai** | Befestigte Uferkante im Hafen, an der Schiffe anlegen – aus Beton oder Stein gebaut |
+| **Dalben** | Im Gewässerboden eingerammter Pfahl (oder Pfahlgruppe) mitten im Wasser als Festmachepunkt – das Schiff liegt dabei frei schwimmend, ohne Kaimauer |
+| **Schwojen** | Das Drehen eines Schiffes um seinen Festpunkt (Anker oder Dalben) durch wechselnden Wind oder Strömung – der nötige Platz dafür heisst "Schwojenraum" |
 | **Anker lichten** | Den Anker aufholen und losfahren |
 | **Ankerwache** | Besatzungsmitglied, das überwacht, ob das Schiff vor Anker bleibt |
 | **Rudergänger** | Person, die das Steuer (Ruder) bedient |
