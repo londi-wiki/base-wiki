@@ -1,5 +1,9 @@
 # base wiki
 
+## Github Pages
+
+[http://londi-wiki.github.io/base-wiki/](http://londi-wiki.github.io/base-wiki/)
+
 ## setup
 
 ```bash
