@@ -299,3 +299,11 @@ Es gibt noch folgende:
 - dynamic_cast: Bei Vererbung üblich
 - const_cast: const "weg" oder "hinzu" casten
 - reinterpret_cast: Bei Rohpointer die nicht den "richtigen" Typ haben üblich
+
+
+---
+
+## Siehe auch
+
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden
+- → [Casting](/docs/programming-languages/cpp/casting) – die C++-Cast-Operatoren in der Praxis

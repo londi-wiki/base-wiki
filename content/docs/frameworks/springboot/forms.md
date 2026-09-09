@@ -24,3 +24,11 @@ public String create(Questionnaire questionnaire) {
     return "redirect:questionnaires";
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Validation](/docs/frameworks/springboot/validation) – JSR-303 Annotationen
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects

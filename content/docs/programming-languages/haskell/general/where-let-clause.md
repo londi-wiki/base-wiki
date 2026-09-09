@@ -29,3 +29,11 @@ cylinder r h =
           topArea = pi*r^2
     in 2 * topArea + sideArea
 ```
+
+
+---
+
+## Siehe auch
+
+- → [case](/docs/programming-languages/haskell/general/case) – Fallunterscheidung als Ausdruck
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare

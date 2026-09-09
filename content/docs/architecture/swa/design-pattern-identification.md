@@ -53,3 +53,10 @@ Jedes Design-Pattern hat ein wiederkehrendes Strukturelement. Bei Code Beispiele
 | Chain of Responsibility | Handler next; handleRequest() ruft next.handleRequest() auf                         | Verarbeitungskette                               |
 | Mediator                | Eine zentrale Klasse verwaltet Kommunikation zwischen Objekten                      | Vermeidung direkter Objektverknüpfung            |
 
+
+---
+
+## Siehe auch
+
+- → [Entwurfsmuster](/docs/architecture/swa/architecture-patterns) – Creational, Structural und Behavioral Patterns
+- → [Pattern Beispiele](/docs/architecture/swa/design-pattern-examples) – Aufgaben und Lösungen zum Üben

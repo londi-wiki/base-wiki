@@ -34,3 +34,12 @@ Der Lösungsansatz:
 - Statt technischer Trennung (z.B. alle Services, alle Repositories, alle Controller in separaten Paketen)
 - Verwenden von fachlicher/domänenorientierter Trennung
 - Jedes Paket repräsentiert einen abgeschlossenen fachlichen Bereich
+
+
+---
+
+## Siehe auch
+
+- → [Spring Architekturen](/docs/frameworks/springboot/architectures) – Monolith, Modulith und eventbasierte Microservices
+- → [Hyperscaling](/docs/public-cloud/principles/hyperscaling) – vertikale und horizontale Skalierung, Elastizität und Burst
+- → [Lose Kopplung](/docs/architecture/swa/loose-coupling) – alle Kopplungsarten von Daten- bis Inhaltskopplung

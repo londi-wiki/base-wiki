@@ -256,3 +256,12 @@ Map<String, Double> avgAgeByCity = people.stream()
 | Streams | Java 8 | Deklarative Datenverarbeitung |
 
 Die drei Features ergaenzen sich perfekt: Generics machen die Stream-API typsicher, Lambdas machen Stream-Operationen praegnant und lesbar.
+
+
+---
+
+## Siehe auch
+
+- → [Funktionale Programmierung in Java](/docs/programming-languages/java/functional-programming) – Lambdas, Functional Interfaces, Streams und Optional
+- → [M323 – Funktional Programmieren](/docs/programming-languages/java/m323) – das ganze Modul von deklarativer Analyse bis Refactoring
+- → [Generics in Python](/docs/datascience/general/generics) – Typparameter für wiederverwendbare Funktionen

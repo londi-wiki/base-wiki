@@ -101,3 +101,11 @@ bool pressed(int value) {
   return value == HIGH;
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Kitchen Timer](/docs/iot/hands-ons/kitchen-timer) – kleines Projekt auf Basis eines Zustandsautomaten
+- → [Hands-on Woche 1](/docs/iot/hands-ons/week1) – Blink und NeoPixel auf dem ESP8266

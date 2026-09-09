@@ -99,3 +99,11 @@ docker tag APP:latest IP:5000/author/APP
 
 docker push IP:5000/author/APP
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Kubernetes](/docs/public-cloud/principles/kubernetes) – Cluster, Control Plane, Worker Nodes und Managed Services
+- → [Gradle und Tomcat installieren](/docs/pizza-corner/stuff/gradle-and-tomcat-installation) – Java-Toolchain aufsetzen

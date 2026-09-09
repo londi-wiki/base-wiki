@@ -89,3 +89,11 @@ INSERT INTO PRICECATEGORIES (PRICECATEGORY_TYPE) VALUES ('Regular');
 INSERT INTO PRICECATEGORIES (PRICECATEGORY_TYPE) VALUES ('Children');
 INSERT INTO PRICECATEGORIES (PRICECATEGORY_TYPE) VALUES ('NewRelease');
 ```
+
+
+---
+
+## Siehe auch
+
+- → [JPA](/docs/frameworks/springboot/JPA) – Entity-Manager, Beziehungen, Vererbung und JPQL
+- → [Persistence Context](/docs/frameworks/springboot/persistenceContext) – DAO Pattern, Entity Manager und Transaktionen

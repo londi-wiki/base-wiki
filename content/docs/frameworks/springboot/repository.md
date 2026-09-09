@@ -20,3 +20,11 @@ toc: true
         return "questionnaires/list";
     }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [JPA](/docs/frameworks/springboot/JPA) – Entity-Manager, Beziehungen, Vererbung und JPQL
+- → [Persistence Context](/docs/frameworks/springboot/persistenceContext) – DAO Pattern, Entity Manager und Transaktionen

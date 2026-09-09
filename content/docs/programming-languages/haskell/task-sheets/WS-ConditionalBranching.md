@@ -33,3 +33,11 @@ Aufgabe d
 Geht nicht (also keine saubere Lösung)
 
 ```
+
+
+---
+
+## Siehe auch
+
+- → [case](/docs/programming-languages/haskell/general/case) – Fallunterscheidung als Ausdruck
+- → [if then else](/docs/programming-languages/haskell/general/ternary-operator) – der bedingte Ausdruck

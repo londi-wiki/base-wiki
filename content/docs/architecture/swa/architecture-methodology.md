@@ -83,3 +83,9 @@ Ein Unternehmen entscheidet sich für eine Event-driven Architecture, weil:
 - Der **Approach** eine asynchrone Kommunikation mit Event Sourcing nutzt.
 
 
+---
+
+## Siehe auch
+
+- → [Architektur-Modelle](/docs/architecture/architecture-models) – 4+1, TOGAF, ArchiMate, Zachman und SOLID im Überblick
+- → [4+1 Sichtenmodell](/docs/architecture/swa/view-model) – ein System aus fünf Perspektiven beschreiben

@@ -82,3 +82,11 @@ Grundkonzept:
 - Regelmässige Überprüfung und Anpassung
 - Dokumentierte Eskalationswege
 
+
+---
+
+## Siehe auch
+
+- → [Identity und Access Management](/docs/public-cloud/principles/identity-access-management) – ABAC, RBAC, Rollen, Gruppen und Blast Radius
+- → [IAM Policies](/docs/public-cloud/principles/iam-policies) – Effects und Actions in AWS-Policies
+- → [Zero Trust](/docs/public-cloud/principles/zero-trust) – niemandem vertrauen, alles verifizieren

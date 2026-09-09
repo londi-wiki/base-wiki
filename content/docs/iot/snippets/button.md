@@ -23,3 +23,11 @@ void loop() {
   digitalWrite(LED, value);
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Analog Snippet](/docs/iot/snippets/analog) – Analogwerte einlesen
+- → [Kitchen Timer](/docs/iot/hands-ons/kitchen-timer) – kleines Projekt auf Basis eines Zustandsautomaten

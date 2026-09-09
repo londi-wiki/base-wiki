@@ -354,3 +354,12 @@ int main() {
      */
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden
+- → [Casting](/docs/programming-languages/cpp/casting) – die C++-Cast-Operatoren in der Praxis
+- → [Pointer und Referenzen](/docs/programming-languages/cpp/pointers) – Rawpointer, Referenzen und Smart Pointer im Vergleich

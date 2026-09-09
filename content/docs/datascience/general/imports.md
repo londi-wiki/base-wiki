@@ -14,3 +14,11 @@ toc: true
 ```python
 from file import function
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Python Pakete](/docs/datascience/general/python-packages) – json, requests, scrapy, flask, rich und tqdm
+- → [Klassen und Variablen](/docs/datascience/general/classes-variables) – Format Strings, with, Argumente, Dunder und Dataclass

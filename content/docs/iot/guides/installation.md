@@ -5,3 +5,11 @@ tags: ["draft"]
 author: "Leon"
 math: false
 ---
+
+
+---
+
+## Siehe auch
+
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Raspberry Pi Setup](/docs/iot/guides/setup-raspi) – Node.js und Bluetooth auf dem Pi einrichten

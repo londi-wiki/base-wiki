@@ -28,3 +28,11 @@ Idempotenz, im Kontext von HTTP-Methoden, bezieht sich auf die Eigenschaft besti
 - `CONNECT`: Etabliert eine Verbindung zu einem Server, ohne die Ressource zu verändern.
 - `PATCH`: Aktualisiert eine Ressource teilweise, wobei die gleiche Anfrage immer das gleiche Ergebnis liefert.
 - `POST`: In der Regel nicht idempotent, da es oft eine neue Ressource erstellt oder eine Aktion ausführt, die nicht wiederholt werden sollte.
+
+
+---
+
+## Siehe auch
+
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich

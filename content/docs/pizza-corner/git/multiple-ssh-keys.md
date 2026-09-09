@@ -29,3 +29,11 @@ toc: true
     Port 443
     ...
 ```
+
+
+---
+
+## Siehe auch
+
+- → [SSH Kommandos](/docs/pizza-corner/stuff/ssh-commands) – Hostkeys, SOCKS-Proxy und ssh-copy-id
+- → [Nützliche Git-Befehle](/docs/pizza-corner/git/useful-git-commands) – Dateien aus der History entfernen und mehr

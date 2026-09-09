@@ -45,4 +45,10 @@ pi :: Floating a => a
 ```
 
 
+---
 
+## Siehe auch
+
+- → [Typklassen](/docs/programming-languages/haskell/general/type-classes) – Eq, Ord, Show, Num und Fractional
+- → [Datentypen](/docs/programming-languages/haskell/general/data-types) – eigene Typen mit mehreren Konstruktoren
+- → [Typsynonyme](/docs/programming-languages/haskell/general/type-synonyms) – eigene Namen für bestehende Typen

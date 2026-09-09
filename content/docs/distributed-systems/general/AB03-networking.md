@@ -46,3 +46,12 @@ Wie verhält sich EchoServer1 (non-threaded) wenn der Backlog auf 2 gesetzt wird
 enten geöffnet (aber nicht geschlossen) werden?
 
 > Wenn drei Clients verbindet werden, erhält dieserr einen Fehler. Connection refused: connect
+
+
+---
+
+## Siehe auch
+
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen
+- → [Sockets und Streams](/docs/distributed-systems/general/sockets-and-streams) – Echo- und Quote-Server als Minimalbeispiele
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

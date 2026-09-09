@@ -26,3 +26,12 @@ public class IndexController {
 
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [View](/docs/frameworks/springboot/view) – das Model an die View übergeben
+- → [Forms](/docs/frameworks/springboot/forms) – Formulare an Objekte binden
+- → [HTTP Servlets](/docs/distributed-systems/general/http-servlets-summary) – Servlet-Lebenszyklus, Thread-Sicherheit und web.xml

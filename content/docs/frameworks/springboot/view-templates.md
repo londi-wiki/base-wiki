@@ -72,3 +72,11 @@ and in the layout.html?
 </body>
 </html>
 {{< /prism >}}
+
+
+---
+
+## Siehe auch
+
+- → [View](/docs/frameworks/springboot/view) – das Model an die View übergeben
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects

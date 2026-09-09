@@ -86,3 +86,12 @@ Wenn die Applikation im ROOT liegt, sieht es anders aus.
 ## loadOnStartup
 
 - Reihenfolge wann die Servlets geladen und initialisiert werden sollen
+
+
+---
+
+## Siehe auch
+
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects
+- → [Tomcat benutzen](/docs/pizza-corner/stuff/tomcat-usage) – Betrieb und detaillierte Fehlerlogs

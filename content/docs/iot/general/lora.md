@@ -161,3 +161,12 @@ apply to nodes and gateways, creating asymmetry.
 The TTN Fair Use Policy limits uplink air time to 30s
 and downlink to 10 messages per 24h per node.
 *See ETSI EN300.220 standard, 7.2.3.
+
+
+---
+
+## Siehe auch
+
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Bluetooth LE](/docs/iot/general/bluetooth) – GAP, GATT, Advertising und Beacons

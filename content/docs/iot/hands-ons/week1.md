@@ -148,3 +148,12 @@ void loop() {
   delay(50);
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Blink Snippet](/docs/iot/snippets/blink) – das Hello World der Mikrocontroller
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [State Machine](/docs/iot/hands-ons/state-machine) – Zustandsautomat als Grundmuster für Sketches

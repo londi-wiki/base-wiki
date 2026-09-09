@@ -35,4 +35,10 @@ Obwohl diese eher "kosmetischer Natur" sind, gibt es dennoch Unterschiede beim V
 da der Assembler einen eingeschränkten Scanning Scope haben könnte.
 
 
+---
 
+## Siehe auch
+
+- → [@Autowired](/docs/frameworks/springboot/autowired) – Dependency Injection in Spring
+- → [Spring Boot Annotations](/docs/frameworks/springboot/general) – die wichtigsten Annotationen auf einen Blick
+- → [AOP](/docs/frameworks/springboot/aop) – Querschnittsbelange über Aspekte lösen

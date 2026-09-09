@@ -137,3 +137,13 @@ Verantwortung: Solution Architekt / Software Engineer
 - Ein view model ist eine Systematik bestehend aus viewpoints, types of models und Beziehungen zwischen diesen. 
 - Architekturbeschreibung besteht weitgehend aus Modellen. Welche Modelle für welche Aspekte einer Architekturbeschreibung verwendet werden, wird von entsprechenden Sichtenmodellen beschrieben und empfohlen.
 - Auf Lösungsarchitektur spezialisierte Sichtenmodelle konzentrieren sich auf folgende Komponententypen: funktionale Komponenten, informationelle Komponenten und betriebliche (i.e., operationale) Komponenten.
+
+
+---
+
+## Siehe auch
+
+- → [Architektur-Modelle](/docs/architecture/architecture-models) – 4+1, TOGAF, ArchiMate, Zachman und SOLID im Überblick
+- → [TOGAF ADM](/docs/architecture/togaf/adm) – die Phasen der Architecture Development Method
+- → [System Evolution](/docs/architecture/system-evolution) – wie Systeme altern und was dagegen hilft
+- → [Architektur-Methodik](/docs/architecture/swa/architecture-methodology) – funktionale und nicht-funktionale Anforderungen sauber trennen

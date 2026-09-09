@@ -48,3 +48,12 @@ fstInt :: (Int, (Int, Int)) -> Int
 4
 it :: Int
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [WS Tupel](/docs/programming-languages/haskell/task-sheets/WS-Tuples) – Übungsblatt zu Tupeln

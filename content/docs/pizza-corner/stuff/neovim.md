@@ -73,3 +73,10 @@ sudo git config --system core.autocrlf false
 sudo apt install dos2unix
 find /home/USER/.local/share/nvim/lazy/ -type f -name "*.vim" -exec dos2unix {} +
 ```
+
+
+---
+
+## Siehe auch
+
+- → [tmux](/docs/pizza-corner/stuff/tmux) – Terminal-Sessions, Panes und Konfiguration

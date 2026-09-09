@@ -309,3 +309,11 @@ List<Movie> movies = q.getResultList();
 
 Werden verwendet, um Operationen via EntityManager an der DB zu machen (ausschliesslich "Lesen").
 
+
+---
+
+## Siehe auch
+
+- → [JPA](/docs/frameworks/springboot/JPA) – Entity-Manager, Beziehungen, Vererbung und JPQL
+- → [Repository](/docs/frameworks/springboot/repository) – Abfragen und Sortierung mit Spring Data
+- → [Discriminator Column](/docs/frameworks/springboot/discriminatorColumnValue) – Vererbung auf eine Tabelle abbilden

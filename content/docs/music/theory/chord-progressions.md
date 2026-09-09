@@ -120,6 +120,6 @@ Der Vorteil der römischen Ziffern: Du kannst dieselbe Folge in jede Tonart übe
 
 ## 6. Weiterführend
 
-- → [Pentatonische Skala](../pentatonic) – Melodien über Akkordfolgen spielen
-- → [Transponieren](../transposing) – Folgen in andere Tonarten übertragen
-- → [Allgemeine Theorie](../general) – Grundlagen zu Akkorden und Tonleitern
+- → [Pentatonische Skala](/docs/music/theory/pentatonic) – Melodien über Akkordfolgen spielen
+- → [Transponieren](/docs/music/theory/transposing) – Folgen in andere Tonarten übertragen
+- → [Allgemeine Theorie](/docs/music/theory/general) – Grundlagen zu Akkorden und Tonleitern

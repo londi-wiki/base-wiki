@@ -67,3 +67,11 @@ Braucht es absolute Datenkonsistenz? → ACID
 Ist Skalierbarkeit und Verfügbarkeit wichtiger? → BASE
 Kann temporäre Inkonsistenzen toleriert werden? → BASE
 Wird mit kritischen Geschäftsdaten gearbeitet? → ACID
+
+
+---
+
+## Siehe auch
+
+- → [Datenbanken in der Cloud](/docs/public-cloud/principles/database) – Datenbanktypen, Data Gravity und das CAP-Theorem
+- → [Storage](/docs/public-cloud/principles/storage) – Speicherklassen, Backup, Migration und Konsistenzmodelle

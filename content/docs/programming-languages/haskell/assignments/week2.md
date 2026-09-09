@@ -151,3 +151,11 @@ Hinweis: Verzweifeln Sie nicht, wenn Sie eine Funktion nicht implementieren kön
 
 > todo = error "TODO"
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Data Records](/docs/programming-languages/haskell/general/data-records) – polymorphe und rekursive Datentypen
+- → [Rekursion](/docs/programming-languages/haskell/general/recursion) – normale und endrekursive Funktionen

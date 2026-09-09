@@ -227,6 +227,8 @@ record Point(int x, int y) {
 
 ## Weiterführende Themen
 
-- [Stream Collectors im Detail](collectors)
-- [CompletableFuture & asynchrone Programmierung](completable-future)
+- → [Generics, Streams und Lambdas](/docs/programming-languages/java/generics) – Typparameter, Wildcards und Stream-Pipelines
+- → [M323 – Funktional Programmieren](/docs/programming-languages/java/m323) – das ganze Modul von deklarativer Analyse bis Refactoring
+- → [Mono und Flux](/docs/programming-languages/java/reactivestreams) – funktionale Datenströme mit Project Reactor
+- → [Haskell Überblick](/docs/programming-languages/haskell/general/overview) – dieselben Konzepte in einer rein funktionalen Sprache
 - [Vavr — funktionale Library für Java](https://vavr.io)

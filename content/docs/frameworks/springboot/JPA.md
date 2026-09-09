@@ -193,3 +193,13 @@ public record UserDto(Long id, String name, String email) {}
 User user = userRepo.findById(1L).get();
 UserDto dto = new UserDto(user.getId(), user.getName(), user.getEmail());
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Persistence Context](/docs/frameworks/springboot/persistenceContext) – DAO Pattern, Entity Manager und Transaktionen
+- → [Repository](/docs/frameworks/springboot/repository) – Abfragen und Sortierung mit Spring Data
+- → [Discriminator Column](/docs/frameworks/springboot/discriminatorColumnValue) – Vererbung auf eine Tabelle abbilden
+- → [Datenbanken in der Cloud](/docs/public-cloud/principles/database) – Datenbanktypen, Data Gravity und das CAP-Theorem

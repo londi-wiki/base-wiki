@@ -27,3 +27,9 @@ it :: Bool
 ```
 
 
+---
+
+## Siehe auch
+
+- → [Typklassen](/docs/programming-languages/haskell/general/type-classes) – Eq, Ord, Show, Num und Fractional
+- → [Enumerationen](/docs/programming-languages/haskell/general/enumeration) – Aufzählungstypen

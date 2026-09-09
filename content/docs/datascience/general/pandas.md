@@ -311,3 +311,12 @@ states.applymap(lambda x: '< {} >'.format(x))
 | 2 | < New York >   | < New york >    | < 19651127 > | < 141297 > |
 | 3 | < Florida >    | < Miami >       | < 19552860 > | < 170312 > |
 | 4 | < Illinois >   | < Springfield > | < 12882135 > | < 149995 > |
+
+
+---
+
+## Siehe auch
+
+- → [Pandas – fortgeschritten](/docs/datascience/general/pandas-2) – fehlende Werte, concat, merge und groupby
+- → [NumPy](/docs/datascience/general/numpy) – Arrays als Basis von Pandas
+- → [Daten plotten](/docs/datascience/general/plot-data) – Visualisierung mit Matplotlib

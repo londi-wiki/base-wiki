@@ -115,3 +115,11 @@ Run docker:
 docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
 ```
 
+
+---
+
+## Siehe auch
+
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Regelbasierte Integration](/docs/iot/general/rule-based-integration) – Node-RED, IFTTT und Webhooks
+- → [WiFi](/docs/iot/general/wifi) – den ESP8266 ins WLAN bringen und Daten senden

@@ -25,3 +25,10 @@ Wait
 it :: ToDo
 ```
 
+
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Currying](/docs/programming-languages/haskell/general/currying) – warum jede Funktion nur ein Argument hat

@@ -146,3 +146,12 @@ class LibraryAmqpConfiguration {
 
 - RESTful APIs für jedes Modul bereitstellen.
 - Module wie Customer, Book und Reservation trennen, aber im selben Deployment halten.
+
+
+---
+
+## Siehe auch
+
+- → [Modulith vs. Microservice](/docs/architecture/swa/modulith-microservice) – Vergleich der beiden Schnittstrategien
+- → [RabbitMQ](/docs/distributed-systems/general/rabbitmq) – Queues, Exchanges und Publishing
+- → [Hyperscaling](/docs/public-cloud/principles/hyperscaling) – vertikale und horizontale Skalierung, Elastizität und Burst

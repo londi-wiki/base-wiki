@@ -63,4 +63,10 @@ Hier ist eine kurze Erklärung der Funktionsweise:
 4.	**Auf diese Weise können externe Nutzer immer dieselbe IP-Adresse verwenden, um eine Verbindung zu deiner Anwendung herzustellen, selbst wenn sich die zugrunde liegende Infrastruktur ändert.**
 
 
+---
 
+## Siehe auch
+
+- → [Storage](/docs/public-cloud/principles/storage) – Speicherklassen, Backup, Migration und Konsistenzmodelle
+- → [Datenbanken in der Cloud](/docs/public-cloud/principles/database) – Datenbanktypen, Data Gravity und das CAP-Theorem
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste

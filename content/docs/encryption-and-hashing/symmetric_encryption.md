@@ -351,3 +351,11 @@ x = 0010 0110 1011
 Wird SPN im CTR Modus betrieben, so wird beim Entschlüsseln die Verschlüsselungs-Funktion von SPN verwendet und nicht die Entschlüsselungsfunktion. Somit bleiben die S-Box und die Schlüssel unverändert.
 
 $ x_i = E\left( \left( y_{i-1} + i \right) \bmod \, 2^l, \, k \right) \oplus y_i \quad (i = 0, \ldots, n - 1) $
+
+
+---
+
+## Siehe auch
+
+- → [Asymmetrische Verschlüsselung](/docs/encryption-and-hashing/asymmetric_encryption) – Übersicht über Public-Key-Verfahren
+- → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel

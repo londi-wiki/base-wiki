@@ -127,37 +127,10 @@ $J(\substack{w,b}) = \frac{1}{2m} \sum_{i=1}^{m} ( f\substack{w,b}(x^{(i)}) - y^
 m = number of training examples
 
 
+---
 
+## Siehe auch
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- → [Neuronale Netze – Formeln](/docs/datascience/ml/neuronal-network/formulas) – Aktivierungsfunktionen Schritt für Schritt
+- → [Deskriptive Statistik](/docs/datascience/general/diskriptive-statistik) – Skalenniveau, Lage, Streuung und Form
+- → [Pandas](/docs/datascience/general/pandas) – Series, DataFrames und die wichtigsten Operationen

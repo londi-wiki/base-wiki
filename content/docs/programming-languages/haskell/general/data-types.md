@@ -82,3 +82,12 @@ move f 2 4
 Fig (XY 4.0 7.0) (Square 2.0 4.0)
 it :: Figure
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Data Records](/docs/programming-languages/haskell/general/data-records) – polymorphe und rekursive Datentypen
+- → [Record-Typen](/docs/programming-languages/haskell/general/record-types) – benannte Felder statt Positionen
+- → [Enumerationen](/docs/programming-languages/haskell/general/enumeration) – Aufzählungstypen

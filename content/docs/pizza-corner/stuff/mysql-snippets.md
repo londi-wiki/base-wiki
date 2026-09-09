@@ -32,3 +32,11 @@ FLUSH PRIVILEGES;
 ```bash
 cat ~/.mysql_history
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Datenbanken in der Cloud](/docs/public-cloud/principles/database) – Datenbanktypen, Data Gravity und das CAP-Theorem
+- → [JPA](/docs/frameworks/springboot/JPA) – Entity-Manager, Beziehungen, Vererbung und JPQL

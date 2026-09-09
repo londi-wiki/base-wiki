@@ -132,3 +132,11 @@ it :: String
 Leon Lüthi"
 it :: ()
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Tupel](/docs/programming-languages/haskell/general/tuples) – aggregierte Typen und ihre Komponenten
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards

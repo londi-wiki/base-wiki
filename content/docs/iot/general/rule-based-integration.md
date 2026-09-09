@@ -49,3 +49,12 @@ mqtt sub -t "test" -u "leon" -P "leon" -h "localhost"
 
 > Note: TO connect the mqtt broker which runs in a docker container with a node-red docker instance, you have to use the wsl's ip address.
  
+
+
+---
+
+## Siehe auch
+
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Dashboards](/docs/iot/general/dashboards) – Thingspeak, InfluxDB und Telegraf als Datensenke
+- → [Philips Hue](/docs/iot/guides/philips-hue) – die lokale Hue-API ansprechen

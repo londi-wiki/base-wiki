@@ -21,6 +21,9 @@ toc: true
 [https://www.kaggle.com/](https://www.kaggle.com/)
 
 
+---
 
+## Siehe auch
 
-
+- → [Data Science Grundlagen](/docs/datascience/general/general) – Definition und die Pyramid of Needs
+- → [Machine Learning Einführung](/docs/datascience/ml/introduction) – Supervised, Unsupervised, lineare Regression und Kostenfunktion

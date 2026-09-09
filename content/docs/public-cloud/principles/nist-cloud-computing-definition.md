@@ -119,7 +119,10 @@ Hyperscaler wie AWS, Azure, Google Cloud entsprechen der NIST-Definition, da sie
 | **Measured Service**        | **Pay-as-you-go-Modell** mit transparenter Ressourcennutzung und Abrechnung.          | Abrechnung erfolgt intern, keine direkte Kostenaufschlüsselung wie in der Public Cloud.  | Kombination aus Public-Cloud-Nutzung (Pay-as-you-go) und internen Abrechnungsmodellen.                   | Ressourcen werden je nach Nutzung der teilnehmenden Organisationen gemessen und verteilt.              |
 
 
+---
 
+## Siehe auch
 
-
-
+- → [Cloud Concepts](/docs/public-cloud/principles/cloud-concepts) – Shared Responsibility, Regionen und Verfügbarkeitszonen
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste
+- → [Hyperscaling](/docs/public-cloud/principles/hyperscaling) – vertikale und horizontale Skalierung, Elastizität und Burst

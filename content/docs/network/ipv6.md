@@ -254,3 +254,12 @@ Präfix: 2001:db8:abcd:0003::/64
 Subnetz 65536: 2001:db8:abcd:ffff::/64
 Präfix: 2001:db8:abcd:ffff::/64
 ```
+
+
+---
+
+## Siehe auch
+
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung
+- → [Cisco IOS](/docs/network/cisco-ios) – Grundkonfiguration von Routern und Switches
+- → [OSPF](/docs/network/ospf) – Link-State-Routing mit Dijkstra und Areas

@@ -154,3 +154,12 @@ ggT(18, 7) = 1 = 2 * 18 + (-5) * 7
        (-5 mod 18 = 13)
 ```
 
+
+---
+
+## Siehe auch
+
+- → [Modulo-Rechnung](/docs/encryption-and-hashing/mod-calculation) – schnelle Exponentiation als Rechengrundlage
+- → [RSA-OAEP](/docs/encryption-and-hashing/rsa-oaep) – das Padding, das RSA erst praktisch sicher macht
+- → [Digitale Signatur](/docs/encryption-and-hashing/digital-signature) – Signierschema, Verifikation und Angriffe auf naives RSA
+- → [Asymmetrische Verschlüsselung](/docs/encryption-and-hashing/asymmetric_encryption) – Übersicht über Public-Key-Verfahren

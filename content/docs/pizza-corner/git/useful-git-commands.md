@@ -32,3 +32,10 @@ git rm css/* --dry-run
 rm 'css/about.css'
 rm 'css/general.css'
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Mehrere SSH-Keys](/docs/pizza-corner/git/multiple-ssh-keys) – verschiedene Identitäten für verschiedene Remotes

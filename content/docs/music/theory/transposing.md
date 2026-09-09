@@ -132,6 +132,6 @@ Auf der Ukulele sind `G – D – Em – C` alle spielbar ohne Barre – ein Vor
 
 ## 8. Weiterführend
 
-- → [Akkordfolgen](../chord-progressions) – Stufentheorie in der Praxis
-- → [Barre-Griffe](../barre-chords) – Akkorde in jeder Tonart greifen
-- → [Allgemeine Theorie](../general) – Tonarten, Intervalle und Grundlagen
+- → [Akkordfolgen](/docs/music/theory/chord-progressions) – Stufentheorie in der Praxis
+- → [Barre-Griffe](/docs/music/theory/barre-chords) – Akkorde in jeder Tonart greifen
+- → [Allgemeine Theorie](/docs/music/theory/general) – Tonarten, Intervalle und Grundlagen

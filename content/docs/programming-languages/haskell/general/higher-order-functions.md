@@ -18,3 +18,12 @@ A higher-order function is a function that takes other functions as arguments or
 > twice :: (a->a) -> a -> a
 > twice f x = f (f x)
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Currying](/docs/programming-languages/haskell/general/currying) – warum jede Funktion nur ein Argument hat
+- → [Lambda-Ausdrücke](/docs/programming-languages/haskell/general/lambda-expressions) – anonyme Funktionen
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map

@@ -104,3 +104,13 @@ Die Architecture Change Management-Phase verwaltet Änderungen an der Architektu
 ### Requirements Management
 
 Die Requirements Management-Phase verwaltet die Anforderungen während des gesamten ADM-Zyklus und stellt sicher, dass alle Anforderungen erfüllt werden.
+
+
+---
+
+## Siehe auch
+
+- → [ADM Artifacts](/docs/architecture/togaf/adm-artifacts-and-deliverables) – Artifacts, Deliverables und ihr Zusammenhang
+- → [TOGAF Prinzipien](/docs/architecture/togaf/architecture-principles) – Aufbau, Charakteristiken und Nutzen von Architekturprinzipien
+- → [Architektur-Modelle](/docs/architecture/architecture-models) – 4+1, TOGAF, ArchiMate, Zachman und SOLID im Überblick
+- → [Architektur Übersicht](/docs/architecture/overview) – Enterprise Operating Model, Disziplinen und Wertschöpfungskette

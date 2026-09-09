@@ -213,3 +213,12 @@ toc: true
 </html>
 
 {{< /rawhtml >}}
+
+
+---
+
+## Siehe auch
+
+- → [Hashing](/docs/encryption-and-hashing/hashing) – Hashfunktionen, Sicherheitsanforderungen und Kompressionsfunktion
+- → [MD5](/docs/encryption-and-hashing/md5) – ein konkretes, heute gebrochenes Hashverfahren
+- → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel

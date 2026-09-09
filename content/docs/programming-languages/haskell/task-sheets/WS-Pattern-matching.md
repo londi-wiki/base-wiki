@@ -35,3 +35,11 @@ Aufgabe 2b
 > addVecOpt :: Vec -> Vec -> Vec
 > addVecOpt (a, b) (x, y) = (addOpt a x, addOpt b y)
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map

@@ -171,3 +171,12 @@ q13 ~> 13
 > map maximum [take 2 [1,4,9], drop 1[10,9,4]]
 [4,9]
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte
+- → [WS Listenfunktionen](/docs/programming-languages/haskell/task-sheets/WS-ListFunctions) – take, drop, zip und der Rest der Standardbibliothek

@@ -26,3 +26,11 @@ def count(iterable: str, counts: Optional[dict[str, int]] = None) -> dict[str, i
 def count(iterable: Iterable[_T], counts: dict[_T, int] = {}) -> dict[_T, int]:
     ...
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Klassen und Variablen](/docs/datascience/general/classes-variables) – Format Strings, with, Argumente, Dunder und Dataclass
+- → [Generics, Streams und Lambdas](/docs/programming-languages/java/generics) – Typparameter, Wildcards und Stream-Pipelines

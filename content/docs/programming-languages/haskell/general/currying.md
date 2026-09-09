@@ -82,10 +82,9 @@ snd :: (a,b) -> b
 ```
 
 
+---
 
+## Siehe auch
 
-
-
-
-
-
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte
+- → [Funktionstypen](/docs/programming-languages/haskell/general/function-types) – Signaturen lesen und schreiben

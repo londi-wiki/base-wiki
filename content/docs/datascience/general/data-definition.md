@@ -18,3 +18,10 @@ toc: true
 - Anzahl Datenpunkte
 - Einheit der vorliegenden Attribute
 
+
+---
+
+## Siehe auch
+
+- → [Deskriptive Statistik](/docs/datascience/general/diskriptive-statistik) – Skalenniveau, Lage, Streuung und Form
+- → [Data Science Grundlagen](/docs/datascience/general/general) – Definition und die Pyramid of Needs

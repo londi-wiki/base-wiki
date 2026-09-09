@@ -12,3 +12,11 @@ toc: true
 ```haskell
 \x -> x + 1
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte
+- → [Currying](/docs/programming-languages/haskell/general/currying) – warum jede Funktion nur ein Argument hat

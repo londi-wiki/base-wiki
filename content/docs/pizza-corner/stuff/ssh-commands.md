@@ -30,3 +30,12 @@ ssh -D 1337 -N -C root@IP_ADDRESS
 # ssh-copy-id: ERROR: No identities found
 # Solution: create ssh keys on the CLIENT!
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Mehrere SSH-Keys](/docs/pizza-corner/git/multiple-ssh-keys) – verschiedene Identitäten für verschiedene Remotes
+- → [Proxy Server](/docs/network/proxy-server) – Vermittler zwischen Client und Zielserver
+- → [Raspberry Pi Setup](/docs/iot/guides/setup-raspi) – Node.js und Bluetooth auf dem Pi einrichten

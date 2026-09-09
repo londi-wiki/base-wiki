@@ -154,3 +154,12 @@ public class RSocketController {
     }
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Mono und Flux](/docs/programming-languages/java/reactivestreams) – die beiden Bausteine von Project Reactor
+- → [WebSocket](/docs/distributed-systems/general/websocket) – bidirektionale Verbindungen über HTTP-Upgrade
+- → [Spring Architekturen](/docs/frameworks/springboot/architectures) – Monolith, Modulith und eventbasierte Microservices

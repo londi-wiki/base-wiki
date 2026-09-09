@@ -41,3 +41,11 @@ Bluetooth Low Energy (BLE)
 1GHz, single-core CPU
 512MB RAM
 
+
+---
+
+## Siehe auch
+
+- → [WiFi](/docs/iot/general/wifi) – den ESP8266 ins WLAN bringen und Daten senden
+- → [Bluetooth LE](/docs/iot/general/bluetooth) – GAP, GATT, Advertising und Beacons
+- → [Raspberry Pi Setup](/docs/iot/guides/setup-raspi) – Node.js und Bluetooth auf dem Pi einrichten

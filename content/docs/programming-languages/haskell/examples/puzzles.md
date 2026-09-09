@@ -15,3 +15,10 @@ Guess: 0?
 Right: The result is always 0. Because the input is always the output.
 ```
 
+
+---
+
+## Siehe auch
+
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [Rekursion](/docs/programming-languages/haskell/general/recursion) – normale und endrekursive Funktionen

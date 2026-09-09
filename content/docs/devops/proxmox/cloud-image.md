@@ -36,3 +36,10 @@ qm template 8000
 
 After that, create a template from it.
 
+
+---
+
+## Siehe auch
+
+- → [Docker](/docs/pizza-corner/stuff/docker) – Installation, Compose und eigene Registry
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste

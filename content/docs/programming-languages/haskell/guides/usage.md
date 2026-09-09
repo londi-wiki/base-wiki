@@ -61,3 +61,12 @@ Example (after)
 False
 it :: Bool
 ```
+
+
+---
+
+## Siehe auch
+
+- → [GHCi Installation](/docs/programming-languages/haskell/guides/installation) – Haskell lokal einrichten
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare
+- → [WS Skripte](/docs/programming-languages/haskell/task-sheets/WS-Haskell-Scripts) – Haskell-Dateien laden und ausführen

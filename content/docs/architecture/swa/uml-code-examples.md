@@ -294,3 +294,11 @@ station.abmelden(anzeige1)
 station.setTemperatur(28.0)
 
 ```
+
+
+---
+
+## Siehe auch
+
+- → [UML Übersicht](/docs/architecture/swa/uml-overview) – Aggregation, Komposition, Assoziation und Abhängigkeit
+- → [Pattern Beispiele](/docs/architecture/swa/design-pattern-examples) – Aufgaben und Lösungen zum Üben

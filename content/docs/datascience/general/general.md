@@ -16,7 +16,10 @@ draft: false
 ![dc pyramid](/dsp/dc_pyramid.png)
 
 
+---
 
+## Siehe auch
 
-
-
+- → [Datendefinition](/docs/datascience/general/data-definition) – qualitative und quantitative Merkmale
+- → [Machine Learning Einführung](/docs/datascience/ml/introduction) – Supervised, Unsupervised, lineare Regression und Kostenfunktion
+- → [Deskriptive Statistik](/docs/datascience/general/diskriptive-statistik) – Skalenniveau, Lage, Streuung und Form

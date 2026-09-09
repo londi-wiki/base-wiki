@@ -136,5 +136,5 @@ Die grosse Stärke: Du kannst **frei improvisieren**, solange du in der richtige
 
 ## 8. Weiterführend
 
-- → [Akkordfolgen](../chord-progressions) – Pentatonik über Akkordfolgen anwenden
-- → [Allgemeine Theorie](../general) – Tonleitern und Intervalle im Detail
+- → [Akkordfolgen](/docs/music/theory/chord-progressions) – Pentatonik über Akkordfolgen anwenden
+- → [Allgemeine Theorie](/docs/music/theory/general) – Tonleitern und Intervalle im Detail

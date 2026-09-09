@@ -169,3 +169,11 @@ public class LeonClient {
 
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich

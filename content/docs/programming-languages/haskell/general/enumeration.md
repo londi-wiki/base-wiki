@@ -47,3 +47,11 @@ instance Show Bool -- Defined in ‘GHC.Show’
 instance Read Bool -- Defined in ‘GHC.Read’
 instance Bounded Bool -- Defined in ‘GHC.Enum’
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Datentypen](/docs/programming-languages/haskell/general/data-types) – eigene Typen mit mehreren Konstruktoren
+- → [Deriving](/docs/programming-languages/haskell/general/deriving) – Typklassen automatisch ableiten

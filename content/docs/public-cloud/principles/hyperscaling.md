@@ -109,3 +109,12 @@ toc: true
   - Speicher: Persistent Volumes verwalten.
   - Observability: Monitoring und Logging implementieren.
 
+
+---
+
+## Siehe auch
+
+- → [Kubernetes](/docs/public-cloud/principles/kubernetes) – Cluster, Control Plane, Worker Nodes und Managed Services
+- → [Serverless](/docs/public-cloud/principles/serverless-applications) – Anwendungen ohne eigene Server betreiben
+- → [Modulith vs. Microservice](/docs/architecture/swa/modulith-microservice) – Vergleich der beiden Schnittstrategien
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste

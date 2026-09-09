@@ -71,3 +71,11 @@ set -g mouse on
 # enable vi commands
 setw -g mode-keys vi
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Neovim](/docs/pizza-corner/stuff/neovim) – Installation, lazy.vim und Nerdfonts
+- → [SSH Kommandos](/docs/pizza-corner/stuff/ssh-commands) – Hostkeys, SOCKS-Proxy und ssh-copy-id

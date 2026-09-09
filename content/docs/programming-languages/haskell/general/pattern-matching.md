@@ -76,6 +76,11 @@ abs n
 ```
 
 
+---
 
+## Siehe auch
 
-
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [case](/docs/programming-languages/haskell/general/case) – Fallunterscheidung als Ausdruck
+- → [Tupel](/docs/programming-languages/haskell/general/tuples) – aggregierte Typen und ihre Komponenten
+- → [WS Pattern Matching](/docs/programming-languages/haskell/task-sheets/WS-Pattern-matching) – Übungsblatt zum Mustervergleich

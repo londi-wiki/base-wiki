@@ -165,3 +165,10 @@ NFS und SMB/CIFS
 - Blob Storage eine flache, objektbasierte Struktur für unstrukturierte Daten
 
 
+---
+
+## Siehe auch
+
+- → [Datenbanken in der Cloud](/docs/public-cloud/principles/database) – Datenbanktypen, Data Gravity und das CAP-Theorem
+- → [Cloud Produkte](/docs/public-cloud/principles/cloud-products) – EBS, S3, EC2 und Cosmos DB im Vergleich
+- → [Cloud Concepts](/docs/public-cloud/principles/cloud-concepts) – Shared Responsibility, Regionen und Verfügbarkeitszonen

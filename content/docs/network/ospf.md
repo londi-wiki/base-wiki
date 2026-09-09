@@ -381,3 +381,12 @@ L   2001:DB8:0:104::1/128 [0/0]
 L   FF00::/8 [0/0]
      via Null0, receive
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Cisco IOS](/docs/network/cisco-ios) – Grundkonfiguration von Routern und Switches
+- → [IPv6](/docs/network/ipv6) – Adressaufbau, Adresstypen, SLAAC und Subnetting
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

@@ -200,3 +200,13 @@ sudo apt-get install mosquitto # port 1883
 ```
 
 TODO...
+
+
+---
+
+## Siehe auch
+
+- → [Dashboards](/docs/iot/general/dashboards) – Thingspeak, InfluxDB und Telegraf als Datensenke
+- → [Regelbasierte Integration](/docs/iot/general/rule-based-integration) – Node-RED, IFTTT und Webhooks
+- → [RabbitMQ](/docs/distributed-systems/general/rabbitmq) – Queues, Exchanges und Publishing
+- → [CoAP](/docs/iot/guides/coap) – schlankes REST-Protokoll für eingeschränkte Geräte

@@ -17,3 +17,11 @@ toc: true
 -- for float numbers
 r**2 * pi
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Nützliche Funktionen](/docs/programming-languages/haskell/general/nice-functions) – intercalate und Feature Dispatcher

@@ -31,3 +31,12 @@ As always, fprog is immutable and the evaluation order isn't relevant.
 # Expressions
 
 Expressions can be evaluated step by step by TODO
+
+
+---
+
+## Siehe auch
+
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare
+- → [Funktionstypen](/docs/programming-languages/haskell/general/function-types) – Signaturen lesen und schreiben
+- → [Funktionale Programmierung in Java](/docs/programming-languages/java/functional-programming) – Lambdas, Functional Interfaces, Streams und Optional

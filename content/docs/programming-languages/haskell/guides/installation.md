@@ -38,3 +38,11 @@ To install other GHC versions and tools, run:
 If you are new to Haskell, check out [haskell.org/ghcup/steps](https://www.haskell.org/ghcup/steps/)
  
 [^1]: Glasgow Haskell Compiler
+
+
+---
+
+## Siehe auch
+
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren
+- → [WS Setup](/docs/programming-languages/haskell/task-sheets/WS-Haskell-Setup) – Übungsblatt zur Installation

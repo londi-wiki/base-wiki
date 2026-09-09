@@ -76,3 +76,12 @@ bins => [0,2), [2,4), ...
 Stichwort: freedman diaconis formel
 
 $\mathsf{Bin width} = 2 * \frac{IQR(x)}{\sqrt[3]{}n}$
+
+
+---
+
+## Siehe auch
+
+- → [Datendefinition](/docs/datascience/general/data-definition) – qualitative und quantitative Merkmale
+- → [Daten plotten](/docs/datascience/general/plot-data) – Visualisierung mit Matplotlib
+- → [Pandas](/docs/datascience/general/pandas) – Series, DataFrames und die wichtigsten Operationen

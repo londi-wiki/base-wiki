@@ -14,4 +14,9 @@ For interactive visualisation like view selection, tooltip hover, ...
 > altair
 
 
+---
 
+## Siehe auch
+
+- → [Daten plotten](/docs/datascience/general/plot-data) – Visualisierung mit Matplotlib
+- → [Pandas](/docs/datascience/general/pandas) – Series, DataFrames und die wichtigsten Operationen

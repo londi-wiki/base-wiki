@@ -32,3 +32,12 @@ MD5 ist **nicht** sicher weil:
 - Praktische Angriffe: 2008 gelang es Forschern, mithilfe eines Clusters von PlayStation 3-Konsolen ein gefälschtes SSL-Zertifikat zu erstellen, das von Browsern als vertrauenswürdig angesehen wurde. Dies unterstreicht die realen Sicherheitsrisiken von MD5.
 
 - Schnelle Berechnung: MD5 ist sehr schnell, was es Angreifern erleichtert, durch Brute-Force- oder Wörterbuchangriffe Passwörter zu knacken. Daher ist es für die Passwortspeicherung ungeeignet.
+
+
+---
+
+## Siehe auch
+
+- → [Hashing](/docs/encryption-and-hashing/hashing) – Hashfunktionen, Sicherheitsanforderungen und Kompressionsfunktion
+- → [Merkle-Damgård](/docs/encryption-and-hashing/merkle-damgard) – wie aus einer Kompressionsfunktion eine Hashfunktion wird
+- → [Rainbow Tables](/docs/encryption-and-hashing/rainbow-tables) – Hashes per Zeit-Speicher-Abwägung zurückrechnen

@@ -272,3 +272,11 @@ export default function App() {
   );
 }
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Ref und State](/docs/frameworks/react/ref-and-state) – useRef und useState und wann welches
+- → [Denken in React](/docs/frameworks/react/concept) – UI in Komponenten zerlegen und State richtig platzieren

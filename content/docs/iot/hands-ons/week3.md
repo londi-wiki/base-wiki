@@ -226,3 +226,11 @@ void setup() {
 
 void loop() {}
 ```
+
+
+---
+
+## Siehe auch
+
+- → [WiFi](/docs/iot/general/wifi) – den ESP8266 ins WLAN bringen und Daten senden
+- → [Web Client](/docs/iot/guides/web-client) – HTTP-Client und -Server auf dem Mikrocontroller

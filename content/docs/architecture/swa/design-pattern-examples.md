@@ -241,3 +241,12 @@ pizza = new Salami(pizza)
 print(pizza.beschreibung() + " kostet " + pizza.preis() + "€")
 
 ```
+
+
+---
+
+## Siehe auch
+
+- → [Entwurfsmuster](/docs/architecture/swa/architecture-patterns) – Creational, Structural und Behavioral Patterns
+- → [Pattern erkennen](/docs/architecture/swa/design-pattern-identification) – Schlüsselindikatoren für die einzelnen Musterfamilien
+- → [UML Code-Beispiele](/docs/architecture/swa/uml-code-examples) – Diagramme in lauffähigen Code übersetzt
