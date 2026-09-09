@@ -13,7 +13,7 @@ toc: true
 
 ## Kruchten 4+1 View Model
 
-[Siehe 4+1 Sichtenmodel](https://wiki.strubli.com/docs/swa/view-model/)
+[Siehe 4+1 Sichtenmodell](/docs/architecture/swa/view-model)
 
 ## TOGAF (The Open Group Architecture Framework)
 
@@ -47,7 +47,7 @@ Eine Architekturstrategie, die auf **formalen Modelltransformationen** basiert.
 - Interface Segregation Principle (ISP) – Viele spezifische Schnittstellen sind besser als eine grosse allgemeine Schnittstelle.
 - Dependency Inversion Principle (DIP) – Abhängigkeiten sollten auf Abstraktionen basieren, nicht auf konkreten Implementierungen.
 
-[Siehe SOLID](https://wiki.strubli.com/docs/swa/architecture-principles/#solid)
+[Siehe SOLID](/docs/architecture/architecture-principles#solid)
 
 # Architektur-Methodologien
 

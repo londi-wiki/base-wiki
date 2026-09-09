@@ -88,3 +88,4 @@ User Stories mit Ablaufbeschreibungen
 
 - → [Architektur-Modelle](/docs/architecture/architecture-models) – 4+1, TOGAF, ArchiMate, Zachman und SOLID im Überblick
 - → [Architektur-Methodik](/docs/architecture/swa/architecture-methodology) – funktionale und nicht-funktionale Anforderungen sauber trennen
+- → [Standards](/docs/architecture/standards) – ISO/IEC 25000 und 42010

@@ -306,3 +306,4 @@ public class Project {
 - → [Lose Kopplung](/docs/architecture/swa/loose-coupling) – alle Kopplungsarten von Daten- bis Inhaltskopplung
 - → [12-Factor App](/docs/architecture/principles/12-factor-app) – zwölf Regeln für betreibbare Anwendungen
 - → [Architektur-Modelle](/docs/architecture/architecture-models) – 4+1, TOGAF, ArchiMate, Zachman und SOLID im Überblick
+- → [Standards](/docs/architecture/standards) – ISO/IEC 25000 und 42010
