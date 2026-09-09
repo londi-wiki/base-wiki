@@ -1,0 +1,29 @@
+{{- $css := resources.Get "graph/graph.css" | minify -}}
+{{- $js := resources.Get "graph/graph.js" | js.Build (dict "minify" true) -}}
+{{- if hugo.IsProduction -}}
+  {{- $css = $css | fingerprint "sha384" -}}
+  {{- $js = $js | fingerprint "sha384" -}}
+{{- end -}}
+{{- $data := site.Home.OutputFormats.Get "graph" -}}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $css.Data.Integrity }}"{{ end }}>
+
+<div class="wiki-graph" data-src="{{ $data.RelPermalink }}">
+  <canvas class="wiki-graph__canvas" role="img"
+          aria-label="Graph aller Wiki-Seiten und ihrer Verbindungen"></canvas>
+
+  <div class="wiki-graph__bar">
+    <input type="search" class="wiki-graph__search" placeholder="Seite suchen …" aria-label="Seite im Graph suchen">
+    <label class="wiki-graph__toggle">
+      <input type="checkbox" class="wiki-graph__tree" checked>
+      Ordnerstruktur
+    </label>
+    <button type="button" class="wiki-graph__btn wiki-graph__reset">Zurücksetzen</button>
+  </div>
+
+  <div class="wiki-graph__legend" aria-label="Bereiche"></div>
+  <p class="wiki-graph__hint">Ziehen = bewegen · Scrollen = zoomen · Klick = Seite öffnen</p>
+  <div class="wiki-graph__status">Graph wird geladen …</div>
+</div>
+
+<script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>

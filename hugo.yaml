@@ -27,6 +27,17 @@ languages:
     weight: 20
     params: {}
 
+# Custom output format that emits the wiki graph data as /graph.json
+outputFormats:
+  graph:
+    mediaType: "application/json"
+    baseName: "graph"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "graph"]
+
 markup:
   defaultMarkdownHandler: "goldmark"
   tableOfContents:

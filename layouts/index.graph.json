@@ -1,0 +1,81 @@
+{{- /*
+  Builds the data for the wiki graph (Obsidian style).
+
+  Nodes  : every page and section below /docs/
+  Links  :
+    - kind "tree" : page -> its parent section (folder structure)
+    - kind "ref"  : an actual markdown link from one page to another
+
+  Emitted as /graph.json via the "graph" output format (see hugo.yaml).
+*/ -}}
+{{- $root := printf "%sdocs" site.Home.RelPermalink -}}
+
+{{- /* 1. collect the pages that become nodes */ -}}
+{{- $pages := slice -}}
+{{- range site.Pages -}}
+  {{- if and (in (slice "page" "section") .Kind) (hasPrefix .RelPermalink (printf "%s/" $root)) -}}
+    {{- if not .Draft -}}
+      {{- $pages = $pages | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 2. index by normalised url, so links can be resolved to a node id.
+       ids are stored as "index + 1" because 0 is falsy in templates. */ -}}
+{{- $ids := dict -}}
+{{- range $i, $p := $pages -}}
+  {{- $ids = merge $ids (dict (strings.TrimSuffix "/" $p.RelPermalink) (add $i 1)) -}}
+{{- end -}}
+
+{{- /* 3. nodes */ -}}
+{{- $nodes := slice -}}
+{{- range $i, $p := $pages -}}
+  {{- $rel := strings.TrimPrefix (printf "%s/" $root) (strings.TrimSuffix "/" $p.RelPermalink) -}}
+  {{- $nodes = $nodes | append (dict
+        "title"   ($p.Title | default $rel)
+        "url"     $p.RelPermalink
+        "group"   (index (split $rel "/") 0)
+        "section" (eq $p.Kind "section")
+        "words"   $p.WordCount
+      ) -}}
+{{- end -}}
+
+{{- /* 4. links */ -}}
+{{- $links := slice -}}
+{{- $seen := dict -}}
+{{- range $i, $p := $pages -}}
+
+  {{- /* 4a. folder structure */ -}}
+  {{- with $p.Parent -}}
+    {{- $key := strings.TrimSuffix "/" .RelPermalink -}}
+    {{- if isset $ids $key -}}
+      {{- $links = $links | append (dict "source" $i "target" (sub (index $ids $key) 1) "kind" "tree") -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* 4b. real markdown links inside the body */ -}}
+  {{- $base := strings.TrimSuffix "/" $p.RelPermalink -}}
+  {{- range findRE `\]\([^)\s]+\)` $p.RawContent -}}
+    {{- $href := index (split (substr . 2 (sub (len .) 3)) "#") 0 -}}
+    {{- if and $href (not (findRE `^(https?:|mailto:|tel:|/images/)` $href)) -}}
+      {{- $target := "" -}}
+      {{- if hasPrefix $href "/" -}}
+        {{- $target = path.Clean $href -}}
+      {{- else -}}
+        {{- $target = path.Join $base $href -}}
+      {{- end -}}
+      {{- $target = strings.TrimSuffix "/" $target -}}
+      {{- if isset $ids $target -}}
+        {{- $j := sub (index $ids $target) 1 -}}
+        {{- $pair := printf "%d-%d" $i $j -}}
+        {{- if not (isset $seen $pair) -}}
+          {{- $seen = merge $seen (dict $pair true) -}}
+          {{- $links = $links | append (dict "source" $i "target" $j "kind" "ref") -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+{{- end -}}
+
+{{- dict "nodes" $nodes "links" $links | jsonify -}}
