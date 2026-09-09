@@ -69,7 +69,6 @@ um langfristige Probleme zu vermeiden und die Agilität des Systems zu sichern.
 dass Entscheidungen zur Erweiterung der Funktionalität immer auch die Auswirkungen
 auf die Agilität berücksichtigen.
 
-
 ---
 
 ## Siehe auch

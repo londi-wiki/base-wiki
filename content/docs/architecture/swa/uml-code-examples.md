@@ -295,7 +295,6 @@ station.setTemperatur(28.0)
 
 ```
 
-
 ---
 
 ## Siehe auch

@@ -139,7 +139,6 @@ for i in tqdm(range(int(9e6))):
 
 Formeln anzeigen. [Look here :D](https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html)
 
-
 ---
 
 ## Siehe auch

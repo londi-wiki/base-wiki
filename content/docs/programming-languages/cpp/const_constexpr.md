@@ -38,7 +38,6 @@ constexpr int b = foo(); // OK, weil foo() auch mit constexpr markiert ist.
 Achtung! Der Compiler hat eine Sicherheit inform einer "Limitte" definiert, 
 welche auf eine maximalen Anzahl an Operationen prüft.
 
-
 ---
 
 ## Siehe auch

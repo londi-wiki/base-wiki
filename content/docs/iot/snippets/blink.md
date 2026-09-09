@@ -27,7 +27,6 @@ void loop() {
 
 > Before uploading: Detach the LED! Why? we don't know yet... :D
 
-
 ---
 
 ## Siehe auch

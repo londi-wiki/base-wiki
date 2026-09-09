@@ -268,7 +268,6 @@ Dies ist ein wichtiges Konstruktionsprinzip in der Kryptographie:
 
 Man baut komplexere Funktionen aus einfachen Bestandteilen zusammen und zeigt, dass die komplexe Funktion sicher ist, **falls die Bausteine sicher sind**.
 
-
 ---
 
 ## Siehe auch
@@ -278,3 +277,4 @@ Man baut komplexere Funktionen aus einfachen Bestandteilen zusammen und zeigt, d
 - → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel
 - → [Rainbow Tables](/docs/encryption-and-hashing/rainbow-tables) – Hashes per Zeit-Speicher-Abwägung zurückrechnen
 - → [Digitale Signatur](/docs/encryption-and-hashing/digital-signature) – Signierschema, Verifikation und Angriffe auf naives RSA
+- → [Kryptografische Protokolle](/docs/encryption-and-hashing/kry-involved-protocols) – Needham-Schroeder, Replay-Angriffe und SSL/TLS

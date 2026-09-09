@@ -27,7 +27,6 @@ def count(iterable: Iterable[_T], counts: dict[_T, int] = {}) -> dict[_T, int]:
     ...
 ```
 
-
 ---
 
 ## Siehe auch

@@ -162,7 +162,6 @@ The TTN Fair Use Policy limits uplink air time to 30s
 and downlink to 10 messages per 24h per node.
 *See ETSI EN300.220 standard, 7.2.3.
 
-
 ---
 
 ## Siehe auch

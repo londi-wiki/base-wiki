@@ -105,10 +105,11 @@ Ein S/MIME-Gateway sitzt als zentrale Komponente im Mailflow – typischerweise 
 
 S/MIME bietet **Ende-zu-Ende-Verschlüsselung** (Inhalt ist auch auf Mailservern nicht lesbar), während TLS nur den **Transport** zwischen Mailservern absichert. TLS ist deutlich einfacher zu implementieren und wird zunehmend als Basisschutz eingesetzt. Für Branchen mit hohen Compliance-Anforderungen (Finanzen, Gesundheitswesen, Behörden) bleibt S/MIME jedoch sehr relevant, da es stärkere Garantien bezüglich Vertraulichkeit und Authentizität bietet.
 
-
 ---
 
 ## Siehe auch
 
+- → [Zertifikate](/docs/encryption-and-hashing/certificates) – Bindungsproblem, CAs und Public-Key-Infrastruktur
 - → [Digitale Signatur](/docs/encryption-and-hashing/digital-signature) – Signierschema, Verifikation und Angriffe auf naives RSA
 - → [Asymmetrische Verschlüsselung](/docs/encryption-and-hashing/asymmetric_encryption) – Übersicht über Public-Key-Verfahren
+- → [Kryptografische Protokolle](/docs/encryption-and-hashing/kry-involved-protocols) – Needham-Schroeder, Replay-Angriffe und SSL/TLS

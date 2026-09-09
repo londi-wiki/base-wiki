@@ -59,7 +59,6 @@ df.head()
 df.groupby(by='Kreis')['QuarLang'].unique()
 ```
 
-
 ---
 
 ## Siehe auch

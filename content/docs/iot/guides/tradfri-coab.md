@@ -11,7 +11,6 @@ toc: true
 
 [Tradfri Community docs](https://github.com/glenndehaan/ikea-tradfri-coap-docs)
 
-
 ---
 
 ## Siehe auch

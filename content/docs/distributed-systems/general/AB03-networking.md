@@ -47,7 +47,6 @@ enten geöffnet (aber nicht geschlossen) werden?
 
 > Wenn drei Clients verbindet werden, erhält dieserr einen Fehler. Connection refused: connect
 
-
 ---
 
 ## Siehe auch

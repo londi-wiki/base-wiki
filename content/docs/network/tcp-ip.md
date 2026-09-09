@@ -131,7 +131,6 @@ kann TCP ohne Window Scaling diese nicht ausnutzen.
 Deshalb wurde Window Scaling als Erweiterung eingeführt, 
 um höhere Durchsatzraten auf Verbindungen mit hohem Bandwidth-Delay-Produkt zu ermöglichen.
 
-
 ---
 
 ## Siehe auch

@@ -355,7 +355,6 @@ int main() {
 }
 ```
 
-
 ---
 
 ## Siehe auch

@@ -17,7 +17,6 @@ Folgende Anleitung erklärt wie man eine VM für RDP fähig macht.
 
 [Installieren und Konfigurieren von xrdp für die Verwendung von Remotedesktop mit Ubuntu](https://learn.microsoft.com/de-de/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli)
 
-
 ---
 
 ## Siehe auch

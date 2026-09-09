@@ -130,7 +130,6 @@ classDiagram
     Assoziation = dauerhafte Beziehung (DruckAuftrag & Drucker)"
 ```
 
-
 ---
 
 ## Siehe auch

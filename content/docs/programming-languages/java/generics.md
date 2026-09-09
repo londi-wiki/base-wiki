@@ -257,7 +257,6 @@ Map<String, Double> avgAgeByCity = people.stream()
 
 Die drei Features ergaenzen sich perfekt: Generics machen die Stream-API typsicher, Lambdas machen Stream-Operationen praegnant und lesbar.
 
-
 ---
 
 ## Siehe auch

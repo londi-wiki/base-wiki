@@ -33,7 +33,6 @@ rm 'css/about.css'
 rm 'css/general.css'
 ```
 
-
 ---
 
 ## Siehe auch

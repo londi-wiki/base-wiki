@@ -72,7 +72,6 @@ set -g mouse on
 setw -g mode-keys vi
 ```
 
-
 ---
 
 ## Siehe auch

@@ -104,7 +104,6 @@ IAM-Policies unterstützen **Platzhalter (`*`)** für flexible Berechtigungen:
   ]
 }
 
-
 ---
 
 ## Siehe auch

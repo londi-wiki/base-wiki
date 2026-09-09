@@ -169,7 +169,6 @@ There are a few indicators for good or bad RSSI signals:
 - Range Estimation
 - Signal Interference
 
-
 ---
 
 ## Siehe auch

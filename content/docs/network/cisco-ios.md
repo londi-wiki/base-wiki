@@ -189,7 +189,6 @@ Die können mit einem /48-Prefix zusammengefasst werden:
 ipv6 route 2001:DB8::/48 2001:DB8:0:4::2
 ```
 
-
 ---
 
 ## Siehe auch

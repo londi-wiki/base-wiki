@@ -29,7 +29,6 @@ math: false
 
 [^1]: Wobei "5" + 8 = 58 ist
 
-
 ---
 
 ## Siehe auch

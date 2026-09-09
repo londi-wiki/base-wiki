@@ -126,7 +126,6 @@ $J(\substack{w,b}) = \frac{1}{2m} \sum_{i=1}^{m} ( f\substack{w,b}(x^{(i)}) - y^
 
 m = number of training examples
 
-
 ---
 
 ## Siehe auch

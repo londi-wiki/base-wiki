@@ -89,7 +89,6 @@ pyth (square 2) 3
 ~> 25                   -- arithmetic
 ```
 
-
 ---
 
 ## Siehe auch

@@ -24,7 +24,6 @@ sudo tail -99f /opt/tomcat/logs/catalina.out
 sudo tail -99f /opt/tomcat/logs/localhost.2023-09-28.log
 ```
 
-
 ---
 
 ## Siehe auch

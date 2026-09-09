@@ -39,7 +39,6 @@ If you are new to Haskell, check out [haskell.org/ghcup/steps](https://www.haske
  
 [^1]: Glasgow Haskell Compiler
 
-
 ---
 
 ## Siehe auch

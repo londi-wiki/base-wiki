@@ -194,7 +194,6 @@ User user = userRepo.findById(1L).get();
 UserDto dto = new UserDto(user.getId(), user.getName(), user.getEmail());
 ```
 
-
 ---
 
 ## Siehe auch

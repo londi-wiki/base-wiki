@@ -11,7 +11,6 @@ author: "Leon"
 | square (times2 3) | 36              | 36              |
 | pyth 1 2          | 5               | 5               |
 
-
 ---
 
 ## Siehe auch

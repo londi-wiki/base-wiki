@@ -15,7 +15,6 @@ toc: true
 nc -zv IP 1-4000 2>&1 | grep succeeded
 ```
 
-
 ---
 
 ## Siehe auch

@@ -27,7 +27,6 @@ public class IndexController {
 }
 ```
 
-
 ---
 
 ## Siehe auch

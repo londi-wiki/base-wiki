@@ -227,10 +227,10 @@ void setup() {
 void loop() {}
 ```
 
-
 ---
 
 ## Siehe auch
 
+- → [Zertifikate](/docs/encryption-and-hashing/certificates) – Bindungsproblem, CAs und Public-Key-Infrastruktur
 - → [WiFi](/docs/iot/general/wifi) – den ESP8266 ins WLAN bringen und Daten senden
 - → [Web Client](/docs/iot/guides/web-client) – HTTP-Client und -Server auf dem Mikrocontroller

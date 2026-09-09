@@ -86,7 +86,6 @@ REACT_APP_NOT_SECRET_CODE=abcdef
 .env.development.local, .env.test.local, .env.production.local: Local overrides of environment-specific settings.
 ```
 
-
 ---
 
 ## Siehe auch

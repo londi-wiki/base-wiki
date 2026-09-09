@@ -41,7 +41,6 @@ const listItems = people.map(person =>
 );
 ```
 
-
 ---
 
 ## Siehe auch

@@ -57,7 +57,6 @@ toc: true
 - **Werte und Kultur widerspiegeln (Reflect value & culture)**
   - Vermittelt ein Verständnis der Unternehmenskultur und -werte sowie Einblicke, wie gut das Unternehmen auf Veränderungen reagiert.
 
-
 ---
 
 ## Siehe auch

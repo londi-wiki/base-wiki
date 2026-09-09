@@ -44,7 +44,6 @@ Floating point numbers
 pi :: Floating a => a
 ```
 
-
 ---
 
 ## Siehe auch

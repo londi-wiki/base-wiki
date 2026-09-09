@@ -82,7 +82,6 @@ function FilterableProductTable({ products }) {
 // ...
 ```
 
-
 ---
 
 ## Siehe auch

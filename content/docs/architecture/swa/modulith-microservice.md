@@ -35,7 +35,6 @@ Der Lösungsansatz:
 - Verwenden von fachlicher/domänenorientierter Trennung
 - Jedes Paket repräsentiert einen abgeschlossenen fachlichen Bereich
 
-
 ---
 
 ## Siehe auch

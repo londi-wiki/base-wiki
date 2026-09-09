@@ -49,7 +49,6 @@ fstInt :: (Int, (Int, Int)) -> Int
 it :: Int
 ```
 
-
 ---
 
 ## Siehe auch

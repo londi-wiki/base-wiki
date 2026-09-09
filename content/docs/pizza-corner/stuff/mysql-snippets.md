@@ -33,7 +33,6 @@ FLUSH PRIVILEGES;
 cat ~/.mysql_history
 ```
 
-
 ---
 
 ## Siehe auch

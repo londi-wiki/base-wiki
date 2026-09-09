@@ -47,7 +47,6 @@ public void findById(@PathVariable("id") Long id) { ... }
 // ...flashcard-mvc/questionnaire/0
 ```
 
-
 ---
 
 ## Siehe auch

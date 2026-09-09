@@ -147,7 +147,6 @@ class LibraryAmqpConfiguration {
 - RESTful APIs für jedes Modul bereitstellen.
 - Module wie Customer, Book und Reservation trennen, aber im selben Deployment halten.
 
-
 ---
 
 ## Siehe auch

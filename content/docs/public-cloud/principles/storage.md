@@ -164,7 +164,6 @@ NFS und SMB/CIFS
 - File Storage bietet eine hierarchische Struktur
 - Blob Storage eine flache, objektbasierte Struktur für unstrukturierte Daten
 
-
 ---
 
 ## Siehe auch

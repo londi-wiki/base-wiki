@@ -77,7 +77,6 @@ Stichwort: freedman diaconis formel
 
 $\mathsf{Bin width} = 2 * \frac{IQR(x)}{\sqrt[3]{}n}$
 
-
 ---
 
 ## Siehe auch

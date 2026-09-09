@@ -62,7 +62,6 @@ Hier ist eine kurze Erklärung der Funktionsweise:
 3.	Sollte die Instanz gestoppt oder beendet werden, kann die Elastic IP einer neuen Instanz zugewiesen werden.
 4.	**Auf diese Weise können externe Nutzer immer dieselbe IP-Adresse verwenden, um eine Verbindung zu deiner Anwendung herzustellen, selbst wenn sich die zugrunde liegende Infrastruktur ändert.**
 
-
 ---
 
 ## Siehe auch

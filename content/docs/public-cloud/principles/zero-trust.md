@@ -83,7 +83,6 @@ sequenceDiagram
 - Audit Logging
 - Intrusion Detection
 
-
 ---
 
 ## Siehe auch

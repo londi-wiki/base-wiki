@@ -50,7 +50,6 @@ channel.basicPublish(
   body: message.getBytes(StandardCharsets.UTF_8)) // Byte array
 ```
 
-
 ---
 
 ## Siehe auch

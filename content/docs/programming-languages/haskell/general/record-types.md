@@ -50,7 +50,6 @@ MkPerson {name = "Bob", age = 99}
 it :: Person
 ```
 
-
 ---
 
 ## Siehe auch

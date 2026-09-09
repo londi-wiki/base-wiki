@@ -90,7 +90,6 @@ flowchart TD
 | 3     | N15 + 2^2   | N50  |
 | 4     | N15 + 2^3   | N50  |
 
-
 ---
 
 ## Siehe auch

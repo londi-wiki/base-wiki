@@ -34,7 +34,6 @@ public @interface Component {
 Obwohl diese eher "kosmetischer Natur" sind, gibt es dennoch Unterschiede beim Verhalten, 
 da der Assembler einen eingeschränkten Scanning Scope haben könnte.
 
-
 ---
 
 ## Siehe auch

@@ -159,7 +159,6 @@ TODO: Mermaid of diagram
         - => correct: (n-1) % x + 1
         - => after that: Send n to all neighbours
 
-
 ---
 
 ## Siehe auch

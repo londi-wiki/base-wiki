@@ -31,7 +31,6 @@ ssh -D 1337 -N -C root@IP_ADDRESS
 # Solution: create ssh keys on the CLIENT!
 ```
 
-
 ---
 
 ## Siehe auch

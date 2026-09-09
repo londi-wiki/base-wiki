@@ -57,7 +57,6 @@ Body	{"on":false}
 Method	PUT
 ```
 
-
 ---
 
 ## Siehe auch

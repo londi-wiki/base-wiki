@@ -43,7 +43,6 @@ model = Sequential([
 ])
 ```
 
-
 ---
 
 ## Siehe auch

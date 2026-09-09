@@ -16,7 +16,6 @@ Wobei:
 - maximal ein Konstruktor @Autowired verwenden darf
 - falls nur ein Konstruktor vorhanden ist, muss @Autowired nicht explizit geschrieben werden
 
-
 ---
 
 ## Siehe auch

@@ -409,7 +409,6 @@ async function deployWebapp({ html, site_name }, netlifyToken) {
 - [ ] Secrets via `wrangler secret put` gesetzt (nie in `wrangler.toml`)
 - [ ] Health-Check Endpoint `GET /` für einfaches Testen
 
-
 ---
 
 ## Siehe auch

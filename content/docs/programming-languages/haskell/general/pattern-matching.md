@@ -75,7 +75,6 @@ abs n
 -- otherwise = True
 ```
 
-
 ---
 
 ## Siehe auch

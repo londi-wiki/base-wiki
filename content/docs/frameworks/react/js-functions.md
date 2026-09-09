@@ -28,7 +28,6 @@ const Dialog = ({ ... , actionFn, ... }) => {
 }
 ```
 
-
 ---
 
 ## Siehe auch

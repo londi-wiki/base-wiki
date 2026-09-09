@@ -59,7 +59,6 @@ fig.canvas.get_supported_filetypes()
 fig.savefig('sinus_cosinus.png')
 ```
 
-
 ---
 
 ## Siehe auch

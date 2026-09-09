@@ -81,7 +81,6 @@ snd :: (a,b) -> b
 > b2 = f.snd.i :: Bool -> Int
 ```
 
-
 ---
 
 ## Siehe auch

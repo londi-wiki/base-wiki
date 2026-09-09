@@ -13,7 +13,6 @@ toc: true
 
 [Add reactstrap](https://github.com/reactstrap/reactstrap#adding-bootstrap)
 
-
 ---
 
 ## Siehe auch

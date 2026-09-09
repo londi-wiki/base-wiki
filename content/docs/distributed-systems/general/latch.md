@@ -26,7 +26,6 @@ latch.await();
 latch.countDown();
 ```
 
-
 ---
 
 ## Siehe auch

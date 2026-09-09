@@ -73,7 +73,6 @@ and in the layout.html?
 </html>
 {{< /prism >}}
 
-
 ---
 
 ## Siehe auch

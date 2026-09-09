@@ -50,7 +50,6 @@ mqtt sub -t "test" -u "leon" -P "leon" -h "localhost"
 > Note: TO connect the mqtt broker which runs in a docker container with a node-red docker instance, you have to use the wsl's ip address.
  
 
-
 ---
 
 ## Siehe auch

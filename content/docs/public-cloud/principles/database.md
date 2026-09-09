@@ -146,7 +146,6 @@ ACID = Atomic, Consistent, Isolated, Durable
 - Verwaltung von Transaktionsdaten und Benutzerkonten.
 - Beispiel: Speicherung von Bestellungen, Rechnungen und Benutzerprofilen **mit ACID-Eigenschaften**.
 
-
 ---
 
 ## Siehe auch

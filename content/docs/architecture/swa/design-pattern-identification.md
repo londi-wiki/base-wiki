@@ -53,7 +53,6 @@ Jedes Design-Pattern hat ein wiederkehrendes Strukturelement. Bei Code Beispiele
 | Chain of Responsibility | Handler next; handleRequest() ruft next.handleRequest() auf                         | Verarbeitungskette                               |
 | Mediator                | Eine zentrale Klasse verwaltet Kommunikation zwischen Objekten                      | Vermeidung direkter Objektverknüpfung            |
 
-
 ---
 
 ## Siehe auch

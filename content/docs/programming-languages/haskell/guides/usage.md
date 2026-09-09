@@ -62,7 +62,6 @@ False
 it :: Bool
 ```
 
-
 ---
 
 ## Siehe auch

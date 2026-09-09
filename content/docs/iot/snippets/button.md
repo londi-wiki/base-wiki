@@ -24,7 +24,6 @@ void loop() {
 }
 ```
 
-
 ---
 
 ## Siehe auch

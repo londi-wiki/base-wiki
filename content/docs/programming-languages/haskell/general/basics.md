@@ -22,7 +22,6 @@ sum :: Integer -> Integer -> Integer
 sum a -- (hello)
 ```
 
-
 ---
 
 ## Siehe auch

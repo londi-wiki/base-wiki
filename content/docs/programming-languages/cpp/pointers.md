@@ -130,7 +130,6 @@ int main() {
     return 0;
 ```
 
-
 ---
 
 ## Siehe auch

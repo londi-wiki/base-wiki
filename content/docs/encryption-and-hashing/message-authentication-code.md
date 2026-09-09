@@ -223,7 +223,6 @@ I \oplus m_0 \oplus m_0' \,\|\, t
 $$  
 ein **gültiges Etikett** zu $m'$.
 
-
 ---
 
 ## Siehe auch

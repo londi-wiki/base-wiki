@@ -74,7 +74,6 @@ sudo apt install dos2unix
 find /home/USER/.local/share/nvim/lazy/ -type f -name "*.vim" -exec dos2unix {} +
 ```
 
-
 ---
 
 ## Siehe auch

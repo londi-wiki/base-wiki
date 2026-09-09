@@ -46,7 +46,6 @@ RSA OAEP (Optimal Asymmetric Encryption Padding) ist eine Methode zur sicheren V
 
 4. Gib $x = t_1 \oplus H_1(r)$ zurück.
 
-
 ---
 
 ## Siehe auch

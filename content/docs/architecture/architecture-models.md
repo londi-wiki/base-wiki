@@ -51,7 +51,6 @@ Eine Architekturstrategie, die auf **formalen Modelltransformationen** basiert.
 
 # Architektur-Methodologien
 
-
 ---
 
 ## Siehe auch
@@ -59,3 +58,4 @@ Eine Architekturstrategie, die auf **formalen Modelltransformationen** basiert.
 - → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail
 - → [4+1 Sichtenmodell](/docs/architecture/swa/view-model) – ein System aus fünf Perspektiven beschreiben
 - → [TOGAF ADM](/docs/architecture/togaf/adm) – die Phasen der Architecture Development Method
+- → [Standards](/docs/architecture/standards) – ISO/IEC 25000 und 42010

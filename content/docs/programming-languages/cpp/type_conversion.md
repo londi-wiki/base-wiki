@@ -28,7 +28,6 @@ float f = 3.14f;
 int bitRepresentation = *reinterpret_cast<int*>(&f);
 ```
 
-
 ---
 
 ## Siehe auch

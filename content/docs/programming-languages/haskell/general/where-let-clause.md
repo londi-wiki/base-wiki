@@ -30,7 +30,6 @@ cylinder r h =
     in 2 * topArea + sideArea
 ```
 
-
 ---
 
 ## Siehe auch

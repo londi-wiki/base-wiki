@@ -24,7 +24,6 @@ data Person = MkPerson { person_name :: String, person_age :: Int }
 data Pet = MkPerson { pet_name :: String, pet_age :: Int }
 ```
 
-
 ---
 
 ## Siehe auch

@@ -25,7 +25,6 @@ toc: true
     - publish & subscribe, no queues
   - delivery guarantees (at least once, at most once, exactly once) and last wish
 
-
 ---
 
 ## Siehe auch

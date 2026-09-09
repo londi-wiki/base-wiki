@@ -68,7 +68,6 @@ Ist Skalierbarkeit und Verfügbarkeit wichtiger? → BASE
 Kann temporäre Inkonsistenzen toleriert werden? → BASE
 Wird mit kritischen Geschäftsdaten gearbeitet? → ACID
 
-
 ---
 
 ## Siehe auch

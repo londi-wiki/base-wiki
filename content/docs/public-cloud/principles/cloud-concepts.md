@@ -57,7 +57,6 @@ Es muss regelmässig durch unabhängige Audits die Einhaltung der CISPE Code of 
 -	Rechte der betroffenen Person: 
 Cloud Provider müssen sicherstellen, dass die Rechte der betroffenen Person nach DSGVO umgesetzt werden können. Dazu gehören: Auskunft, Löschung oder Berichtigung von Daten.
 
-
 ---
 
 ## Siehe auch

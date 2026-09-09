@@ -33,7 +33,6 @@ MD5 ist **nicht** sicher weil:
 
 - Schnelle Berechnung: MD5 ist sehr schnell, was es Angreifern erleichtert, durch Brute-Force- oder Wörterbuchangriffe Passwörter zu knacken. Daher ist es für die Passwortspeicherung ungeeignet.
 
-
 ---
 
 ## Siehe auch

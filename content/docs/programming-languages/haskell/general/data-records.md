@@ -162,7 +162,6 @@ simpl ex3
 Mul (Const 2) (Const 3)
 ```
 
-
 ---
 
 ## Siehe auch

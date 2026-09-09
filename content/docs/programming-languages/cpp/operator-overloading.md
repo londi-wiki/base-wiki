@@ -300,7 +300,6 @@ Es gibt noch folgende:
 - const_cast: const "weg" oder "hinzu" casten
 - reinterpret_cast: Bei Rohpointer die nicht den "richtigen" Typ haben üblich
 
-
 ---
 
 ## Siehe auch

@@ -151,7 +151,6 @@ std::cout << "DEBUG" << std::endl;
 #endif
 ```
 
-
 ---
 
 ## Siehe auch

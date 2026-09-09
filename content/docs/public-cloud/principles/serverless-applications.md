@@ -33,7 +33,6 @@ toc: true
 - Limitierte Unterstützung von langen Verbindungen
 - Fehlende lokale Entwicklungsparität: Man kann die Funktion lokal nicht gleich laufen lassen wie auf dem Cloud Anbieter. Es gibt zwar Serverless Frameworks (AWS SAM), jedoch bestehen dann nach wie vor Unterschiede zwischen der lokalen und Serverless Umgebung.
 
-
 ---
 
 ## Siehe auch

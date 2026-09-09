@@ -54,7 +54,6 @@ In der Cloud teilen sich mehrere Workloads denselben Host. Die Isolation erfolgt
 - Cloud-Computing-Dienste bieten flexible, skalierbare und sichere Lösungen für unterschiedliche Workloads.
 - Durch die Nutzung von sowohl virtuellen Maschinen als auch serverlosen Architekturen können Nutzer verschiedene Anwendungsfälle effizient abdecken.
 
-
 ---
 
 ## Siehe auch

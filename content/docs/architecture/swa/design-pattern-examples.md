@@ -242,7 +242,6 @@ print(pizza.beschreibung() + " kostet " + pizza.preis() + "€")
 
 ```
 
-
 ---
 
 ## Siehe auch

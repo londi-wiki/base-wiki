@@ -33,7 +33,6 @@ $quickref
 $\Omega$
 ```
 
-
 ---
 
 ## Siehe auch

@@ -80,7 +80,6 @@ toc: true
 
 **Verbesserung:** Abstraktionen (Interfaces oder Adapter) verwenden, um die Abhängigkeit zu entkoppeln.
 
-
 ---
 
 ## Siehe auch

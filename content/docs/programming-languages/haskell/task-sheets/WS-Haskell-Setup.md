@@ -22,7 +22,6 @@ author: "Leon"
 
 [^2]: True and False has to be written with a leading upper case letter, e.g. "true" isn't valid.
 
-
 ---
 
 ## Siehe auch

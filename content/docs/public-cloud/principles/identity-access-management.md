@@ -136,7 +136,6 @@ Der potenzielle Schadensbereich, den ein Fehler oder eine Sicherheitslücke veru
 - Testing: Änderungen an IaC können vorher getestet werden, um Fehler zu minimieren.
 - Least Privilege: Rollen und Zugriffsrechte sind strikt auf spezifische Ressourcen begrenzt.
 
-
 ---
 
 ## Siehe auch

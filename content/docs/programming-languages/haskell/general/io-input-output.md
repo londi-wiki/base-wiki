@@ -196,7 +196,6 @@ main' = do putStrLn "Welcome to MiniCalc!"
            forever loop
 ```
 
-
 ---
 
 ## Siehe auch

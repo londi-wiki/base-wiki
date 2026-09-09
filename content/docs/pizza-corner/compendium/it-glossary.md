@@ -29,7 +29,6 @@ Idempotenz, im Kontext von HTTP-Methoden, bezieht sich auf die Eigenschaft besti
 - `PATCH`: Aktualisiert eine Ressource teilweise, wobei die gleiche Anfrage immer das gleiche Ergebnis liefert.
 - `POST`: In der Regel nicht idempotent, da es oft eine neue Ressource erstellt oder eine Aktion ausführt, die nicht wiederholt werden sollte.
 
-
 ---
 
 ## Siehe auch

@@ -18,7 +18,6 @@ toc: true
 - Anzahl Datenpunkte
 - Einheit der vorliegenden Attribute
 
-
 ---
 
 ## Siehe auch

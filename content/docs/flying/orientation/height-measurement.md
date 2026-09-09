@@ -13,7 +13,6 @@ toc: true
 
 [Grundlagen der Vermessung: Einführung in Höhensysteme](https://youtu.be/BUisrgCBlu0?si=nbZbNq89YU83o3dX)
 
-
 ---
 
 ## Siehe auch

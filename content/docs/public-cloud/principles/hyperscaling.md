@@ -109,7 +109,6 @@ toc: true
   - Speicher: Persistent Volumes verwalten.
   - Observability: Monitoring und Logging implementieren.
 
-
 ---
 
 ## Siehe auch

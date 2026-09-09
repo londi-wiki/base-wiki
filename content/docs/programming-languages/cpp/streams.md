@@ -104,7 +104,6 @@ Beispiel:
 ofs.write(  points.data(), points.size()*sizeof(Point) );
 ```
 
-
 ---
 
 ## Siehe auch

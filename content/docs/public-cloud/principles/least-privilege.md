@@ -82,7 +82,6 @@ Grundkonzept:
 - Regelmässige Überprüfung und Anpassung
 - Dokumentierte Eskalationswege
 
-
 ---
 
 ## Siehe auch

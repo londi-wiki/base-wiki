@@ -138,7 +138,6 @@ Verantwortung: Solution Architekt / Software Engineer
 - Architekturbeschreibung besteht weitgehend aus Modellen. Welche Modelle für welche Aspekte einer Architekturbeschreibung verwendet werden, wird von entsprechenden Sichtenmodellen beschrieben und empfohlen.
 - Auf Lösungsarchitektur spezialisierte Sichtenmodelle konzentrieren sich auf folgende Komponententypen: funktionale Komponenten, informationelle Komponenten und betriebliche (i.e., operationale) Komponenten.
 
-
 ---
 
 ## Siehe auch

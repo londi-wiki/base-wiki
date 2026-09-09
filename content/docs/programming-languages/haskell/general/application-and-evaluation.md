@@ -23,7 +23,6 @@ That means that a sub expression will only be once calculated.
 The execution order doesn't matter because they do not rely on each other.
 They could be also evaluated parallel.
 
-
 ---
 
 ## Siehe auch

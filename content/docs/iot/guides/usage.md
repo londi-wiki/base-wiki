@@ -10,7 +10,6 @@ math: false
 
 [Pinmapping](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#mapping)
 
-
 ---
 
 ## Siehe auch

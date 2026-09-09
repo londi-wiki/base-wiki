@@ -312,7 +312,6 @@ states.applymap(lambda x: '< {} >'.format(x))
 | 3 | < Florida >    | < Miami >       | < 19552860 > | < 170312 > |
 | 4 | < Illinois >   | < Springfield > | < 12882135 > | < 149995 > |
 
-
 ---
 
 ## Siehe auch

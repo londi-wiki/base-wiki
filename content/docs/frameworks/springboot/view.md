@@ -22,7 +22,6 @@ public String findAll(Model model) {
 }
 ```
 
-
 ---
 
 ## Siehe auch

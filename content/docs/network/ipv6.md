@@ -255,7 +255,6 @@ Subnetz 65536: 2001:db8:abcd:ffff::/64
 Präfix: 2001:db8:abcd:ffff::/64
 ```
 
-
 ---
 
 ## Siehe auch

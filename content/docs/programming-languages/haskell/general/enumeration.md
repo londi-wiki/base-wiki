@@ -48,7 +48,6 @@ instance Read Bool -- Defined in ‘GHC.Read’
 instance Bounded Bool -- Defined in ‘GHC.Enum’
 ```
 
-
 ---
 
 ## Siehe auch

@@ -13,7 +13,6 @@ toc: true
 \x -> x + 1
 ```
 
-
 ---
 
 ## Siehe auch

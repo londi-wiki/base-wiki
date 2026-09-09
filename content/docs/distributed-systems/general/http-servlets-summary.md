@@ -87,7 +87,6 @@ Wenn die Applikation im ROOT liegt, sieht es anders aus.
 
 - Reihenfolge wann die Servlets geladen und initialisiert werden sollen
 
-
 ---
 
 ## Siehe auch

@@ -118,7 +118,6 @@ Hyperscaler wie AWS, Azure, Google Cloud entsprechen der NIST-Definition, da sie
 | **Rapid Elasticity**        | Unbegrenzte Skalierbarkeit, um dynamisch auf Nachfrage zu reagieren.                  | Skalierung ist begrenzt durch die verfügbare interne Infrastruktur.                      | Skalierbarkeit hängt von Public-Cloud-Integration und internen Ressourcen ab.                            | Gemeinschaftliche Infrastruktur kann skaliert werden, ist jedoch oft begrenzter als Public Clouds.     |
 | **Measured Service**        | **Pay-as-you-go-Modell** mit transparenter Ressourcennutzung und Abrechnung.          | Abrechnung erfolgt intern, keine direkte Kostenaufschlüsselung wie in der Public Cloud.  | Kombination aus Public-Cloud-Nutzung (Pay-as-you-go) und internen Abrechnungsmodellen.                   | Ressourcen werden je nach Nutzung der teilnehmenden Organisationen gemessen und verteilt.              |
 
-
 ---
 
 ## Siehe auch

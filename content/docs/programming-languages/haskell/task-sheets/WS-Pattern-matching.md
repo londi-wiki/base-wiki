@@ -36,7 +36,6 @@ Aufgabe 2b
 > addVecOpt (a, b) (x, y) = (addOpt a x, addOpt b y)
 ```
 
-
 ---
 
 ## Siehe auch

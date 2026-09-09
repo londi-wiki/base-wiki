@@ -41,7 +41,6 @@ sudo nano 000-default.conf
 sudo service apache2 restart
 ```
 
-
 ---
 
 ## Siehe auch

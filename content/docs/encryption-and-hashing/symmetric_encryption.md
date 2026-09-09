@@ -352,10 +352,10 @@ Wird SPN im CTR Modus betrieben, so wird beim Entschlüsseln die Verschlüsselun
 
 $ x_i = E\left( \left( y_{i-1} + i \right) \bmod \, 2^l, \, k \right) \oplus y_i \quad (i = 0, \ldots, n - 1) $
 
-
 ---
 
 ## Siehe auch
 
 - → [Asymmetrische Verschlüsselung](/docs/encryption-and-hashing/asymmetric_encryption) – Übersicht über Public-Key-Verfahren
 - → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel
+- → [Kryptografische Protokolle](/docs/encryption-and-hashing/kry-involved-protocols) – Needham-Schroeder, Replay-Angriffe und SSL/TLS

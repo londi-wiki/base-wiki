@@ -10,7 +10,6 @@ author: "Leon"
 - https://github.com/xmonad/xmonad
 - https://www.purescript.org/
 
-
 ---
 
 ## Siehe auch

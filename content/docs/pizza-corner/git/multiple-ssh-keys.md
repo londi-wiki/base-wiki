@@ -30,7 +30,6 @@ toc: true
     ...
 ```
 
-
 ---
 
 ## Siehe auch

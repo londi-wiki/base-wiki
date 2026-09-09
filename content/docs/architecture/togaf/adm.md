@@ -105,7 +105,6 @@ Die Architecture Change Management-Phase verwaltet Änderungen an der Architektu
 
 Die Requirements Management-Phase verwaltet die Anforderungen während des gesamten ADM-Zyklus und stellt sicher, dass alle Anforderungen erfüllt werden.
 
-
 ---
 
 ## Siehe auch

@@ -21,7 +21,6 @@ ite False i _ = e
 > ite (null []) 5 undefined
 ```
 
-
 ---
 
 ## Siehe auch

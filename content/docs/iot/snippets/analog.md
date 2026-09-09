@@ -18,7 +18,6 @@ void loop() {
 }
 ```
 
-
 ---
 
 ## Siehe auch

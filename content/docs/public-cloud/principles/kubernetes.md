@@ -111,7 +111,6 @@ Container sind standardisierte Einheiten, die Code, Abhängigkeiten und Runtime-
   - Setze ein Node-Group für Worker Nodes auf (EC2-Instances oder Fargate).
   - Richte IAM-Rollen für Kubernetes und Anwendungen ein.
 
-
 ---
 
 ## Siehe auch

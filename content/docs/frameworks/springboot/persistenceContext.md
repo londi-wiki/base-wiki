@@ -309,7 +309,6 @@ List<Movie> movies = q.getResultList();
 
 Werden verwendet, um Operationen via EntityManager an der DB zu machen (ausschliesslich "Lesen").
 
-
 ---
 
 ## Siehe auch

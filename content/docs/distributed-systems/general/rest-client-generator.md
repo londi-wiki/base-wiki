@@ -187,7 +187,6 @@ CONFIG generators:
 
 `java -jar openapi-generator-cli-7.4.0.jar generate -i http://localhost:8080/api/openapi.json -g python-fastapi -o python-fastapi`
 
-
 ---
 
 ## Siehe auch

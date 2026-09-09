@@ -152,7 +152,6 @@ classDiagram
 - **Mediator:** Definiert ein Objekt, das die Kommunikation zwischen verschiedenen Objekten vermittelt und entkoppelt.
 - **Visitor:** Trennt einen Algorithmus von den Objekten, auf denen er arbeitet, sodass neue Operationen hinzugefügt werden können, ohne die Klassen zu ändern, auf die der Algorithmus angewendet wird.
 
-
 ---
 
 ## Siehe auch

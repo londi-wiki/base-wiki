@@ -19,7 +19,6 @@ A higher-order function is a function that takes other functions as arguments or
 > twice f x = f (f x)
 ```
 
-
 ---
 
 ## Siehe auch

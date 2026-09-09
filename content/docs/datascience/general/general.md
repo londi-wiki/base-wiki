@@ -15,7 +15,6 @@ draft: false
 
 ![dc pyramid](/dsp/dc_pyramid.png)
 
-
 ---
 
 ## Siehe auch

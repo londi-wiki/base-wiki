@@ -158,7 +158,6 @@ R(H, Stufe):
 
 Die "Stufe" fügt einfach einen kleinen "Shift" zum Hash hinzu, damit jede Ketten-Position eine eigene Reduktions-Version hat. Ohne diesen Shift würden $R_1. R_2, ...$ identisch sein.
 
-
 ---
 
 ## Siehe auch

@@ -268,7 +268,6 @@ int main() {
 }
 ```
 
-
 ---
 
 ## Siehe auch

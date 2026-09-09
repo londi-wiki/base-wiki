@@ -102,7 +102,6 @@ bool pressed(int value) {
 }
 ```
 
-
 ---
 
 ## Siehe auch

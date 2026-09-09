@@ -15,7 +15,6 @@ Guess: 0?
 Right: The result is always 0. Because the input is always the output.
 ```
 
-
 ---
 
 ## Siehe auch

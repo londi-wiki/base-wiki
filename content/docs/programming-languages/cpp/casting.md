@@ -72,7 +72,6 @@ Daher ist `c` im letzten Fall `nullptr` und die Bedingung `if(c != nullptr)` ist
 
 Dies ist ein gutes Beispiel dafür, warum `dynamic_cast` sicherer ist als `static_cast`, wenn man mit Vererbungshierarchien arbeitet. `static_cast` kann zu undefiniertem Verhalten führen, wenn man fälschlicherweise zu einem falschen Typ castet, während `dynamic_cast` solche Fehler zur Laufzeit erkennt.
 
-
 ---
 
 ## Siehe auch

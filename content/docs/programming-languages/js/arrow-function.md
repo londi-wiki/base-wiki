@@ -51,7 +51,6 @@ new C().s()
 // returns the class
 ```
 
-
 ---
 
 ## Siehe auch

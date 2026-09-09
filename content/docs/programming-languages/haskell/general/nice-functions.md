@@ -35,7 +35,6 @@ dispatch "done"  i = markDoneAction taskFile i
 dispatch _       _ = return ()
 ```
 
-
 ---
 
 ## Siehe auch

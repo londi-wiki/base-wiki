@@ -58,7 +58,6 @@ Die Schweiz beherbergt 48 der 82 Viertausender der Alpen. Hier sind alle Gipfel 
 | Lagginhorn | VS | 4'010 | Nördlicher Nachbar des Weissmies, etwas weniger besucht |
 | Durrenhorn | VS | 4'035 | Südlichster Gipfel des Nadelgrats, selten besucht |
 
-
 ---
 
 ## Siehe auch

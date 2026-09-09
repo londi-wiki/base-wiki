@@ -31,7 +31,6 @@ it :: Bool
 it :: ([Char], Bool)
 ```
 
-
 ---
 
 ## Siehe auch

@@ -19,7 +19,6 @@ Resources are discoverable at .well-known/core
 
 [Cheat Sheet](https://github.com/markushx/coap-cheatsheet/raw/master/coap-cheatsheet.pdf)
 
-
 ---
 
 ## Siehe auch

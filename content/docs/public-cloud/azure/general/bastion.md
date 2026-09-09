@@ -11,7 +11,6 @@ toc: true
 
 Mit einem Bastionhost kann man über den Browser auf die Shell eines Servers zugreifen. Sehr praktisch, wenn der direkte Zugriff via SSH nicht möglich ist.
 
-
 ---
 
 ## Siehe auch

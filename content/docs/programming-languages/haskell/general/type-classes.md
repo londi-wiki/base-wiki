@@ -80,7 +80,6 @@ fromIntegral :: (Integral a, Numb b) => a -> b
 2 :: Fractional a => a
 ```
 
-
 ---
 
 ## Siehe auch

@@ -83,7 +83,6 @@ Fig (XY 4.0 7.0) (Square 2.0 4.0)
 it :: Figure
 ```
 
-
 ---
 
 ## Siehe auch

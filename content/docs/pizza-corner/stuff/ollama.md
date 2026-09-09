@@ -25,7 +25,6 @@ Ollama ist ein CLI Tool um bekannte LLM Modelle auf eine Weise auszuprobieren.
 
 [Verfügbare Modelle](https://ollama.com/library)
 
-
 ---
 
 ## Siehe auch

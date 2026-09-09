@@ -13,7 +13,6 @@ For interactive visualisation like view selection, tooltip hover, ...
 
 > altair
 
-
 ---
 
 ## Siehe auch

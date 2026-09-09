@@ -18,7 +18,6 @@ toc: true
 r**2 * pi
 ```
 
-
 ---
 
 ## Siehe auch

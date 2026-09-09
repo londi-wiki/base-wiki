@@ -34,7 +34,6 @@ mul 1 size
 mul (square 2) 3
 ```
 
-
 ---
 
 ## Siehe auch

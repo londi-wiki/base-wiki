@@ -42,7 +42,6 @@ Approved Dokumente:
 - kann sich in den nachfolgenden ADM-Phasen weiterentwickeln
 - kann nur durch einen Änderungsprozess (control & governance process) geändert werden 
 
-
 ---
 
 ## Siehe auch
