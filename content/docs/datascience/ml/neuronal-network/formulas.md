@@ -43,5 +43,8 @@ model = Sequential([
 ])
 ```
 
+---
 
+## Siehe auch
 
+- → [Machine Learning Einführung](/docs/datascience/ml/introduction) – Supervised, Unsupervised, lineare Regression und Kostenfunktion

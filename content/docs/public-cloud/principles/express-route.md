@@ -119,3 +119,10 @@ graph LR
 - AS Numbers
 - IP Prefixes
 - Route Filters
+
+---
+
+## Siehe auch
+
+- → [Connectivity und Loadbalancing](/docs/public-cloud/principles/connectivity) – VPC, Subnetze, Security Groups und Loadbalancer
+- → [OSPF](/docs/network/ospf) – Link-State-Routing mit Dijkstra und Areas

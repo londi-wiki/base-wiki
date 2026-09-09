@@ -50,3 +50,10 @@ channel.basicPublish(
   body: message.getBytes(StandardCharsets.UTF_8)) // Byte array
 ```
 
+---
+
+## Siehe auch
+
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich
+- → [Spring Architekturen](/docs/frameworks/springboot/architectures) – Monolith, Modulith und eventbasierte Microservices
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message

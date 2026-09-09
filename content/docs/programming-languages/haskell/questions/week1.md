@@ -27,3 +27,10 @@ test 1 2 3
  -- mit infix
 (1 `test` 2) 3
 ```
+
+---
+
+## Siehe auch
+
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare

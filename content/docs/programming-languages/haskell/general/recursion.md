@@ -90,3 +90,9 @@ countDownUp 10
 > 
 > ~> 6
 
+---
+
+## Siehe auch
+
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards

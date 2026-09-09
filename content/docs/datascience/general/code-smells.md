@@ -26,3 +26,10 @@ def append_to(element, to=None):
     to.append(element)
     return to
 ```
+
+---
+
+## Siehe auch
+
+- → [Klassen und Variablen](/docs/datascience/general/classes-variables) – Format Strings, with, Argumente, Dunder und Dataclass
+- → [Python Tooling](/docs/datascience/general/python-tooling) – black, ruff, mypy, pytest und pre-commit

@@ -5,7 +5,7 @@ description: ""
 icon: "article"
 date: "2025-05-29T11:03:32+02:00"
 lastmod: "2025-05-29T11:03:32+02:00"
-draft: true
+draft: false
 toc: true
 ---
 
@@ -142,3 +142,11 @@ SSL/TLS verwendet eine Kombination aus symmetrischer und asymmetrischer Kryptogr
 
 5. **Integritätsschutz**: SSL/TLS verwendet HMAC (Hash-based Message Authentication Code), um die Integrität der übertragenen Daten sicherzustellen.
 
+---
+
+## Siehe auch
+
+- → [Symmetrische Verschlüsselung](/docs/encryption-and-hashing/symmetric_encryption) – SPN, Betriebsmodi ECB/CBC/CTR und ihr Vergleich
+- → [Zertifikate](/docs/encryption-and-hashing/certificates) – Bindungsproblem, CAs und Public-Key-Infrastruktur
+- → [Digitale Signatur](/docs/encryption-and-hashing/digital-signature) – Signierschema, Verifikation und Angriffe auf naives RSA
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

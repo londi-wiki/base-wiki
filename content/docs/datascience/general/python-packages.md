@@ -139,7 +139,10 @@ for i in tqdm(range(int(9e6))):
 
 Formeln anzeigen. [Look here :D](https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html)
 
+---
 
+## Siehe auch
 
-
-
+- → [Python Tooling](/docs/datascience/general/python-tooling) – black, ruff, mypy, pytest und pre-commit
+- → [Pandas](/docs/datascience/general/pandas) – Series, DataFrames und die wichtigsten Operationen
+- → [Imports](/docs/datascience/general/imports) – Funktionen aus anderen Dateien laden

@@ -10,3 +10,9 @@ author: "Leon"
 - https://github.com/xmonad/xmonad
 - https://www.purescript.org/
 
+---
+
+## Siehe auch
+
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare

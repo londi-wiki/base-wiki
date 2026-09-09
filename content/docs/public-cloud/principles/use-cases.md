@@ -32,3 +32,10 @@ CloudWatch Events können als Zeitgeber fungieren, um diese Lambda-Funktion in b
 
 Azure Automation ist ein Dienst, der es ermöglicht, Aufgaben wie das Starten und Stoppen von VMs automatisch zu steuern. 
 Mit Runbooks (Skripten) können Aktionen wie das Starten oder Stoppen von Instanzen definieren werden.
+
+---
+
+## Siehe auch
+
+- → [Serverless](/docs/public-cloud/principles/serverless-applications) – Anwendungen ohne eigene Server betreiben
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste

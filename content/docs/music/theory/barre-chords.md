@@ -130,6 +130,6 @@ Barre-Griffe werden nötig bei:
 
 ## 7. Weiterführend
 
-- → [Akkordfolgen](../chord-progressions) – Barre-Griffe in Progressionen einsetzen
-- → [Transponieren](../transposing) – Songs mit Barre-Griffen in andere Tonarten bringen
-- → [Allgemeine Theorie](../general) – Akkordaufbau verstehen
+- → [Akkordfolgen](/docs/music/theory/chord-progressions) – Barre-Griffe in Progressionen einsetzen
+- → [Transponieren](/docs/music/theory/transposing) – Songs mit Barre-Griffen in andere Tonarten bringen
+- → [Allgemeine Theorie](/docs/music/theory/general) – Akkordaufbau verstehen

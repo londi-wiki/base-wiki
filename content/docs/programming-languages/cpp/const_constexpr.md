@@ -37,3 +37,10 @@ constexpr int b = foo(); // OK, weil foo() auch mit constexpr markiert ist.
 
 Achtung! Der Compiler hat eine Sicherheit inform einer "Limitte" definiert, 
 welche auf eine maximalen Anzahl an Operationen prüft.
+
+---
+
+## Siehe auch
+
+- → [Typkonvertierung](/docs/programming-languages/cpp/type_conversion) – implizite und explizite Umwandlung
+- → [C++ Basics](/docs/programming-languages/cpp/basics) – Memory Mapping, Übersetzungsablauf, Datentypen und Scope

@@ -151,5 +151,5 @@ Lass das Muster los und folge dem Gefühl des Songs – das ist das Ziel!
 
 ## 8. Weiterführend
 
-- → [Akkordfolgen](../chord-progressions) – Strumming Patterns auf echte Songs anwenden
-- → [Allgemeine Theorie](../general) – Takt, Notenwerte und Rhythmus in der Theorie
+- → [Akkordfolgen](/docs/music/theory/chord-progressions) – Strumming Patterns auf echte Songs anwenden
+- → [Allgemeine Theorie](/docs/music/theory/general) – Takt, Notenwerte und Rhythmus in der Theorie

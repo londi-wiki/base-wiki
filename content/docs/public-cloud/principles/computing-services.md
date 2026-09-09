@@ -53,3 +53,11 @@ In der Cloud teilen sich mehrere Workloads denselben Host. Die Isolation erfolgt
 ## Zusammenfassung
 - Cloud-Computing-Dienste bieten flexible, skalierbare und sichere Lösungen für unterschiedliche Workloads.
 - Durch die Nutzung von sowohl virtuellen Maschinen als auch serverlosen Architekturen können Nutzer verschiedene Anwendungsfälle effizient abdecken.
+
+---
+
+## Siehe auch
+
+- → [Kubernetes](/docs/public-cloud/principles/kubernetes) – Cluster, Control Plane, Worker Nodes und Managed Services
+- → [Serverless](/docs/public-cloud/principles/serverless-applications) – Anwendungen ohne eigene Server betreiben
+- → [Hyperscaling](/docs/public-cloud/principles/hyperscaling) – vertikale und horizontale Skalierung, Elastizität und Burst

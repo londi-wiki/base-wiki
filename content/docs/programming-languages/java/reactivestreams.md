@@ -104,3 +104,10 @@ Flux<String> flux = Flux.just("Hello", "Flux", "World!");
 //oder:
 Flux<String> emptyFlux = Flux.empty();
 ```
+
+---
+
+## Siehe auch
+
+- → [Reactive Programming](/docs/frameworks/springboot/reactive-programming) – Reactive Streams, Project Reactor und WebFlux
+- → [Funktionale Programmierung in Java](/docs/programming-languages/java/functional-programming) – Lambdas, Functional Interfaces, Streams und Optional

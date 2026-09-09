@@ -13,7 +13,9 @@ toc: true
 
 [Add reactstrap](https://github.com/reactstrap/reactstrap#adding-bootstrap)
 
+---
 
+## Siehe auch
 
-
-
+- → [Denken in React](/docs/frameworks/react/concept) – UI in Komponenten zerlegen und State richtig platzieren
+- → [Listen rendern](/docs/frameworks/react/rendering-lists) – Listen mit map darstellen

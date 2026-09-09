@@ -111,3 +111,11 @@ Container sind standardisierte Einheiten, die Code, Abhängigkeiten und Runtime-
   - Setze ein Node-Group für Worker Nodes auf (EC2-Instances oder Fargate).
   - Richte IAM-Rollen für Kubernetes und Anwendungen ein.
 
+---
+
+## Siehe auch
+
+- → [Hyperscaling](/docs/public-cloud/principles/hyperscaling) – vertikale und horizontale Skalierung, Elastizität und Burst
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste
+- → [Docker](/docs/pizza-corner/stuff/docker) – Installation, Compose und eigene Registry
+- → [Modulith vs. Microservice](/docs/architecture/swa/modulith-microservice) – Vergleich der beiden Schnittstrategien

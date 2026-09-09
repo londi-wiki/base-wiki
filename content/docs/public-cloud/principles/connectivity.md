@@ -150,4 +150,10 @@ Security Groups:
 - SSL Offloading: Verarbeitung von SSL/TLS-Verbindungen
 - Routing: Basierend auf Pfaden oder HTTP-Headern.
 
+---
 
+## Siehe auch
+
+- → [ExpressRoute / Direct Connect](/docs/public-cloud/principles/express-route) – dedizierte Leitungen statt VPN
+- → [Zero Trust](/docs/public-cloud/principles/zero-trust) – niemandem vertrauen, alles verifizieren
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

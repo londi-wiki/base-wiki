@@ -71,3 +71,11 @@ Lass uns das schrittweise durchgehen:
 Daher ist `c` im letzten Fall `nullptr` und die Bedingung `if(c != nullptr)` ist nicht erfüllt - folglich wird "E" nicht ausgegeben.
 
 Dies ist ein gutes Beispiel dafür, warum `dynamic_cast` sicherer ist als `static_cast`, wenn man mit Vererbungshierarchien arbeitet. `static_cast` kann zu undefiniertem Verhalten führen, wenn man fälschlicherweise zu einem falschen Typ castet, während `dynamic_cast` solche Fehler zur Laufzeit erkennt.
+
+---
+
+## Siehe auch
+
+- → [Typkonvertierung](/docs/programming-languages/cpp/type_conversion) – implizite und explizite Umwandlung
+- → [Pointer und Referenzen](/docs/programming-languages/cpp/pointers) – Rawpointer, Referenzen und Smart Pointer im Vergleich
+- → [Vererbung](/docs/programming-languages/cpp/inheritance) – Konstruktoren, Overload Resolution, RTTI und Abstraktion

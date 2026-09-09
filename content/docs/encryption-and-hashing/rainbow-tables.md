@@ -157,3 +157,11 @@ R(H, Stufe):
 **Bemerkung:** 
 
 Die "Stufe" fügt einfach einen kleinen "Shift" zum Hash hinzu, damit jede Ketten-Position eine eigene Reduktions-Version hat. Ohne diesen Shift würden $R_1. R_2, ...$ identisch sein.
+
+---
+
+## Siehe auch
+
+- → [Hashing](/docs/encryption-and-hashing/hashing) – Hashfunktionen, Sicherheitsanforderungen und Kompressionsfunktion
+- → [MD5](/docs/encryption-and-hashing/md5) – ein konkretes, heute gebrochenes Hashverfahren
+- → [Symmetrische Verschlüsselung](/docs/encryption-and-hashing/symmetric_encryption) – SPN, Betriebsmodi ECB/CBC/CTR und ihr Vergleich

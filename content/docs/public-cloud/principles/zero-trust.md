@@ -82,3 +82,11 @@ sequenceDiagram
 - Request Signing
 - Audit Logging
 - Intrusion Detection
+
+---
+
+## Siehe auch
+
+- → [Identity und Access Management](/docs/public-cloud/principles/identity-access-management) – ABAC, RBAC, Rollen, Gruppen und Blast Radius
+- → [Least Privilege](/docs/public-cloud/principles/least-privilege) – so wenig Rechte wie möglich, so viele wie nötig
+- → [Connectivity und Loadbalancing](/docs/public-cloud/principles/connectivity) – VPC, Subnetze, Security Groups und Loadbalancer

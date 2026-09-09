@@ -187,3 +187,9 @@ CONFIG generators:
 
 `java -jar openapi-generator-cli-7.4.0.jar generate -i http://localhost:8080/api/openapi.json -g python-fastapi -o python-fastapi`
 
+---
+
+## Siehe auch
+
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes

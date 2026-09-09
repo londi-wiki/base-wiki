@@ -188,3 +188,10 @@ ipv6 route 2001:DB8:0:4::/64 2001:DB8:0:4::2
 Die können mit einem /48-Prefix zusammengefasst werden:
 ipv6 route 2001:DB8::/48 2001:DB8:0:4::2
 ```
+
+---
+
+## Siehe auch
+
+- → [IPv6](/docs/network/ipv6) – Adressaufbau, Adresstypen, SLAAC und Subnetting
+- → [OSPF](/docs/network/ospf) – Link-State-Routing mit Dijkstra und Areas

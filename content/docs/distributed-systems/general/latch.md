@@ -25,3 +25,10 @@ latch.await();
 // release on "step"
 latch.countDown();
 ```
+
+---
+
+## Siehe auch
+
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen
+- → [Funktionale Programmierung in Java](/docs/programming-languages/java/functional-programming) – Lambdas, Functional Interfaces, Streams und Optional

@@ -16,4 +16,9 @@ Wobei:
 - maximal ein Konstruktor @Autowired verwenden darf
 - falls nur ein Konstruktor vorhanden ist, muss @Autowired nicht explizit geschrieben werden
 
+---
 
+## Siehe auch
+
+- → [Spring Beans](/docs/frameworks/springboot/bean) – Beans und @Component
+- → [Spring Boot Annotations](/docs/frameworks/springboot/general) – die wichtigsten Annotationen auf einen Blick

@@ -21,3 +21,10 @@ author: "Leon"
 [^1]: Result will be a float number
 
 [^2]: True and False has to be written with a leading upper case letter, e.g. "true" isn't valid.
+
+---
+
+## Siehe auch
+
+- → [GHCi Installation](/docs/programming-languages/haskell/guides/installation) – Haskell lokal einrichten
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren

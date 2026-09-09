@@ -131,3 +131,11 @@ kann TCP ohne Window Scaling diese nicht ausnutzen.
 Deshalb wurde Window Scaling als Erweiterung eingeführt, 
 um höhere Durchsatzraten auf Verbindungen mit hohem Bandwidth-Delay-Produkt zu ermöglichen.
 
+---
+
+## Siehe auch
+
+- → [IPv6](/docs/network/ipv6) – Adressaufbau, Adresstypen, SLAAC und Subnetting
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes
+- → [OSPF](/docs/network/ospf) – Link-State-Routing mit Dijkstra und Areas

@@ -81,3 +81,11 @@ function FilterableProductTable({ products }) {
         onChange={(e) => onFilterTextChange(e.target.value)} />
 // ...
 ```
+
+---
+
+## Siehe auch
+
+- → [Ref und State](/docs/frameworks/react/ref-and-state) – useRef und useState und wann welches
+- → [Context](/docs/frameworks/react/context) – Prop Drilling vermeiden
+- → [Listen rendern](/docs/frameworks/react/rendering-lists) – Listen mit map darstellen

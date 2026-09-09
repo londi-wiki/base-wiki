@@ -168,3 +168,11 @@ There are a few indicators for good or bad RSSI signals:
 - Link Quality
 - Range Estimation
 - Signal Interference
+
+---
+
+## Siehe auch
+
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Raspberry Pi Setup](/docs/iot/guides/setup-raspi) – Node.js und Bluetooth auf dem Pi einrichten
+- → [LoRa / LoRaWAN](/docs/iot/general/lora) – Reichweite, Gateways, OTAA und ABP

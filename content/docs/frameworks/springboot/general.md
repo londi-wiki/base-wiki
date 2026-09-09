@@ -46,3 +46,11 @@ public void findById(@PathVariable("id") Long id) { ... }
 
 // ...flashcard-mvc/questionnaire/0
 ```
+
+---
+
+## Siehe auch
+
+- → [Spring Beans](/docs/frameworks/springboot/bean) – Beans und @Component
+- → [@Autowired](/docs/frameworks/springboot/autowired) – Dependency Injection in Spring
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects

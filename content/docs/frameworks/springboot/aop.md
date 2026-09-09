@@ -145,3 +145,10 @@ public Object traceServices(ProceedingJoinPoint pjp, Long id) throws Throwable {
     return o;
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Spring Beans](/docs/frameworks/springboot/bean) – Beans und @Component
+- → [Spring Boot Annotations](/docs/frameworks/springboot/general) – die wichtigsten Annotationen auf einen Blick

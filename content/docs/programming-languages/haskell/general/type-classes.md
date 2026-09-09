@@ -79,3 +79,11 @@ fromIntegral :: (Integral a, Numb b) => a -> b
 > fromIntegral (3 :: Int) / 1.5
 2 :: Fractional a => a
 ```
+
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Deriving](/docs/programming-languages/haskell/general/deriving) – Typklassen automatisch ableiten
+- → [Polymorphe Typen](/docs/programming-languages/haskell/general/polymorphic-types) – Typvariablen und generische Signaturen

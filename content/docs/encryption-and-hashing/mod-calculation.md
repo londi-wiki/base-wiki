@@ -30,3 +30,10 @@ $ 5^{ 2 } \bmod 11 = 25 \bmod 11 = 3 $
 **Schritt 2**: Mod von "3" mit dem übrig gebliebenen Exponent $ (^{2}) $ berechnen 
 
 $ 3^{ 2 } \bmod 11 = 9 $
+
+---
+
+## Siehe auch
+
+- → [RSA](/docs/encryption-and-hashing/rsa) – Schlüsselpaar, Verschlüsselung und erweiterter euklidischer Algorithmus
+- → [RSA-OAEP](/docs/encryption-and-hashing/rsa-oaep) – das Padding, das RSA erst praktisch sicher macht

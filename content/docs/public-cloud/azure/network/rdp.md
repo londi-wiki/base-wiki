@@ -17,3 +17,9 @@ Folgende Anleitung erklärt wie man eine VM für RDP fähig macht.
 
 [Installieren und Konfigurieren von xrdp für die Verwendung von Remotedesktop mit Ubuntu](https://learn.microsoft.com/de-de/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli)
 
+---
+
+## Siehe auch
+
+- → [Azure Bastion](/docs/public-cloud/azure/general/bastion) – geschützter Zugang zu VMs ohne öffentliche IP
+- → [Connectivity und Loadbalancing](/docs/public-cloud/principles/connectivity) – VPC, Subnetze, Security Groups und Loadbalancer

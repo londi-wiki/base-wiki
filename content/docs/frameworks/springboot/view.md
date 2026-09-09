@@ -21,3 +21,10 @@ public String findAll(Model model) {
     return "questionnaires/list";
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [View Templates](/docs/frameworks/springboot/view-templates) – Fragmente und Layouts mit Thymeleaf
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects

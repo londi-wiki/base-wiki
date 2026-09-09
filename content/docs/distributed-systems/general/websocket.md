@@ -180,3 +180,11 @@ public class LeonClient {
 
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Sockets und Streams](/docs/distributed-systems/general/sockets-and-streams) – Echo- und Quote-Server als Minimalbeispiele
+- → [Reactive Programming](/docs/frameworks/springboot/reactive-programming) – Reactive Streams, Project Reactor und WebFlux
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich

@@ -129,3 +129,10 @@ classDiagram
     Abhängigkeit = temporäre Beziehung (Drucker & Dokument)
     Assoziation = dauerhafte Beziehung (DruckAuftrag & Drucker)"
 ```
+
+---
+
+## Siehe auch
+
+- → [UML Code-Beispiele](/docs/architecture/swa/uml-code-examples) – Diagramme in lauffähigen Code übersetzt
+- → [Entwurfsmuster](/docs/architecture/swa/architecture-patterns) – Creational, Structural und Behavioral Patterns

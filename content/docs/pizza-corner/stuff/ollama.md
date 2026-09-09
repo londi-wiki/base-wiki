@@ -24,3 +24,9 @@ Ollama ist ein CLI Tool um bekannte LLM Modelle auf eine Weise auszuprobieren.
 3. Mit `/bye` beenden
 
 [Verfügbare Modelle](https://ollama.com/library)
+
+---
+
+## Siehe auch
+
+- → [MCP mit Wrangler](/docs/ai/mcp/mcp-with-wrangler) – MCP-Server auf Cloudflare Workers samt OAuth und PKCE

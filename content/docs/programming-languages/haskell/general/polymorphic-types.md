@@ -31,3 +31,10 @@ it :: Bool
 it :: ([Char], Bool)
 ```
 
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Typklassen](/docs/programming-languages/haskell/general/type-classes) – Eq, Ord, Show, Num und Fractional
+- → [Data Records](/docs/programming-languages/haskell/general/data-records) – polymorphe und rekursive Datentypen

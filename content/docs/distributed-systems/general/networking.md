@@ -421,3 +421,12 @@ public class EchoServer2 {
 ```
 
 In den Folien folgen noch andere thread Beispiele.
+
+---
+
+## Siehe auch
+
+- → [Sockets und Streams](/docs/distributed-systems/general/sockets-and-streams) – Echo- und Quote-Server als Minimalbeispiele
+- → [Networking Zusammenfassung](/docs/distributed-systems/general/networking-summary) – typische Stolpersteine bei Sockets und Streams
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung
+- → [Networking Aufgaben](/docs/distributed-systems/general/AB03-networking) – Übungen zu Sockets und Protokollen

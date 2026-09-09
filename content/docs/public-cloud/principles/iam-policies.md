@@ -104,3 +104,9 @@ IAM-Policies unterstützen **Platzhalter (`*`)** für flexible Berechtigungen:
   ]
 }
 
+---
+
+## Siehe auch
+
+- → [Identity und Access Management](/docs/public-cloud/principles/identity-access-management) – ABAC, RBAC, Rollen, Gruppen und Blast Radius
+- → [Least Privilege](/docs/public-cloud/principles/least-privilege) – so wenig Rechte wie möglich, so viele wie nötig

@@ -267,3 +267,10 @@ int main() {
     return 0;
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Pointer und Referenzen](/docs/programming-languages/cpp/pointers) – Rawpointer, Referenzen und Smart Pointer im Vergleich
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden

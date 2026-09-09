@@ -29,3 +29,10 @@ stateDiagram-v2
 ```C
 // TODO
 ```
+
+---
+
+## Siehe auch
+
+- → [State Machine](/docs/iot/hands-ons/state-machine) – Zustandsautomat als Grundmuster für Sketches
+- → [Button Snippet](/docs/iot/snippets/button) – Taster einlesen

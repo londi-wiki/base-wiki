@@ -10,3 +10,9 @@ math: false
 
 [Pinmapping](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#mapping)
 
+---
+
+## Siehe auch
+
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Blink Snippet](/docs/iot/snippets/blink) – das Hello World der Mikrocontroller

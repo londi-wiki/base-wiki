@@ -5,7 +5,7 @@ description: ""
 icon: "article"
 date: "2025-09-30T09:27:00+02:00"
 lastmod: "2025-09-30T09:27:00+02:00"
-draft: true
+draft: false
 toc: true
 katex: false
 ---
@@ -36,3 +36,9 @@ qm template 8000
 
 After that, create a template from it.
 
+---
+
+## Siehe auch
+
+- → [Docker](/docs/pizza-corner/stuff/docker) – Installation, Compose und eigene Registry
+- → [Computing Services](/docs/public-cloud/principles/computing-services) – Workload-Isolation, Confidential Computing und Compute-Dienste

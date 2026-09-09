@@ -79,3 +79,11 @@ toc: true
 **Erkennung:** Direkter Zugriff auf externe Ressourcen, z. B. Database.newConnection() verbindet sich mit einer Datenbank.
 
 **Verbesserung:** Abstraktionen (Interfaces oder Adapter) verwenden, um die Abhängigkeit zu entkoppeln.
+
+---
+
+## Siehe auch
+
+- → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail
+- → [Entwurfsmuster](/docs/architecture/swa/architecture-patterns) – Creational, Structural und Behavioral Patterns
+- → [Modulith vs. Microservice](/docs/architecture/swa/modulith-microservice) – Vergleich der beiden Schnittstrategien

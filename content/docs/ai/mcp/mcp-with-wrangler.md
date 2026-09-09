@@ -408,3 +408,11 @@ async function deployWebapp({ html, site_name }, netlifyToken) {
 - [ ] `initialize`, `tools/list`, `tools/call` JSON-RPC Methoden
 - [ ] Secrets via `wrangler secret put` gesetzt (nie in `wrangler.toml`)
 - [ ] Health-Check Endpoint `GET /` für einfaches Testen
+
+---
+
+## Siehe auch
+
+- → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich
+- → [Ollama](/docs/pizza-corner/stuff/ollama) – Sprachmodelle lokal betreiben

@@ -22,3 +22,10 @@ That means that a sub expression will only be once calculated.
 
 The execution order doesn't matter because they do not rely on each other.
 They could be also evaluated parallel.
+
+---
+
+## Siehe auch
+
+- → [Currying](/docs/programming-languages/haskell/general/currying) – warum jede Funktion nur ein Argument hat
+- → [Haskell Überblick](/docs/programming-languages/haskell/general/overview) – FP gegen OOP und was eine Funktion wirklich ist

@@ -186,3 +186,11 @@ bool writeFields() {
 }
 
 ```
+
+---
+
+## Siehe auch
+
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Web Client](/docs/iot/guides/web-client) – HTTP-Client und -Server auf dem Mikrocontroller
+- → [Dashboards](/docs/iot/general/dashboards) – Thingspeak, InfluxDB und Telegraf als Datensenke

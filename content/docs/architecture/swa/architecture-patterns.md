@@ -151,3 +151,12 @@ classDiagram
 - **State:** Ermöglicht es einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert.
 - **Mediator:** Definiert ein Objekt, das die Kommunikation zwischen verschiedenen Objekten vermittelt und entkoppelt.
 - **Visitor:** Trennt einen Algorithmus von den Objekten, auf denen er arbeitet, sodass neue Operationen hinzugefügt werden können, ohne die Klassen zu ändern, auf die der Algorithmus angewendet wird.
+
+---
+
+## Siehe auch
+
+- → [Pattern erkennen](/docs/architecture/swa/design-pattern-identification) – Schlüsselindikatoren für die einzelnen Musterfamilien
+- → [Pattern Beispiele](/docs/architecture/swa/design-pattern-examples) – Aufgaben und Lösungen zum Üben
+- → [Lose Kopplung](/docs/architecture/swa/loose-coupling) – alle Kopplungsarten von Daten- bis Inhaltskopplung
+- → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail

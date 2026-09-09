@@ -11,3 +11,9 @@ author: "Leon"
 | square (times2 3) | 36              | 36              |
 | pyth 1 2          | 5               | 5               |
 
+---
+
+## Siehe auch
+
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare

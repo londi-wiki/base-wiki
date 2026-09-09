@@ -158,3 +158,11 @@ void loop() {
   }
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [WiFi](/docs/iot/general/wifi) – den ESP8266 ins WLAN bringen und Daten senden
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Hands-on Woche 3](/docs/iot/hands-ons/week3) – Fingerprint und Zertifikat einer TLS-Verbindung prüfen

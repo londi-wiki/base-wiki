@@ -100,3 +100,11 @@ public class QuoteServer {
 
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen
+- → [WebSocket](/docs/distributed-systems/general/websocket) – bidirektionale Verbindungen über HTTP-Upgrade
+- → [Networking Zusammenfassung](/docs/distributed-systems/general/networking-summary) – typische Stolpersteine bei Sockets und Streams

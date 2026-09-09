@@ -41,3 +41,10 @@ Achtung: Approved != finalized
 Approved Dokumente:
 - kann sich in den nachfolgenden ADM-Phasen weiterentwickeln
 - kann nur durch einen Änderungsprozess (control & governance process) geändert werden 
+
+---
+
+## Siehe auch
+
+- → [TOGAF ADM](/docs/architecture/togaf/adm) – die Phasen der Architecture Development Method
+- → [TOGAF Prinzipien](/docs/architecture/togaf/architecture-principles) – Aufbau, Charakteristiken und Nutzen von Architekturprinzipien

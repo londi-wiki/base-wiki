@@ -103,3 +103,10 @@ math: false
 | ------------ |-----------------------------------------------------------------------------------------------------------|
 | Beispiel     | zipWith (+) [1,2,3] [10,11,12] ~> [11,13,15]    zipWith (++) ["Ha","Ec"] ["llo","ho"] ~> ["Hallo","Echo"] |
 | Beschreibung | 'zipWith' generalises 'zip' by zipping with the function, given as the first argument, instead of a tupling function.                                                |
+
+---
+
+## Siehe auch
+
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte

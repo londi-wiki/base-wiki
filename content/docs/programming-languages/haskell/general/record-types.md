@@ -49,3 +49,10 @@ it :: Int
 MkPerson {name = "Bob", age = 99}
 it :: Person
 ```
+
+---
+
+## Siehe auch
+
+- → [Data Records](/docs/programming-languages/haskell/general/data-records) – polymorphe und rekursive Datentypen
+- → [Datentypen](/docs/programming-languages/haskell/general/data-types) – eigene Typen mit mehreren Konstruktoren

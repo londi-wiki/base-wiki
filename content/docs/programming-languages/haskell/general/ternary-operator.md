@@ -21,3 +21,9 @@ ite False i _ = e
 > ite (null []) 5 undefined
 ```
 
+---
+
+## Siehe auch
+
+- → [case](/docs/programming-languages/haskell/general/case) – Fallunterscheidung als Ausdruck
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards

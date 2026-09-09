@@ -40,3 +40,11 @@ sudo nano 000-default.conf
 ```bash
 sudo service apache2 restart
 ```
+
+---
+
+## Siehe auch
+
+- → [SSH Kommandos](/docs/pizza-corner/stuff/ssh-commands) – Hostkeys, SOCKS-Proxy und ssh-copy-id
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes
+- → [Azure Bastion](/docs/public-cloud/azure/general/bastion) – geschützter Zugang zu VMs ohne öffentliche IP

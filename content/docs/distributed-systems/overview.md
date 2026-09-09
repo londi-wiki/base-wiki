@@ -25,3 +25,11 @@ toc: true
     - publish & subscribe, no queues
   - delivery guarantees (at least once, at most once, exactly once) and last wish
 
+---
+
+## Siehe auch
+
+- → [API Technologien](/docs/distributed-systems/general/api-technologies) – RPC, Message-based und Shared Repository im Vergleich
+- → [RabbitMQ](/docs/distributed-systems/general/rabbitmq) – Queues, Exchanges und Publishing
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Chord](/docs/algorithm/chord) – verteilte Hashtabelle mit Fingertables

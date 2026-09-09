@@ -9,5 +9,9 @@ draft: false
 toc: true
 ---
 
+---
 
+## Siehe auch
 
+- → [TOGAF ADM](/docs/architecture/togaf/adm) – die Phasen der Architecture Development Method
+- → [ADM Artifacts](/docs/architecture/togaf/adm-artifacts-and-deliverables) – Artifacts, Deliverables und ihr Zusammenhang

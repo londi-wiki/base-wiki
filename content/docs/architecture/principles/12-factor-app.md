@@ -102,3 +102,12 @@ Einmalige Admin-Tasks (Migrationen, Skripte) als eigenständige Prozesse im glei
 **Implikation:** DB-Migrationen laufen als Init-Container oder Job in OpenShift, nicht manuell per SSH auf dem Server.
 
 ---
+
+---
+
+## Siehe auch
+
+- → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail
+- → [Serverless](/docs/public-cloud/principles/serverless-applications) – Anwendungen ohne eigene Server betreiben
+- → [Kubernetes](/docs/public-cloud/principles/kubernetes) – Cluster, Control Plane, Worker Nodes und Managed Services
+- → [Environment Variablen](/docs/frameworks/react/environment-vars) – Konfiguration über .env-Dateien

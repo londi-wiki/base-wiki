@@ -58,3 +58,11 @@ fig.canvas.get_supported_filetypes()
 
 fig.savefig('sinus_cosinus.png')
 ```
+
+---
+
+## Siehe auch
+
+- → [Pandas](/docs/datascience/general/pandas) – Series, DataFrames und die wichtigsten Operationen
+- → [Visualisierung fortgeschritten](/docs/datascience/general/viz_advanced) – weiterführende Darstellungsformen
+- → [Deskriptive Statistik](/docs/datascience/general/diskriptive-statistik) – Skalenniveau, Lage, Streuung und Form

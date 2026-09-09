@@ -26,3 +26,10 @@ void loop() {
 ```
 
 > Before uploading: Detach the LED! Why? we don't know yet... :D
+
+---
+
+## Siehe auch
+
+- → [Hands-on Woche 1](/docs/iot/hands-ons/week1) – Blink und NeoPixel auf dem ESP8266
+- → [Serial Snippet](/docs/iot/snippets/serial) – Debug-Ausgaben über die serielle Schnittstelle

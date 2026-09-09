@@ -33,9 +33,9 @@ $quickref
 $\Omega$
 ```
 
+---
 
+## Siehe auch
 
-
-
-
-
+- → [Jupyter Installation](/docs/datascience/guides/installation) – die Umgebung aufsetzen
+- → [Daten plotten](/docs/datascience/general/plot-data) – Visualisierung mit Matplotlib

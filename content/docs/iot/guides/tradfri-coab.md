@@ -11,3 +11,9 @@ toc: true
 
 [Tradfri Community docs](https://github.com/glenndehaan/ikea-tradfri-coap-docs)
 
+---
+
+## Siehe auch
+
+- → [CoAP](/docs/iot/guides/coap) – schlankes REST-Protokoll für eingeschränkte Geräte
+- → [Philips Hue](/docs/iot/guides/philips-hue) – die lokale Hue-API ansprechen

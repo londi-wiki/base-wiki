@@ -25,8 +25,10 @@ f1 x =
         _ -> 20 - x
 ```
 
+---
 
+## Siehe auch
 
-
-
-
+- → [Pattern Matching](/docs/programming-languages/haskell/general/pattern-matching) – Konstanten, Listen, Tupel und Guards
+- → [where und let](/docs/programming-languages/haskell/general/where-let-clause) – Hilfsdefinitionen an der richtigen Stelle
+- → [if then else](/docs/programming-languages/haskell/general/ternary-operator) – der bedingte Ausdruck

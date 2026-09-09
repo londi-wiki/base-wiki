@@ -33,3 +33,10 @@ square 2
 mul 1 size
 mul (square 2) 3
 ```
+
+---
+
+## Siehe auch
+
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map

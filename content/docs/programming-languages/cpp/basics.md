@@ -150,3 +150,11 @@ Code nur im DEBUG Modus ausführen:
 std::cout << "DEBUG" << std::endl;
 #endif
 ```
+
+---
+
+## Siehe auch
+
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden
+- → [Pointer und Referenzen](/docs/programming-languages/cpp/pointers) – Rawpointer, Referenzen und Smart Pointer im Vergleich
+- → [Linker](/docs/programming-languages/cpp/linker) – One Definition Rule und typische Linkerfehler

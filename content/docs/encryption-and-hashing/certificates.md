@@ -5,7 +5,7 @@ description: ""
 icon: "article"
 date: "2025-05-29T09:57:26+02:00"
 lastmod: "2025-05-29T09:57:26+02:00"
-draft: true
+draft: false
 toc: true
 ---
 
@@ -125,4 +125,11 @@ Die Struktur einer PKI ist typischerweise hierarchisch aufgebaut und wird oft al
 
 **Endnutzerzertifikat** (Leaf Certificate): Dies ist das Zertifikat, das einer spezifischen Entität (z. B. einer Webseite, einem Benutzer) ausgestellt wird. Es wird von einer Intermediate CA (oder in selteneren Fällen direkt von einer Root CA in kleineren Setups) signiert.
 
+---
 
+## Siehe auch
+
+- → [Digitale Signatur](/docs/encryption-and-hashing/digital-signature) – Signierschema, Verifikation und Angriffe auf naives RSA
+- → [Asymmetrische Verschlüsselung](/docs/encryption-and-hashing/asymmetric_encryption) – Übersicht über Public-Key-Verfahren
+- → [Kryptografische Protokolle](/docs/encryption-and-hashing/kry-involved-protocols) – Needham-Schroeder, Replay-Angriffe und SSL/TLS
+- → [S/MIME](/docs/encryption-and-hashing/email-s-mime) – sichere E-Mail zwischen Organisationen auf PKI-Basis

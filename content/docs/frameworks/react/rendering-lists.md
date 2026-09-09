@@ -41,3 +41,9 @@ const listItems = people.map(person =>
 );
 ```
 
+---
+
+## Siehe auch
+
+- → [JS Funktionen in React](/docs/frameworks/react/js-functions) – Callbacks und actionFn
+- → [Denken in React](/docs/frameworks/react/concept) – UI in Komponenten zerlegen und State richtig platzieren

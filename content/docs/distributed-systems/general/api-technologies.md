@@ -159,3 +159,11 @@ TODO: Mermaid of diagram
         - => correct: (n-1) % x + 1
         - => after that: Send n to all neighbours
 
+---
+
+## Siehe auch
+
+- → [REST Client Generator](/docs/distributed-systems/general/rest-client-generator) – Clients aus einer OpenAPI-Spezifikation erzeugen
+- → [RabbitMQ](/docs/distributed-systems/general/rabbitmq) – Queues, Exchanges und Publishing
+- → [WebSocket](/docs/distributed-systems/general/websocket) – bidirektionale Verbindungen über HTTP-Upgrade
+- → [HTTP Zusammenfassung](/docs/distributed-systems/general/http-summary) – Methoden, Idempotenz und Statuscodes

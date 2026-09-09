@@ -129,3 +129,11 @@ int main() {
     */
     return 0;
 ```
+
+---
+
+## Siehe auch
+
+- → [Move-Semantik](/docs/programming-languages/cpp/move-operation) – Ressourcen verschieben statt kopieren
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden
+- → [Casting](/docs/programming-languages/cpp/casting) – die C++-Cast-Operatoren in der Praxis

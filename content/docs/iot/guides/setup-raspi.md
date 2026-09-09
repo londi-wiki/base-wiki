@@ -51,3 +51,10 @@ npm init
 # probably execute also this command:
 npm --build-from-source install bcrypt
 ```
+
+---
+
+## Siehe auch
+
+- → [Boards](/docs/iot/general/boards) – Feather Huzzah, nRF52840 und Raspberry Pi Zero
+- → [Bluetooth LE](/docs/iot/general/bluetooth) – GAP, GATT, Advertising und Beacons

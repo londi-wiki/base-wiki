@@ -28,3 +28,10 @@ math: false
 | Implicit Conversion | ✅ "5" * 8 = 40 [^1]  (String to int) (weak)        | ✅ "5" * 8 = 40 = 58 (int to String (ascii value)) (weak)  | ❌ striktes typsystem (strong) |
 
 [^1]: Wobei "5" + 8 = 58 ist
+
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Typklassen](/docs/programming-languages/haskell/general/type-classes) – Eq, Ord, Show, Num und Fractional

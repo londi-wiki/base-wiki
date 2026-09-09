@@ -38,3 +38,10 @@ export default function Section({ level, children }) {
     );
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Denken in React](/docs/frameworks/react/concept) – UI in Komponenten zerlegen und State richtig platzieren
+- → [Ref und State](/docs/frameworks/react/ref-and-state) – useRef und useState und wann welches

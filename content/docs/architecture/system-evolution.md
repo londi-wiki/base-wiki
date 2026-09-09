@@ -68,3 +68,11 @@ um langfristige Probleme zu vermeiden und die Agilität des Systems zu sichern.
 **Starke Governance:** Es sollte eine klare Governance-Struktur geben, die sicherstellt,
 dass Entscheidungen zur Erweiterung der Funktionalität immer auch die Auswirkungen
 auf die Agilität berücksichtigen.
+
+---
+
+## Siehe auch
+
+- → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail
+- → [Modulith vs. Microservice](/docs/architecture/swa/modulith-microservice) – Vergleich der beiden Schnittstrategien
+- → [Architektur Übersicht](/docs/architecture/overview) – Enterprise Operating Model, Disziplinen und Wertschöpfungskette

@@ -17,3 +17,10 @@ void loop() {
   delay(1);
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Button Snippet](/docs/iot/snippets/button) – Taster einlesen
+- → [Serial Snippet](/docs/iot/snippets/serial) – Debug-Ausgaben über die serielle Schnittstelle

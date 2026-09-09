@@ -297,3 +297,11 @@ for(const auto& [key, value] : m) {
     cout << key << ',' << value << endl;
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Vererbung](/docs/programming-languages/cpp/inheritance) – Konstruktoren, Overload Resolution, RTTI und Abstraktion
+- → [Operator Overloading](/docs/programming-languages/cpp/operator-overloading) – Output-, Vergleichs-, Cast- und Index-Operator
+- → [C++ Basics](/docs/programming-languages/cpp/basics) – Memory Mapping, Übersetzungsablauf, Datentypen und Scope

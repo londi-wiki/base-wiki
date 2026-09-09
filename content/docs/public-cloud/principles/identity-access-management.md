@@ -135,3 +135,11 @@ Der potenzielle Schadensbereich, den ein Fehler oder eine Sicherheitslücke veru
 - Modularität: Infrastruktur wird in kleinere Einheiten zerlegt, um den Blast Radius zu begrenzen.
 - Testing: Änderungen an IaC können vorher getestet werden, um Fehler zu minimieren.
 - Least Privilege: Rollen und Zugriffsrechte sind strikt auf spezifische Ressourcen begrenzt.
+
+---
+
+## Siehe auch
+
+- → [IAM Policies](/docs/public-cloud/principles/iam-policies) – Effects und Actions in AWS-Policies
+- → [Least Privilege](/docs/public-cloud/principles/least-privilege) – so wenig Rechte wie möglich, so viele wie nötig
+- → [Zero Trust](/docs/public-cloud/principles/zero-trust) – niemandem vertrauen, alles verifizieren

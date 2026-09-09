@@ -146,6 +146,11 @@ ACID = Atomic, Consistent, Isolated, Durable
 - Verwaltung von Transaktionsdaten und Benutzerkonten.
 - Beispiel: Speicherung von Bestellungen, Rechnungen und Benutzerprofilen **mit ACID-Eigenschaften**.
 
+---
 
+## Siehe auch
 
-
+- → [ACID und BASE](/docs/public-cloud/principles/acid-base) – zwei Konsistenzphilosophien im Vergleich
+- → [Storage](/docs/public-cloud/principles/storage) – Speicherklassen, Backup, Migration und Konsistenzmodelle
+- → [Cloud Produkte](/docs/public-cloud/principles/cloud-products) – EBS, S3, EC2 und Cosmos DB im Vergleich
+- → [MySQL Snippets](/docs/pizza-corner/stuff/mysql-snippets) – User anlegen und Rechte vergeben

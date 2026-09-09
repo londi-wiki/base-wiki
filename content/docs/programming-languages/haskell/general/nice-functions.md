@@ -34,3 +34,10 @@ dispatch "add"   t = addTaskAction taskFile t
 dispatch "done"  i = markDoneAction taskFile i
 dispatch _       _ = return ()
 ```
+
+---
+
+## Siehe auch
+
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte

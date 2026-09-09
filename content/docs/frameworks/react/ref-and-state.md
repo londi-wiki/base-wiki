@@ -126,6 +126,9 @@ When you pass a ref to a ref attribute in JSX, like `<div ref={myRef}>`,
 React will put the corresponding DOM element into myRef.current. Once the element is removed from the DOM, React will update myRef.current to be **null**. 
 You can read more about this in Manipulating the DOM with Refs.
 
+---
 
+## Siehe auch
 
-
+- → [Denken in React](/docs/frameworks/react/concept) – UI in Komponenten zerlegen und State richtig platzieren
+- → [Effects](/docs/frameworks/react/synchronizing-with-effects) – useEffect, Dependencies und Cleanup

@@ -60,3 +60,12 @@ toc: true
 ## 500er
 
 - Servererror
+
+---
+
+## Siehe auch
+
+- → [Conditional Requests](/docs/distributed-systems/general/http-conditional-requests) – ETag und If-Modified-Since für sparsame Requests
+- → [HTTP Servlets](/docs/distributed-systems/general/http-servlets-summary) – Servlet-Lebenszyklus, Thread-Sicherheit und web.xml
+- → [IT-Glossar](/docs/pizza-corner/compendium/it-glossary) – Idempotenz und andere Begriffe
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

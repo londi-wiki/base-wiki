@@ -21,3 +21,11 @@ sum a b = a + b
 sum :: Integer -> Integer -> Integer
 sum a -- (hello)
 ```
+
+---
+
+## Siehe auch
+
+- → [Haskell Überblick](/docs/programming-languages/haskell/general/overview) – FP gegen OOP und was eine Funktion wirklich ist
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren

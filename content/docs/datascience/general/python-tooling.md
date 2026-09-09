@@ -49,9 +49,9 @@ Unittest frameworks
 
 Pre commit hooks
 
+---
 
+## Siehe auch
 
-
-
-
-
+- → [Python Pakete](/docs/datascience/general/python-packages) – json, requests, scrapy, flask, rich und tqdm
+- → [Code Smells](/docs/datascience/general/code-smells) – Mutable Default Arguments und andere Fallen

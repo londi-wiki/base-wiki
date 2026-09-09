@@ -97,3 +97,10 @@ class Test:
 
 ```
 
+---
+
+## Siehe auch
+
+- → [Generics in Python](/docs/datascience/general/generics) – Typparameter für wiederverwendbare Funktionen
+- → [Code Smells](/docs/datascience/general/code-smells) – Mutable Default Arguments und andere Fallen
+- → [Python Tooling](/docs/datascience/general/python-tooling) – black, ruff, mypy, pytest und pre-commit

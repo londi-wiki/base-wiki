@@ -358,3 +358,12 @@ s_1 \cdot s_2 \equiv (r \cdot (x \cdot r^{-1}))^d \equiv x^d \pmod{n}
 $$
 
 $x^d$ ist laut RSA die **korrekte Signatur auf $x$**.
+
+---
+
+## Siehe auch
+
+- → [RSA](/docs/encryption-and-hashing/rsa) – Schlüsselpaar, Verschlüsselung und erweiterter euklidischer Algorithmus
+- → [Hashing](/docs/encryption-and-hashing/hashing) – Hashfunktionen, Sicherheitsanforderungen und Kompressionsfunktion
+- → [Zertifikate](/docs/encryption-and-hashing/certificates) – Bindungsproblem, CAs und Public-Key-Infrastruktur
+- → [Message Authentication Code](/docs/encryption-and-hashing/message-authentication-code) – Integrität und Authentizität mit geheimem Schlüssel

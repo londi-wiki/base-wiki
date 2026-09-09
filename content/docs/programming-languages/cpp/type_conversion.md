@@ -27,3 +27,10 @@ const_cast<Point&>(p).setX(4);
 float f = 3.14f;
 int bitRepresentation = *reinterpret_cast<int*>(&f);
 ```
+
+---
+
+## Siehe auch
+
+- → [Casting](/docs/programming-languages/cpp/casting) – die C++-Cast-Operatoren in der Praxis
+- → [const und constexpr](/docs/programming-languages/cpp/const_constexpr) – Konstanz zur Laufzeit und zur Compilezeit

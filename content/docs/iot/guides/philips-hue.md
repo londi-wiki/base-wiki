@@ -57,5 +57,9 @@ Body	{"on":false}
 Method	PUT
 ```
 
+---
 
+## Siehe auch
 
+- → [CoAP](/docs/iot/guides/coap) – schlankes REST-Protokoll für eingeschränkte Geräte
+- → [Regelbasierte Integration](/docs/iot/general/rule-based-integration) – Node-RED, IFTTT und Webhooks

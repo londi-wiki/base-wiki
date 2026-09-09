@@ -88,3 +88,10 @@ pyth (square 2) 3
 ~> 16 + 9               -- arithmetic
 ~> 25                   -- arithmetic
 ```
+
+---
+
+## Siehe auch
+
+- → [Listen](/docs/programming-languages/haskell/general/lists) – Cons, Pattern Matching, filter und map
+- → [WS Listenfunktionen](/docs/programming-languages/haskell/task-sheets/WS-ListFunctions) – take, drop, zip und der Rest der Standardbibliothek

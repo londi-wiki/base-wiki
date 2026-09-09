@@ -50,3 +50,10 @@ class C {
 new C().s()
 // returns the class
 ```
+
+---
+
+## Siehe auch
+
+- → [JS Funktionen in React](/docs/frameworks/react/js-functions) – Callbacks und actionFn
+- → [Funktionale Programmierung in Java](/docs/programming-languages/java/functional-programming) – Lambdas, Functional Interfaces, Streams und Optional

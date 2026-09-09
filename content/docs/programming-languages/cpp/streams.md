@@ -103,3 +103,10 @@ Beispiel:
 # vector::data gibt Adresse des darunterliegenden Arrays zurück
 ofs.write(  points.data(), points.size()*sizeof(Point) );
 ```
+
+---
+
+## Siehe auch
+
+- → [C++ Basics](/docs/programming-languages/cpp/basics) – Memory Mapping, Übersetzungsablauf, Datentypen und Scope
+- → [Struct und Klasse](/docs/programming-languages/cpp/struct-and-class) – Parameterübergabe, Initialisierungslisten und strukturiertes Binden

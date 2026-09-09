@@ -43,3 +43,10 @@ infixl 6 |+|
 
 (((1 + (2 ^ 3)) == 6) && ((3 / 4) < 12)) || (snd (1, True))
 ```
+
+---
+
+## Siehe auch
+
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte
+- → [Funktionstypen](/docs/programming-languages/haskell/general/function-types) – Signaturen lesen und schreiben

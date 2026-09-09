@@ -86,10 +86,9 @@ REACT_APP_NOT_SECRET_CODE=abcdef
 .env.development.local, .env.test.local, .env.production.local: Local overrides of environment-specific settings.
 ```
 
+---
 
+## Siehe auch
 
-
-
-
-
-
+- → [12-Factor App](/docs/architecture/principles/12-factor-app) – zwölf Regeln für betreibbare Anwendungen
+- → [React Basics](/docs/frameworks/react/basics) – der Einstieg

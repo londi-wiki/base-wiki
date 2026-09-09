@@ -18,3 +18,10 @@ COAP communicated via UDP.
 Resources are discoverable at .well-known/core
 
 [Cheat Sheet](https://github.com/markushx/coap-cheatsheet/raw/master/coap-cheatsheet.pdf)
+
+---
+
+## Siehe auch
+
+- → [MQTT](/docs/iot/general/mqtt) – Topics, Wildcards, QoS und Will Message
+- → [Philips Hue](/docs/iot/guides/philips-hue) – die lokale Hue-API ansprechen

@@ -161,3 +161,11 @@ ex3 = ((Const 0) `Add` (Const 2)) `Mul` (Const 3)
 simpl ex3
 Mul (Const 2) (Const 3)
 ```
+
+---
+
+## Siehe auch
+
+- → [Datentypen](/docs/programming-languages/haskell/general/data-types) – eigene Typen mit mehreren Konstruktoren
+- → [Record-Typen](/docs/programming-languages/haskell/general/record-types) – benannte Felder statt Positionen
+- → [Polymorphe Typen](/docs/programming-languages/haskell/general/polymorphic-types) – Typvariablen und generische Signaturen

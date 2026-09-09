@@ -12,3 +12,9 @@ toc: true
 # Video
 
 [Grundlagen der Vermessung: Einführung in Höhensysteme](https://youtu.be/BUisrgCBlu0?si=nbZbNq89YU83o3dX)
+
+---
+
+## Siehe auch
+
+- → [LV95](/docs/flying/orientation/lv95) – das Schweizer Koordinatensystem

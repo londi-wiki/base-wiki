@@ -29,3 +29,9 @@ public String create(@Valid Questionnaire questionnaire, BindingResult bindingRe
 }
 ```
 
+---
+
+## Siehe auch
+
+- → [Forms](/docs/frameworks/springboot/forms) – Formulare an Objekte binden
+- → [Controller](/docs/frameworks/springboot/controller) – Routen und Redirects

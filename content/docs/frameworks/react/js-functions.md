@@ -28,7 +28,9 @@ const Dialog = ({ ... , actionFn, ... }) => {
 }
 ```
 
+---
 
+## Siehe auch
 
-
-
+- → [Arrow Functions](/docs/programming-languages/js/arrow-function) – kompakte Funktionen und automatisches Binding
+- → [Listen rendern](/docs/frameworks/react/rendering-lists) – Listen mit map darstellen

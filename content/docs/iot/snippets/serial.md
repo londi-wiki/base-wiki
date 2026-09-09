@@ -20,3 +20,10 @@ void loop() {
   delay(500);
 }
 ```
+
+---
+
+## Siehe auch
+
+- → [Blink Snippet](/docs/iot/snippets/blink) – das Hello World der Mikrocontroller
+- → [Analog Snippet](/docs/iot/snippets/analog) – Analogwerte einlesen

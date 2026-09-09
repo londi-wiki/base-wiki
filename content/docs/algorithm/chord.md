@@ -90,3 +90,9 @@ flowchart TD
 | 3     | N15 + 2^2   | N50  |
 | 4     | N15 + 2^3   | N50  |
 
+---
+
+## Siehe auch
+
+- → [Verteilte Systeme – Übersicht](/docs/distributed-systems/overview) – Einstieg und Messaging-Protokolle
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen

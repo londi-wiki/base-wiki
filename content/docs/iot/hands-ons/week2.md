@@ -5,3 +5,10 @@ tags: ["draft"]
 author: "Leon"
 math: false
 ---
+
+---
+
+## Siehe auch
+
+- → [Hands-on Woche 1](/docs/iot/hands-ons/week1) – Blink und NeoPixel auf dem ESP8266
+- → [Hands-on Woche 3](/docs/iot/hands-ons/week3) – Fingerprint und Zertifikat einer TLS-Verbindung prüfen

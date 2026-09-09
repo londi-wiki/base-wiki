@@ -56,3 +56,10 @@ toc: true
 
 - **Werte und Kultur widerspiegeln (Reflect value & culture)**
   - Vermittelt ein Verständnis der Unternehmenskultur und -werte sowie Einblicke, wie gut das Unternehmen auf Veränderungen reagiert.
+
+---
+
+## Siehe auch
+
+- → [TOGAF ADM](/docs/architecture/togaf/adm) – die Phasen der Architecture Development Method
+- → [Architektur-Prinzipien](/docs/architecture/architecture-principles) – die SOLID-Prinzipien im Detail

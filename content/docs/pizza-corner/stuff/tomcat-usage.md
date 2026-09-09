@@ -24,3 +24,9 @@ sudo tail -99f /opt/tomcat/logs/catalina.out
 sudo tail -99f /opt/tomcat/logs/localhost.2023-09-28.log
 ```
 
+---
+
+## Siehe auch
+
+- → [Gradle und Tomcat installieren](/docs/pizza-corner/stuff/gradle-and-tomcat-installation) – Java-Toolchain aufsetzen
+- → [HTTP Servlets](/docs/distributed-systems/general/http-servlets-summary) – Servlet-Lebenszyklus, Thread-Sicherheit und web.xml

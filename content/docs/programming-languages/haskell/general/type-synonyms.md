@@ -22,3 +22,10 @@ time = (23, 59)
 > xCoord time -- compiles
 23
 ```
+
+---
+
+## Siehe auch
+
+- → [Basistypen](/docs/programming-languages/haskell/general/types) – Bool, Char, Int, Integer und Double
+- → [Record-Typen](/docs/programming-languages/haskell/general/record-types) – benannte Felder statt Positionen

@@ -210,7 +210,10 @@ public final class StreamEncoder extends Writer {
 }
 ```
 
+---
 
+## Siehe auch
 
-
-
+- → [Networking in Java](/docs/distributed-systems/general/networking) – Sockets, InetAddress und Netzwerkschnittstellen
+- → [Sockets und Streams](/docs/distributed-systems/general/sockets-and-streams) – Echo- und Quote-Server als Minimalbeispiele
+- → [TCP/IP](/docs/network/tcp-ip) – Handshake, Fehlerbehandlung und Überlaststeuerung

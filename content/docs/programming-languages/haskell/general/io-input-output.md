@@ -196,3 +196,9 @@ main' = do putStrLn "Welcome to MiniCalc!"
            forever loop
 ```
 
+---
+
+## Siehe auch
+
+- → [Haskell Basics](/docs/programming-languages/haskell/general/basics) – Syntax und Kommentare
+- → [GHCi benutzen](/docs/programming-languages/haskell/guides/usage) – Typen anzeigen und Funktionen interaktiv definieren

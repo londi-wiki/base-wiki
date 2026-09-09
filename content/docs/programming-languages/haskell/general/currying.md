@@ -81,11 +81,9 @@ snd :: (a,b) -> b
 > b2 = f.snd.i :: Bool -> Int
 ```
 
+---
 
+## Siehe auch
 
-
-
-
-
-
-
+- → [Higher Order Functions](/docs/programming-languages/haskell/general/higher-order-functions) – Funktionen als Argumente und Rückgabewerte
+- → [Funktionstypen](/docs/programming-languages/haskell/general/function-types) – Signaturen lesen und schreiben
