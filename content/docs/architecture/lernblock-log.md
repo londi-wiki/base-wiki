@@ -4,7 +4,7 @@ title: "Lernblock Log"
 description: ""
 icon: "article"
 date: "2026-09-09T08:49:32+00:00"
-lastmod: "2026-09-09T08:49:32+00:00"
+lastmod: "2026-09-10T06:21:25+00:00"
 draft: false
 toc: true
 ---
@@ -31,3 +31,4 @@ gespeichert.
 | Datum | Tag | Thema | Stichworte |
 |---|---|---|---|
 | 2026-09-09 | Mi | Gateway API als Nachfolger von Ingress nach dem ingress-nginx EOL | GatewayClass/Gateway/HTTPRoute, Rollentrennung, ingress2gateway 1.0, Annotation-Audit, BackendTLSPolicy |
+| 2026-09-10 | Do | Hands-on: C4-Modell als Code mit Structurizr local | workspace.dsl, !identifiers hierarchical, systemContext/container Views, !adrs im Modell, Lite/Cloud EOL, export -format mermaid, Frage nach Modell-Ownership |
